@@ -1,0 +1,98 @@
+medibo data sources...
+
+
+2. For the medical corpus, I would use this
+I checked the current sources and I would not use the giant list you pasted as-is.
+Default corpus: MedlinePlus + Disease Ontology + HPO
+This combination is much more appropriate for your college project.
+A. MedlinePlus — primary text corpus
+This should be your main embedded knowledge source.
+NLM provides downloadable XML containing health-topic records with titles, summaries, vocabulary/synonyms, related topics and links. NLM Support Center
+Most importantly, MedlinePlus says its health-topic summaries are public domain, while some linked/embedded content such as A.D.A.M. articles is copyrighted. MedlinePlus
+So for your project:
+MedlinePlus
+   ↓
+health-topic XML
+   ↓
+extract
+   ├── title
+   ├── summary
+   ├── also-called
+   ├── related topics
+   └── source URL
+   ↓
+chunk
+   ↓
+embed
+
+This is my #1 source for the default RAG corpus.
+B. Disease Ontology — disease vocabulary
+Disease Ontology gives you a structured disease vocabulary with OWL/OBO downloads, and its content is released under CC0. Disease Ontology
+Use it for:
+Disease
+├── canonical name
+├── synonyms
+├── definition
+├── hierarchy
+└── cross-references
+
+This is particularly useful for terminology normalization.
+Example:
+heart attack
+      ↓
+myocardial infarction
+      ↓
+DO concept
+
+That complements the actual prose from MedlinePlus.
+C. Human Phenotype Ontology — symptom/phenotype layer
+HPO is particularly useful for the symptom/phenotype side. It provides standardized phenotype terminology and downloadable disease-phenotype annotations. Human Phenotype Ontology
+For example:
+Disease
+   ↓
+phenotype
+   ├── fever
+   ├── headache
+   ├── fatigue
+   └── ...
+
+One important licensing detail: HPO is freely available, but its license requires proper acknowledgement/versioning and says the official ontology files should not be altered. Human Phenotype Ontology
+So I'd use HPO as structured metadata/lookup data, rather than modifying the ontology itself.
+D. NLM Clinical Tables — useful synonym/condition layer
+NLM's Clinical Tables has a downloadable medical-conditions dataset with over 2,400 conditions, ICD-10-CM/ICD-9-CM codes and extensive synonyms. Clinical Tables
+This is useful for:
+"high blood sugar"
+"hyperglycemia"
+"elevated blood glucose"
+        ↓
+same normalized condition
+
+I'd use this primarily for terminology/query expansion, rather than making it your main prose corpus.
+3. What about PubMed / PMC?
+Yes, but not as your initial default corpus.
+PMC's Open Access subset gives you millions of full-text biomedical articles in machine-readable formats, and the BioC API makes them convenient for retrieval/processing. PubMed Central (PMC)
+However, article licenses vary, so you have to preserve and respect each article's license. PubMed Central (PMC)
+For the college project I'd make this:
+Phase 1:
+MedlinePlus
+Disease Ontology
+HPO
+NLM Conditions
+
+Phase 2:
+PMC Open Access
+
+That keeps the initial dataset manageable and easier to explain.
+4. What I would NOT bundle by default
+UMLS
+Extremely useful, but not ideal as your default bundled dataset.
+The current full 2026AA UMLS release is about 5.3 GB compressed / 40.1 GB uncompressed, and access is through NLM's licensing process. National Library of Medicine
+Use it later for terminology normalization, not as the college project's initial embedded corpus.
+SNOMED CT
+Very valuable clinically, and India is a SNOMED International member. SNOMED International
+But distribution/licensing still needs to be handled through the Indian release/licensing mechanism. I wouldn't silently package it into the repo.
+PrimeKG
+Don't build the project around PrimeKG. Its own repository now says PrimeKG has been superseded by OptimusKG. GitHub
+Also, a huge knowledge graph isn't necessary for your first medical Potbot.
+WHO ICD-11
+Useful for classification and coding, and the current ICD API has a 2026 release, but I'd use it as an optional API/lookup layer, not the initial embedded RAG corpus. ICD-11
