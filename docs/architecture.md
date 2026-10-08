@@ -338,8 +338,8 @@ User types: "What is the vacation rollover limit?"
    │                           │
    │  Groq cloud call OR       │
    │  Ollama local HTTP call:  │
-   │  Model: llama-3.3-70b /   │
-   │         llama3 / etc.     │
+   │  Model: gpt-oss (20b/120b)│
+   │         qwen3.8 / llama3  │
    │  Temperature: 0.1         │
    │  Max tokens: 1024         │
    │                           │
@@ -375,7 +375,7 @@ PostgreSQL contains two tables, auto-created by SQLAlchemy on first startup:
 | `question`           | TEXT        | The user's original question             |
 | `answer`             | TEXT        | The LLM-generated answer                 |
 | `context`            | TEXT        | JSON string of retrieved source snippets |
-| `model`              | VARCHAR(100)| LLM model used (e.g. `llama-3.3-70b-versatile`) |
+| `model`              | VARCHAR(100)| LLM model used (e.g. `qwen/qwen3.8-27b`) |
 | `prompt_style`       | VARCHAR(50) | `concise`, `detailed`, or `structured`   |
 | `retrieval_method`   | VARCHAR(50) | `vector`, `text`, or `hybrid`            |
 | `response_time_ms`   | INTEGER     | End-to-end LLM response time             |
@@ -437,7 +437,7 @@ All domain objects are **plain Python dataclasses** in `domain/models.py` with n
 
 ### Groq API (cloud — requires internet + API key, default provider)
 - **Used for**: LLM text generation and query rewriting when `LLM_PROVIDER=groq`
-- **Model**: `llama-3.3-70b-versatile` (open-weight, hosted by Groq for fast inference)
+- **Models**: `openai/gpt-oss-20b`, `openai/gpt-oss-120b`, `qwen/qwen3.8-27b` (open-weight, hosted by Groq for fast inference); default `qwen/qwen3.8-27b`
 - **Rate limits**: Free tier ~30 requests/min; paid tier much higher
 - **Data privacy**: Your document content is sent to Groq as part of the prompt context
 

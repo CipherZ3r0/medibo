@@ -71,7 +71,7 @@ services:
       - LLM_PROVIDER=${LLM_PROVIDER:-groq}
       # --- Groq (default) ---
       - GROQ_API_KEY=${GROQ_API_KEY}
-      - LLM_MODEL=${LLM_MODEL:-llama-3.3-70b-versatile}
+      - LLM_MODEL=${LLM_MODEL:-qwen/qwen3.8-27b}
       # --- Ollama (only used when LLM_PROVIDER=ollama) ---
       # Points to the companion ollama service (active with --profile ollama)
       - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://ollama:11434}

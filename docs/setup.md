@@ -57,7 +57,8 @@ Open `.env` and set the most important variables. The default provider is **Groq
 ```env
 LLM_PROVIDER=groq
 GROQ_API_KEY=gsk_your_groq_api_key_here
-LLM_MODEL=llama-3.3-70b-versatile
+# Supported: openai/gpt-oss-20b | openai/gpt-oss-120b | qwen/qwen3.8-27b
+LLM_MODEL=qwen/qwen3.8-27b
 ```
 Get a free Groq key at https://console.groq.com/
 

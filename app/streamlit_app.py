@@ -539,7 +539,7 @@ with st.sidebar:
     selected_provider_key = "groq" if "Groq" in ui_provider else "ollama"
     
     if selected_provider_key == "groq":
-        groq_models = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768", "gemma2-9b-it", "Custom..."]
+        groq_models = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "qwen/qwen3.8-27b", "Custom..."]
         is_custom = config.LLM_MODEL not in [m for m in groq_models if m != "Custom..."]
         
         default_idx = groq_models.index("Custom...") if is_custom else groq_models.index(config.LLM_MODEL)
