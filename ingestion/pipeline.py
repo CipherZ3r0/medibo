@@ -25,8 +25,9 @@ from typing import Any, Dict, Optional
 from ingestion.chunkers import CompositeChunker
 from ingestion.config import PipelineConfig
 from ingestion.embedders import BaseEmbedder, SentenceTransformerEmbedder
-from ingestion.indexers import BaseVectorStore, ElasticsearchVectorStore
+from ingestion.indexers import BaseVectorStore
 from ingestion.loaders import CompositeDocumentLoader
+from ingestion.medical_index import user_vector_store
 from ingestion.metrics import PipelineMetrics
 
 logger = logging.getLogger(__name__)
@@ -48,7 +49,9 @@ class IngestionPipeline:
     embedder:
         Embedding service.  Defaults to a ``SentenceTransformerEmbedder``.
     vector_store:
-        Vector store.  Defaults to an ``ElasticsearchVectorStore``.
+        Vector store.  Defaults to the **user** dataset (``medibo_user``), so
+        everything the UI ingests lands in user data only; ``medibo_default``
+        stays read-only from this path.
     config:
         Runtime configuration controlling parallelism, batch sizes, device
         selection, and caching.  Defaults to ``PipelineConfig.from_env()``.
@@ -87,7 +90,7 @@ class IngestionPipeline:
                 pipeline_config=self.config,
                 cache=cache,
             )
-        self.vector_store = vector_store or ElasticsearchVectorStore()
+        self.vector_store = vector_store or user_vector_store()
         self.state_store = state_store
 
     # ------------------------------------------------------------------

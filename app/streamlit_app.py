@@ -20,7 +20,18 @@ st.set_page_config(
 )
 from domain.models import FeedbackRecord
 from ingestion.loaders import CompositeDocumentLoader
+from ingestion.medical_index import clear_user_data, dataset_counts
 from ingestion.pipeline import IngestionPipeline
+from rag.citations import Citation, citations_as_dicts, citations_markdown
+from rag.evidence import (
+    SOURCE_TRUSTED,
+    SOURCE_UNKNOWN,
+    SOURCE_USER,
+    TRUST_LEVEL_USER_ONLY,
+    USER_ONLY_BANNER,
+    classify_dataset_type,
+    classify_source,
+)
 from rag.pipeline import RAGPipeline
 from app.database import PostgresDatabaseRepository
 
@@ -397,6 +408,113 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 if "pending_prompt" not in st.session_state:
     st.session_state.pending_prompt = None
+if "clear_my_data_pending" not in st.session_state:
+    st.session_state.clear_my_data_pending = False
+
+
+def render_source_card(src: dict) -> str:
+    """HTML card for one retrieved source, including medical metadata."""
+    import html as _html
+
+    meta = src.get("metadata") or {}
+    label = _html.escape(str(src.get("file_name") or "Unknown"))
+    parts = []
+    if src.get("page_number"):
+        parts.append(f"Page {src['page_number']}")
+    for key in ("section", "source", "title"):
+        if meta.get(key):
+            parts.append(str(meta[key]))
+    prefix = " • ".join(_html.escape(p) for p in parts)
+    body = _html.escape(str(src.get("text") or ""))[:200]
+    card = f'<div class="source-card"><span class="file-name">{label}</span>'
+    if prefix:
+        card += f'<div style="font-size: 12px; color: #A1A1AA;">{prefix}</div>'
+    card += f'<div style="margin-top: 4px;">{body}...</div>'
+    url = meta.get("source_url")
+    if url:
+        safe_url = _html.escape(str(url))
+        card += (
+            f'<div style="margin-top: 6px;"><a href="{safe_url}" '
+            f'target="_blank" rel="noopener" style="color: #F97316; '
+            f'font-size: 12px; word-break: break-all;">{safe_url}</a></div>'
+        )
+    card += "</div>"
+    return card
+
+
+def doc_to_source(doc) -> dict:
+    """UI source dict for one retrieved document, tagged with its trust class.
+
+    Phase 8: the class comes from ``dataset_type`` only — ``default`` is
+    trusted, ``user`` is user-provided, anything else is unknown/untrusted.
+    """
+    trust = classify_source(doc)
+    return {
+        "file_name": doc.file_name,
+        "page_number": doc.page_number,
+        "text": doc.text,
+        "metadata": doc.metadata,
+        "trust": trust,
+        "trusted": trust == SOURCE_TRUSTED,
+    }
+
+
+def _source_trust(src: dict) -> str:
+    """Trust class of a stored source dict (handles legacy messages too)."""
+    trust = src.get("trust")
+    if trust in (SOURCE_TRUSTED, SOURCE_USER, SOURCE_UNKNOWN):
+        return trust
+    meta = src.get("metadata") or {}
+    return classify_dataset_type(meta.get("dataset_type"))
+
+
+def split_sources(sources: list) -> dict:
+    """Bucket source dicts into trusted / user-provided / unknown.
+
+    Unknown or missing ``dataset_type`` never lands in the trusted bucket.
+    """
+    groups = {"trusted": [], "user": [], "unknown": []}
+    for src in sources or []:
+        groups[_source_trust(src)].append(src)
+    return groups
+
+
+def render_sources_block(groups: dict) -> None:
+    """Draw the Sources expander, keeping curated and user uploads visually apart."""
+    trusted = groups.get("trusted") or []
+    user = groups.get("user") or []
+    unknown = groups.get("unknown") or []
+    if not trusted and not user and not unknown:
+        return
+    headers = (
+        (trusted, "Medibo knowledge base — trusted"),
+        (user, "Your uploaded data — user-provided"),
+        (unknown, "Unverified source — origin unknown"),
+    )
+    with st.expander("Sources", expanded=False):
+        for i, (items, title) in enumerate(headers):
+            if not items:
+                continue
+            margin = "" if i == 0 else "margin: 10px 0 6px; "
+            st.markdown(
+                "<div style='font-size: 11px; font-weight: 600; color: #A1A1AA; "
+                f"{margin}text-transform: uppercase;'>{title}</div>",
+                unsafe_allow_html=True,
+            )
+            for src in items:
+                st.markdown(render_source_card(src), unsafe_allow_html=True)
+
+
+def _as_citation(item) -> Citation:
+    return item if isinstance(item, Citation) else Citation(**item)
+
+
+def render_citations(citations) -> None:
+    """Render the numbered citation list of a grounded answer (or history)."""
+    items = [_as_citation(c) for c in citations or ()]
+    if not items:
+        return
+    st.markdown(citations_markdown(items))
 
 
 # --- Sidebar ---
@@ -405,6 +523,13 @@ with st.sidebar:
 
     # Document Ingestion Section
     st.markdown("<div style='font-size: 11px; font-weight: 600; color: #A1A1AA; margin-bottom: 8px; text-transform: uppercase;'>Knowledge Base</div>", unsafe_allow_html=True)
+    st.markdown(
+        "<div style='font-size: 11px; color: #A1A1AA; margin-bottom: 10px; line-height: 1.5;'>"
+        "Uploads go to <span style='color: #F97316;'>My data</span>. "
+        "Default medical knowledge is read-only and is never rebuilt or deleted here."
+        "</div>",
+        unsafe_allow_html=True,
+    )
     
     tab_files, tab_folder = st.tabs(["Upload", "Folder"])
 
@@ -426,7 +551,7 @@ with st.sidebar:
                             uploaded_files=uploaded_files,
                             recreate_index=recreate_idx_files
                         )
-                        st.success(f"Indexed {result.get('indexed_count', 0)} chunks")
+                        st.success(f"Indexed {result.get('indexed_count', 0)} chunks into My data")
                     except Exception as e:
                         st.error(f"Error: {str(e)}")
             else:
@@ -448,7 +573,7 @@ with st.sidebar:
                         try:
                             pipeline = IngestionPipeline()
                             result = pipeline.run(folder_path=clean_path, recreate_index=recreate_idx_folder)
-                            st.success(f"Indexed {result.get('indexed_count', 0)} chunks")
+                            st.success(f"Indexed {result.get('indexed_count', 0)} chunks into My data")
                         except Exception as e:
                             st.error(f"Error: {str(e)}")
                 else:
@@ -456,48 +581,28 @@ with st.sidebar:
 
     st.write("") # Spacer
 
-    # Knowledge Base Stats
+    # --- Knowledge Base Stats: default corpus and my data are counted apart ---
     try:
         from ingestion.indexers import ElasticsearchVectorStore
+
+        counts = dataset_counts()
         es_store = ElasticsearchVectorStore()
-        es_client = es_store.es
-        stats = es_store.get_stats()
-        chunk_count = stats.get("doc_count", 0) if stats.get("exists") else 0
-        
-        unique_file_count = 0
-        if stats.get("exists") and es_client:
-            try:
-                body = {
-                    "size": 0,
-                    "aggs": {
-                        "unique_files": {
-                            "cardinality": {
-                                "field": "file_name"
-                            }
-                        }
-                    }
-                }
-                res = es_client.search(index=es_store.index_name, body=body)
-                unique_file_count = res["aggregations"]["unique_files"]["value"]
-            except Exception:
-                unique_file_count = 0
-                
-        if es_client and es_client.ping():
+        if es_store.es and es_store.es.ping():
             status_text = "Online"
             status_color = "#10B981"
         else:
             status_text = "Offline"
             status_color = "#EF4444"
-            
+
         st.markdown(f"""
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-val">{unique_file_count}</div>
-                    <div class="stat-lbl">Documents</div>
+                    <div class="stat-val">{counts['default']:,}</div>
+                    <div class="stat-lbl">Default knowledge</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-val">{chunk_count}</div>
-                    <div class="stat-lbl">Chunks</div>
+                    <div class="stat-val">{counts['user']:,}</div>
+                    <div class="stat-lbl">My data</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-val" style="color: {status_color}; display: flex; align-items: center; justify-content: center; gap: 6px;">
@@ -513,11 +618,11 @@ with st.sidebar:
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-val">0</div>
-                    <div class="stat-lbl">Documents</div>
+                    <div class="stat-lbl">Default knowledge</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-val">0</div>
-                    <div class="stat-lbl">Chunks</div>
+                    <div class="stat-lbl">My data</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-val" style="color: #EF4444; display: flex; align-items: center; justify-content: center; gap: 6px;">
@@ -528,6 +633,37 @@ with st.sidebar:
                 </div>
             </div>
         """, unsafe_allow_html=True)
+
+    # --- Clear my data: deletes the user dataset only ---
+    # Separate from the "Rebuild index" checkbox above: rebuilding re-ingests
+    # your uploads, clearing removes them. Neither touches medibo_default.
+    if st.button("Clear my data", key="btn_clear_my_data", use_container_width=True):
+        st.session_state.clear_my_data_pending = True
+        st.rerun()
+
+    if st.session_state.get("clear_my_data_pending"):
+        st.warning(
+            "This deletes only your uploaded data. "
+            "Default medical knowledge is read-only and stays in place."
+        )
+        c_clear_yes, c_clear_no = st.columns(2)
+        with c_clear_yes:
+            if st.button("Confirm", key="btn_clear_my_data_confirm", use_container_width=True):
+                try:
+                    result = clear_user_data()
+                    st.toast(
+                        "My data cleared"
+                        if result.get("deleted")
+                        else "No uploaded data to clear"
+                    )
+                except Exception as e:
+                    st.error(f"Could not clear my data: {e}")
+                st.session_state.clear_my_data_pending = False
+                st.rerun()
+        with c_clear_no:
+            if st.button("Cancel", key="btn_clear_my_data_cancel", use_container_width=True):
+                st.session_state.clear_my_data_pending = False
+                st.rerun()
 
     st.write("") # Spacer
 
@@ -638,17 +774,13 @@ else:
                         unsafe_allow_html=True
                     )
                 
-                if msg.get("sources"):
-                    with st.expander("Sources", expanded=False):
-                        for src in msg["sources"]:
-                            st.markdown(
-                                f'<div class="source-card">'
-                                f'<span class="file-name">{src["file_name"]}</span>'
-                                f'{"Page " + str(src["page_number"]) + " • " if src.get("page_number") else ""}'
-                                f'{src["text"][:200]}...'
-                                f"</div>",
-                                unsafe_allow_html=True,
-                            )
+                if msg.get("evidence_status") == "insufficient":
+                    st.caption("No sources cited — general-knowledge answer.")
+                elif msg.get("sources"):
+                    if msg.get("trust_level") == TRUST_LEVEL_USER_ONLY:
+                        st.info(USER_ONLY_BANNER)
+                    render_citations(msg.get("citations"))
+                    render_sources_block(split_sources(msg["sources"]))
                 
                 if msg.get("conversation_id"):
                     conv_id = msg["conversation_id"]
@@ -695,31 +827,37 @@ if active_prompt:
 
                 st.markdown(response.answer)
 
-                sources = [
-                    {
-                        "file_name": doc.file_name,
-                        "page_number": doc.page_number,
-                        "text": doc.text,
-                    }
-                    for doc in response.retrieved_docs
-                ]
+                evidence = getattr(response, "evidence", None)
+                grounded = bool(evidence is not None and evidence.sufficient)
+                groups = {"trusted": [], "user": [], "unknown": []}
 
-                if sources:
-                    with st.expander("Sources", expanded=False):
-                        for src in sources:
-                            st.markdown(
-                                f'<div class="source-card">'
-                                f'<span class="file-name">{src["file_name"]}</span>'
-                                f'{"Page " + str(src["page_number"]) + " • " if src.get("page_number") else ""}'
-                                f'{src["text"][:200]}...'
-                                f"</div>",
-                                unsafe_allow_html=True,
-                            )
+                if grounded:
+                    groups = {
+                        "trusted": [doc_to_source(doc) for doc in evidence.trusted_docs],
+                        "user": [doc_to_source(doc) for doc in evidence.user_docs],
+                        "unknown": [
+                            doc_to_source(doc)
+                            for doc in getattr(evidence, "unknown_docs", ())
+                        ],
+                    }
+                    if evidence.trust_level == TRUST_LEVEL_USER_ONLY:
+                        st.info(USER_ONLY_BANNER)
+                    # Citations come from the supporting chunks only — unknown
+                    # provenance is shown separately and never cited.
+                    render_citations(response.citations)
+                    render_sources_block(groups)
+                else:
+                    # The answer already carries the explicit warning line —
+                    # never attach sources or citations to an ungrounded answer.
+                    st.caption("No sources cited — general-knowledge answer.")
 
                 st.session_state.messages.append({
                     "role": "assistant",
                     "content": response.answer,
-                    "sources": sources,
+                    "sources": groups["trusted"] + groups["user"] + groups["unknown"],
+                    "citations": citations_as_dicts(response.citations),
+                    "evidence_status": "sufficient" if grounded else "insufficient",
+                    "trust_level": evidence.trust_level if evidence else "none",
                     "conversation_id": response.conversation_id,
                     "response_time_ms": response.response_time_ms,
                     "total_tokens": response.total_tokens

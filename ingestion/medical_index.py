@@ -143,6 +143,102 @@ def user_vector_store(
     )
 
 
+def retrieval_store(
+    host: Optional[str] = None,
+    es_client: Optional[Any] = None,
+) -> "MedicalVectorStore":
+    """Read-only store used by the application read path.
+
+    Searches ``medibo_default`` *and* ``medibo_user`` for every query (the
+    default corpus is always part of the read set), while ``index_name`` — the
+    target for writes and stats — stays on the protected default index, so an
+    accidental write through this store raises
+    :class:`DatasetProtectionError`.
+    """
+    read_set = getattr(
+        config,
+        "MEDICAL_RETRIEVAL_INDEXES",
+        f"{MEDICAL_DEFAULT_INDEX},{MEDICAL_USER_INDEX}",
+    )
+    return MedicalVectorStore(
+        host=host,
+        index_name=MEDICAL_DEFAULT_INDEX,
+        es_client=es_client,
+        allow_default_write=False,
+        search_indexes=read_set,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Dataset counts
+# ---------------------------------------------------------------------------
+
+def _count_documents(es: Any, index_name: str) -> int:
+    """Real-time document count for *index_name* (0 when absent)."""
+    try:
+        if not es.indices.exists(index=index_name):
+            return 0
+    except Exception:  # pragma: no cover - defensive
+        return 0
+    try:
+        response = es.count(index=index_name)
+        if hasattr(response, "get"):
+            return int(response.get("count", 0) or 0)
+    except Exception:
+        pass
+    # Fallback for clients without the count API (docs.count also lags a
+    # refresh, so it is only used when _count is unavailable).
+    try:
+        stats = es.indices.stats(index=index_name)
+        return int(
+            stats["indices"][index_name]["primaries"]["docs"]["count"]
+        )
+    except Exception:  # pragma: no cover - defensive
+        return 0
+
+
+def dataset_counts(
+    es: Optional[Any] = None,
+    host: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Return separate counts for the default corpus and the user dataset.
+
+    The two numbers are reported independently in the UI ("Default medical
+    knowledge" / "My data"); clearing the user dataset only ever changes the
+    second one.
+    """
+    owns_client = es is None
+    if es is None:
+        if Elasticsearch is None:
+            raise RuntimeError("Elasticsearch client library not available.")
+        raw_host = host or config.ELASTICSEARCH_HOST
+        if not raw_host.startswith(("http://", "https://")):
+            raw_host = f"http://{raw_host}"
+        es = Elasticsearch(raw_host)
+
+    try:
+        # A fresh bulk write is only counted after the index refresh interval,
+        # so refresh the (small, frequently written) user index to keep the
+        # "My data" number accurate right after an upload.
+        if not is_protected(MEDICAL_USER_INDEX):
+            try:
+                es.indices.refresh(index=MEDICAL_USER_INDEX)
+            except Exception:
+                pass
+        return {
+            "default": _count_documents(es, MEDICAL_DEFAULT_INDEX),
+            "user": _count_documents(es, MEDICAL_USER_INDEX),
+            "default_index": MEDICAL_DEFAULT_INDEX,
+            "user_index": MEDICAL_USER_INDEX,
+        }
+    finally:
+        if owns_client and hasattr(es, "close"):
+            try:
+                es.close()
+            except Exception:  # pragma: no cover
+                pass
+
+
 # ---------------------------------------------------------------------------
 # Mapping
 # ---------------------------------------------------------------------------
@@ -222,6 +318,7 @@ class MedicalVectorStore(ElasticsearchVectorStore):
         index_name: Optional[str] = None,
         es_client: Optional[Any] = None,
         allow_default_write: bool = False,
+        search_indexes: Optional[Any] = None,
     ) -> None:
         target_index = index_name or MEDICAL_DEFAULT_INDEX
         if es_client is not None:
@@ -231,8 +328,15 @@ class MedicalVectorStore(ElasticsearchVectorStore):
             self.host = raw_host
             self.index_name = target_index
             self.es = es_client
+            self.search_indexes = (
+                self._normalize_indexes(search_indexes) or self.index_name
+            )
         else:
-            super().__init__(host=host, index_name=target_index)
+            super().__init__(
+                host=host,
+                index_name=target_index,
+                search_indexes=search_indexes,
+            )
         self.allow_default_write = allow_default_write
 
     # ------------------------------------------------------------------
@@ -272,8 +376,7 @@ class MedicalVectorStore(ElasticsearchVectorStore):
     # Indexing
     # ------------------------------------------------------------------
 
-    @staticmethod
-    def build_source(chunk: Chunk) -> Dict[str, Any]:
+    def build_source(self, chunk: Chunk) -> Dict[str, Any]:
         """Flatten a :class:`~domain.models.Chunk` into an ES ``_source``."""
         source: Dict[str, Any] = {
             "chunk_id": chunk.chunk_id,
@@ -291,9 +394,13 @@ class MedicalVectorStore(ElasticsearchVectorStore):
         for key in MEDICAL_METADATA_FIELDS:
             if key in metadata:
                 source[key] = metadata[key]
-        # Fall back to dataset_type on the chunk itself (Phase 4 convention).
+        # Fall back to the dataset the chunk is being written to (Phase 4
+        # convention for the bundled corpus: chunks carry dataset_type there;
+        # user uploads carry none, so they are tagged "user").
         if "dataset_type" not in source:
-            source["dataset_type"] = "default"
+            source["dataset_type"] = (
+                "default" if is_protected(self.index_name) else "user"
+            )
         return source
 
     def index_chunks(self, chunks: List[Chunk]) -> int:
@@ -365,6 +472,8 @@ __all__ = [
     "assert_writable_index",
     "build_medical_mapping",
     "clear_user_data",
+    "dataset_counts",
     "is_protected",
+    "retrieval_store",
     "user_vector_store",
 ]

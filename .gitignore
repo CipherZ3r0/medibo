@@ -37,3 +37,7 @@ env/
 
 # Local evaluation corpus
 temp_data/
+
+# agent
+.agents/
+skills-lock.json

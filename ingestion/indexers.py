@@ -169,22 +169,36 @@ class BaseVectorStore(ABC):
 class ElasticsearchVectorStore(BaseVectorStore):
     """Elasticsearch implementation of BaseVectorStore for Hybrid Search."""
 
-    def __init__(self, host: Optional[str] = None, index_name: Optional[str] = None):
-        if Elasticsearch is None:
-            logger.warning(
-                "Elasticsearch client library not available. "
-                "Vector store operations will be disabled."
-            )
-            self.host = host or config.ELASTICSEARCH_HOST
-            self.index_name = index_name or config.ELASTICSEARCH_INDEX
-            self.es = None
-            return
-
+    def __init__(
+        self,
+        host: Optional[str] = None,
+        index_name: Optional[str] = None,
+        search_indexes: Optional[Any] = None,
+        es_client: Optional[Any] = None,
+    ):
         raw_host = host or config.ELASTICSEARCH_HOST
         if not raw_host.startswith(("http://", "https://")):
             raw_host = f"http://{raw_host}"
         self.host = raw_host
         self.index_name = index_name or config.ELASTICSEARCH_INDEX
+        #: Indexes queried by vector/text search. Defaults to ``index_name``;
+        #: pass a comma-separated list (or iterable) to search several indexes
+        #: at once — e.g. ``medibo_default,medibo_user`` for the application
+        #: read path. Writes and stats always target ``self.index_name``.
+        self.search_indexes = self._normalize_indexes(search_indexes) or self.index_name
+
+        if es_client is not None:
+            # Injected client (tests / callers that own the connection).
+            self.es = es_client
+            return
+
+        if Elasticsearch is None:
+            logger.warning(
+                "Elasticsearch client library not available. "
+                "Vector store operations will be disabled."
+            )
+            self.es = None
+            return
 
         try:
             self.es = Elasticsearch(self.host)
@@ -210,6 +224,29 @@ class ElasticsearchVectorStore(BaseVectorStore):
                     e2,
                 )
                 self.es = None
+
+    @staticmethod
+    def _normalize_indexes(search_indexes: Optional[Any]) -> str:
+        """Return a comma-separated index list, or ``""`` for a falsy input."""
+        if not search_indexes:
+            return ""
+        if isinstance(search_indexes, str):
+            parts = [p.strip() for p in search_indexes.split(",")]
+        else:
+            parts = [str(p).strip() for p in search_indexes]
+        return ",".join(p for p in parts if p)
+
+    def _search_kwargs(self) -> Dict[str, Any]:
+        """Extra arguments for search requests.
+
+        A multi-index read set must stay usable when one member is absent —
+        after ``medibo_user`` is cleared by the UI it no longer exists, and an
+        Elasticsearch query naming a missing index would fail outright. The
+        default medical corpus is unaffected by that flag.
+        """
+        if "," in self.search_indexes:
+            return {"ignore_unavailable": True, "allow_no_indices": True}
+        return {}
 
     # ------------------------------------------------------------------
     # Index management
@@ -317,7 +354,9 @@ class ElasticsearchVectorStore(BaseVectorStore):
             },
             "_source": {"excludes": ["embedding"]},
         }
-        response = self.es.search(index=self.index_name, body=body)
+        response = self.es.search(
+            index=self.search_indexes, body=body, **self._search_kwargs()
+        )
         return self._parse_search_hits(response)
 
     def text_search(self, query_text: str, top_k: int) -> List[SearchResult]:
@@ -329,7 +368,9 @@ class ElasticsearchVectorStore(BaseVectorStore):
             "query": {"match": {"text": {"query": query_text}}},
             "_source": {"excludes": ["embedding"]},
         }
-        response = self.es.search(index=self.index_name, body=body)
+        response = self.es.search(
+            index=self.search_indexes, body=body, **self._search_kwargs()
+        )
         return self._parse_search_hits(response)
 
     # ------------------------------------------------------------------

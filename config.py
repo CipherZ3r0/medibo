@@ -43,6 +43,20 @@ ELASTICSEARCH_INDEX = os.getenv("ELASTICSEARCH_INDEX", "potbot_documents")
 MEDICAL_DEFAULT_INDEX = os.getenv("MEDICAL_DEFAULT_INDEX", "medibo_default")
 MEDICAL_USER_INDEX = os.getenv("MEDICAL_USER_INDEX", "medibo_user")
 
+# Phase 6.6 — application read path. Every query searches the default corpus
+# plus whatever the user has uploaded; the default half is always present, so
+# retrieval keeps working when the user dataset has been cleared (Elasticsearch
+# is asked to ignore a missing index in the list).
+MEDICAL_RETRIEVAL_INDEXES = os.getenv(
+    "MEDICAL_RETRIEVAL_INDEXES",
+    f"{MEDICAL_DEFAULT_INDEX},{MEDICAL_USER_INDEX}",
+)
+
+# Phase 6.6 — application write path. UI uploads and folder ingestion land in
+# the user dataset only; medibo_default is written exclusively by the backend
+# build script (which opts in with allow_default_write=True).
+MEDICAL_UPLOAD_INDEX = os.getenv("MEDICAL_UPLOAD_INDEX", MEDICAL_USER_INDEX)
+
 # --- PostgreSQL ---
 POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
 POSTGRES_PORT = int(os.getenv("POSTGRES_PORT", "5432"))
@@ -72,6 +86,23 @@ VECTOR_RRF_WEIGHT = float(os.getenv("VECTOR_RRF_WEIGHT", "0.5"))
 TEXT_RRF_WEIGHT = float(os.getenv("TEXT_RRF_WEIGHT", "0.5"))
 # RRF smoothing constant applied to every rank (kept at the measured default).
 RRF_K = int(os.getenv("RRF_K", "60"))
+
+# --- Phase 7: trusted evidence gate ---
+# The gate runs after retrieval/re-ranking and only READS their scores; RRF,
+# the candidate pool, the re-ranker and the embedding model are untouched.
+# Thresholds calibrated on medibo_default: relevant queries score +4.8..+7.4
+# on the cross-encoder logit (absent queries -7.6..-11.2) and 0.68..0.75
+# cosine query/chunk similarity (absent queries 0.19..0.32).
+# Policy name is recorded on every response so offline threshold sweeps can
+# be attributed later.
+EVIDENCE_POLICY_NAME = os.getenv("EVIDENCE_POLICY_NAME", "evidence-v1")
+# Minimum number of retrieved documents that must clear the relevance threshold
+# for the answer to be treated as knowledge-base grounded.
+EVIDENCE_MIN_RELEVANT_DOCS = int(os.getenv("EVIDENCE_MIN_RELEVANT_DOCS", "1"))
+# Cross-encoder rerank logit threshold (used whenever re-ranking is enabled).
+EVIDENCE_MIN_RERANK_SCORE = float(os.getenv("EVIDENCE_MIN_RERANK_SCORE", "1.0"))
+# Cosine query/chunk similarity threshold (used when re-ranking is disabled).
+EVIDENCE_MIN_SIMILARITY = float(os.getenv("EVIDENCE_MIN_SIMILARITY", "0.60"))
 
 # LLM query rewriting. Off by default (measured net-negative for retrieval);
 # explicit opt-in per-query is still available via use_query_rewriting=True.

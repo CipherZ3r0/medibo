@@ -363,6 +363,87 @@ User types: "What is the vacation rollover limit?"
 
 ---
 
+### 6.3 Evidence Gate & Citations (Phase 7/8 — trusted evidence)
+
+Runs **after retrieval + re-ranking and before prompt building**. Decides whether the
+retrieved set is good enough to ground the answer, attributes every supporting
+document to a source bucket, and builds the citations shown with the answer.
+
+```
+retrieved results (query, documents)
+        │
+        ▼
+┌────────────────────────────────────────────────────────┐
+│ EvidenceGate.evaluate(query, results, sim_fn)          │
+│                                                        │
+│ 1. Per-document scoring  (EvidenceScore)               │
+│    signal "rerank"  → CrossEncoder logit               │
+│    signal "similarity" (rerank disabled) → cosine      │
+│    signal "none"    → never sufficient                 │
+│    relevant ⇔ score ≥ policy threshold                 │
+│                                                        │
+│ 2. Strict classification (classify_source)             │
+│    dataset_type "default" → trusted                    │
+│    dataset_type "user"    → user-provided              │
+│    missing / anything else → unknown (NEVER trusted)   │
+│                                                        │
+│ 3. Decision (EvidenceDecision)                         │
+│    supporting = trusted + user chunks that are relevant│
+│    len(supporting) ≥ EVIDENCE_MIN_RELEVANT_DOCS        │
+│      → sufficient                                      │
+│         trusted present → trust_level "trusted"        │
+│         user only      → trust_level "user_only"       │
+│    unknown-only / none  → trust_level "none"           │
+│    unknown chunks are recorded in `unknown_docs` only  │
+└────────────────────────────────────────────────────────┘
+        │
+        ▼
+ sufficient ─► prompt built from SUPPORTING docs only,
+               each labelled "Source type: trusted|user|
+               unknown"; citations = build_citations(
+               supporting_docs) → RAGResponse.citations
+ insufficient► fallback prompt with NO context, system
+               instructs to answer from general knowledge
+               and never invent citations; answer text is
+               prefixed with UNTRUSTED_ANSWER_WARNING
+               "⚠ No trusted source found in Medibo's
+                knowledge base. This answer is generated
+                from the model's general knowledge."
+               RAGResponse.citations = ()
+```
+
+* **Provenance is authoritative** — only `dataset_type == "default"` is trusted.
+  Missing/unknown provenance never grounds an answer, never becomes a citation
+  and is never shown under the trusted header. Unknown-only evidence is
+  treated as no evidence (fallback warning).
+* **Citations (`rag/citations.py`)** — one `Citation` per supporting chunk with
+  `source`, `title`, `source_url`, `page_number`, `section`, `authority`,
+  `region`, `document_type`, `disease_topic`, `dataset_type`, `chunk_id`,
+  `trust` and a human `label`
+  (`title — via source — p. N | section — url`), rendered as a numbered
+  "Citations" list above the Sources expander.
+* **User-only vs no-evidence** — user-only answers are grounded and show the
+  banner "Based only on your uploaded data. This information has not been
+  independently verified by Medibo."; answers with no trusted/user evidence get
+  the `UNTRUSTED_ANSWER_WARNING` string above and **zero** sources/citations.
+* **Policy isolation** — thresholds live in `EvidencePolicy`
+  (`EVIDENCE_POLICY_NAME` (default `evidence-v1`), `EVIDENCE_MIN_RELEVANT_DOCS`,
+  `EVIDENCE_MIN_RERANK_SCORE`, `EVIDENCE_MIN_SIMILARITY`), built once per
+  `RAGPipeline` from config; a different policy can be injected for eval without
+  touching the retrieval code.
+* **Response contract** — `RAGResponse` carries `evidence` (trusted/user/unknown
+  buckets + per-document scores + reason), `evidence_warning` and `citations`.
+* **UI** — sources render in three groups ("Medibo knowledge base — trusted" /
+  "Your uploaded data — user-provided" / "Unverified source — origin unknown"),
+  followed by the numbered citation list. Chat history restores the same
+  markers and citations from stored message state.
+* **Calibration** — CrossEncoder relevant ≈ +4.8…+7.4 vs irrelevant ≈ −7.6…−11.2
+  → threshold 1.0; cosine relevant ≈ 0.68…0.75 vs irrelevant ≈ 0.19…0.32 →
+  threshold 0.60. BM25/RRF scores are not discriminative and are never used as
+  an evidence signal.
+
+---
+
 ## 7. Database Schema
 
 PostgreSQL contains two tables, auto-created by SQLAlchemy on first startup:
@@ -400,7 +481,18 @@ PostgreSQL contains two tables, auto-created by SQLAlchemy on first startup:
 
 ## 8. Elasticsearch Index Schema
 
-Index name: `potbot_documents` (configurable via `ELASTICSEARCH_INDEX`)
+Three indices exist; the Streamlit app only ever touches the medical ones.
+
+| Index | Config key | Role |
+|-------|-----------|------|
+| `medibo_default` | `MEDICAL_DEFAULT_INDEX` | Bundled medical corpus (3,187 chunks). **Read-only** — the app never writes, clears or deletes it. |
+| `medibo_user` | `MEDICAL_USER_INDEX` | User-uploaded knowledge. Written by **Ingest Files**, deleted in one click by **Clear my data**. |
+| `potbot_documents` | `ELASTICSEARCH_INDEX` | Legacy/evaluation corpus (OpenLibrary sample). Used by the `evaluation/` scripts and `scripts/smoke_*` harnesses; **not queried by the app UI**. |
+
+Retrieval searches `MEDICAL_RETRIEVAL_INDEXES` (default `medibo_default,medibo_user`) in a single
+query, so default knowledge and user data are returned together; a missing `medibo_user` index is
+ignored rather than treated as an error. Uploads are written only to `MEDICAL_UPLOAD_INDEX`
+(default `medibo_user`). The sidebar reports the two counts separately.
 
 | Field          | ES Type        | Purpose                                        |
 |----------------|----------------|-------------------------------------------------|
@@ -416,6 +508,22 @@ Index name: `potbot_documents` (configurable via `ELASTICSEARCH_INDEX`)
 | `modified_date`| `date`         | Last-modified timestamp of the source file      |
 
 Settings: 1 shard, 0 replicas (single-node dev setup).
+
+The medical indices share the fields above and add provenance used for citation:
+
+| Field          | ES Type        | Purpose                                        |
+|----------------|----------------|-------------------------------------------------|
+| `title`        | `text`         | Document title shown with each source          |
+| `source`       | `keyword`      | Publisher key (e.g. `medlineplus`, `icmr`)      |
+| `source_url`   | `keyword`      | Canonical URL of the source document           |
+| `region`       | `keyword`      | Geographic scope (e.g. `India`, `global`)       |
+| `authority`    | `text`         | Issuing body (e.g. WHO, ICMR)                   |
+| `document_type`| `keyword`      | Guideline, factsheet, textbook, …               |
+| `disease_topic`| `keyword`      | Topic label used for filtering                 |
+| `published_at` / `updated_at` | `date` | Partial dates accepted (`2015`, `2016-03`) |
+| `section`      | `text`         | Section heading inside the document            |
+| `dataset_type` | `keyword`      | `default` or `user` — written at index time    |
+| `license`      | `keyword`      | Source license label                           |
 
 ---
 

@@ -4,7 +4,11 @@ Domain Models — Dataclasses representing core domain entities in potbot.
 
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
+
+if TYPE_CHECKING:  # pragma: no cover - import cycle guard
+    from rag.citations import Citation
+    from rag.evidence import EvidenceDecision
 
 
 @dataclass
@@ -71,6 +75,14 @@ class RAGResponse:
     completion_tokens: int = 0
     total_tokens: int = 0
     conversation_id: Optional[int] = None
+    #: Phase 7 trusted-evidence decision (None when built outside the pipeline).
+    #: When ``sufficient`` is False the answer is NOT knowledge-base grounded and
+    #: ``evidence_warning`` carries the required warning string.
+    evidence: Optional["EvidenceDecision"] = None
+    evidence_warning: Optional[str] = None
+    #: Phase 8 citations tied to the actual supporting chunks of a grounded
+    #: answer; empty for untrusted/fallback answers (never invented).
+    citations: Tuple["Citation", ...] = ()
 
 
 @dataclass

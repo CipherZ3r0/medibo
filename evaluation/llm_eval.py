@@ -149,7 +149,9 @@ def evaluate_llm(
         for style in prompt_styles:
             try:
                 # Generate answer
-                prompt_builder = TemplatePromptBuilder()
+                # Historic style-based prompt (variant=None) — llm_eval predates
+                # the Phase 9 adoption of variant_structured_brief.
+                prompt_builder = TemplatePromptBuilder(variant=None)
                 prompt = prompt_builder.build_prompt(question, context_results, style=style)
                 
                 llm = GroqLLMProvider()
