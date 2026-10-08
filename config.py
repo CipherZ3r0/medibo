@@ -38,6 +38,11 @@ EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 ELASTICSEARCH_HOST = os.getenv("ELASTICSEARCH_HOST", "http://localhost:9200")
 ELASTICSEARCH_INDEX = os.getenv("ELASTICSEARCH_INDEX", "potbot_documents")
 
+# --- Medical datasets (Phase 6) ---
+# medibo_default = shipped read-only corpus; medibo_user = user uploads.
+MEDICAL_DEFAULT_INDEX = os.getenv("MEDICAL_DEFAULT_INDEX", "medibo_default")
+MEDICAL_USER_INDEX = os.getenv("MEDICAL_USER_INDEX", "medibo_user")
+
 # --- PostgreSQL ---
 POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
 POSTGRES_PORT = int(os.getenv("POSTGRES_PORT", "5432"))

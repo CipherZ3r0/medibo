@@ -1,0 +1,110 @@
+{
+  "doc_id": "icmr-malaria-drug-policy-north-east",
+  "title": "Guiding Drug Policy for P. falciparum Malaria in the North Eastern States (ICMR-NIMR)",
+  "indexed_text": "[page 1]\nGuiding Drug Policy for P. falciparum malaria by ICMR’s National Institute of Malaria\nResearch (NIMR) in North Eastern States:-\n\nNIMR has played a pivotal role in guiding the national drug policy for treatment of malaria in\nIndia. It has been carrying out operational research by monitoring the therapeutic efficacy of\nantimalarials used in the national programme. The findings of the research carried out by\nNIMR were instrumental in providing evidence based data for phasing out the use of oral\nartemisinin monotherapy in the country in 2008. Further the studies carried out during 2005-\n07 on efficacy of chloroquine showed high resistance in P. falciparum malaria which led to\nintroduction of artemisinin based combination therapy i.e artesunate + sulfadoxine\npyrimethamine (AS-SP) in 2007 and its complete coverage for treatment of P. falciparum\nmalaria all over the country in the year 2010. Recent study conducted by NIMR has shown\nevidence of treatment failures to the current combination AS-SP in P. falciparum malaria in\nthe North-Eastern states.\n\nRecommendation:-\nIn view of the recent evidence of treatment failures to the current combination AS-SP in\nP. falciparum in the North-Eastern states, this combination therapy has been replaced with\nACT-AL co-formulated tablet of ARTEMETHER( 20 mg) - LUMEFANTRINE (120 mg) by\nNational Vector Borne Disease Control Programme and has been included in the “National\ndrug policy on malaria- 2013”. This combination therapy is not recommended during the first\ntrimester of pregnancy and for children weighing < 5 kg.",
+  "source": {
+    "source": "icmr",
+    "name": "ICMR Guidelines",
+    "region": "india",
+    "authority": "Indian Council of Medical Research (ICMR), Department of Health Research, Ministry of Health and Family Welfare, Government of India",
+    "landing_url": "https://www.icmr.gov.in/guidelines",
+    "license": "Copyright ICMR / Government of India - official clinical and treatment guidelines",
+    "license_notes": "Government-issued guidelines for non-commercial research and education with clear attribution. Verify ICMR website terms before redistribution or any commercial use.",
+    "documents": [
+      {
+        "doc_id": "icmr-type-2-diabetes-guideline",
+        "title": "Guidelines for Management of Type 2 Diabetes",
+        "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_GuidelinesType2diabetes2018_0.pdf",
+        "document_type": "clinical_guideline",
+        "topic": "Type 2 diabetes mellitus - diagnosis, self-care, glycaemic control and complications",
+        "published_at": "2018",
+        "updated_at": null,
+        "format": "pdf",
+        "source_page": "https://www.icmr.gov.in/guidelines",
+        "selection_reason": "Indian disease-management guideline with plain sections on day-to-day care, warning signs of complications and referral.",
+        "notes": "82 pages, text-extractable. Publication year 2018 (from document file name on the ICMR guidelines page)."
+      },
+      {
+        "doc_id": "icmr-common-syndromes-antimicrobial-2019",
+        "title": "Treatment Guidelines for Antimicrobial Use in Common Syndromes (2nd edition)",
+        "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/Treatment_Guidelines_2019_Final.pdf",
+        "document_type": "treatment_guideline",
+        "topic": "Common infectious syndromes - fever, respiratory, diarrhoea, skin and other syndromes; antimicrobial use",
+        "published_at": "2019",
+        "updated_at": null,
+        "format": "pdf",
+        "source_page": "https://www.icmr.gov.in/guidelines",
+        "selection_reason": "Maps presenting symptoms (fever, cough, diarrhoea) to Indian first-line treatment and escalation criteria.",
+        "notes": "206 pages, text-extractable. Listed on the ICMR guidelines page under Antimicrobial Resistance."
+      },
+      {
+        "doc_id": "icmr-rickettsial-diseases-india",
+        "title": "DHR-ICMR Guidelines for Diagnosis and Management of Rickettsial Diseases in India",
+        "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/DHR-ICMR%20Guidelines%20on%20Ricketesial%20Diseases.pdf",
+        "document_type": "clinical_guideline",
+        "topic": "Rickettsial diseases - fever, rash, early recognition and treatment in India",
+        "published_at": "2015",
+        "updated_at": null,
+        "format": "pdf",
+        "source_page": "https://www.icmr.gov.in/guidelines",
+        "selection_reason": "Indian guideline for a commonly missed cause of fever with rash, including warning signs for severe disease.",
+        "notes": "20 pages, text-extractable. Cover dated 2015 (Department of Health Research / ICMR)."
+      },
+      {
+        "doc_id": "icmr-malaria-drug-policy-north-east",
+        "title": "Guiding Drug Policy for P. falciparum Malaria in the North Eastern States (ICMR-NIMR)",
+        "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/drug%20policy.pdf",
+        "document_type": "treatment_guideline",
+        "topic": "Plasmodium falciparum malaria - antimalarial drug policy for North Eastern India",
+        "published_at": null,
+        "updated_at": null,
+        "format": "pdf",
+        "source_page": "https://www.icmr.gov.in/guidelines",
+        "selection_reason": "Short, India-specific malaria treatment policy that complements the general malaria material from MedlinePlus and MoHFW.",
+        "notes": "No publication date stated in the document; published_at left null."
+      }
+    ]
+  },
+  "manifest_document": {
+    "doc_id": "icmr-malaria-drug-policy-north-east",
+    "title": "Guiding Drug Policy for P. falciparum Malaria in the North Eastern States (ICMR-NIMR)",
+    "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/drug%20policy.pdf",
+    "document_type": "treatment_guideline",
+    "topic": "Plasmodium falciparum malaria - antimalarial drug policy for North Eastern India",
+    "published_at": null,
+    "updated_at": null,
+    "format": "pdf",
+    "source_page": "https://www.icmr.gov.in/guidelines",
+    "selection_reason": "Short, India-specific malaria treatment policy that complements the general malaria material from MedlinePlus and MoHFW.",
+    "notes": "No publication date stated in the document; published_at left null."
+  },
+  "pages": [
+    1
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "start_page": 1,
+      "end_page": 1,
+      "text": "[page 1]\nGuiding Drug Policy for P. falciparum malaria by ICMR’s National Institute of Malaria\nResearch (NIMR) in North Eastern States:-"
+    },
+    {
+      "heading": "NIMR has played a pivotal role in guiding the national drug policy for treatment of malaria in",
+      "start_page": 1,
+      "end_page": 1,
+      "text": "India. It has been carrying out operational research by monitoring the therapeutic efficacy of\nantimalarials used in the national programme. The findings of the research carried out by"
+    },
+    {
+      "heading": "NIMR were instrumental in providing evidence based data for phasing out the use of oral",
+      "start_page": 1,
+      "end_page": 1,
+      "text": "artemisinin monotherapy in the country in 2008. Further the studies carried out during 2005-\n07 on efficacy of chloroquine showed high resistance in P. falciparum malaria which led to\nintroduction of artemisinin based combination therapy i.e artesunate + sulfadoxine\npyrimethamine (AS-SP) in 2007 and its complete coverage for treatment of P. falciparum\nmalaria all over the country in the year 2010. Recent study conducted by NIMR has shown\nevidence of treatment failures to the current combination AS-SP in P. falciparum malaria in\nthe North-Eastern states.\n\nRecommendation:-\nIn view of the recent evidence of treatment failures to the current combination AS-SP in\nP. falciparum in the North-Eastern states, this combination therapy has been replaced with\nACT-AL co-formulated tablet of ARTEMETHER( 20 mg) - LUMEFANTRINE (120 mg) by\nNational Vector Borne Disease Control Programme and has been included in the “National\ndrug policy on malaria- 2013”. This combination therapy is not recommended during the first\ntrimester of pregnancy and for children weighing < 5 kg."
+    }
+  ],
+  "raw_text_path": "data/medical/raw/icmr/icmr-malaria-drug-policy-north-east/raw_text.txt",
+  "original_path": "data/medical/raw/icmr/icmr-malaria-drug-policy-north-east/original.pdf",
+  "bytes": 21410,
+  "sha256": "81ddb002a0a72f7a2c713dbf2d3e2b69108d5fe7dd80df877e69854b97a08923",
+  "processed_at": "2026-10-08T05:14:51.246802Z",
+  "problems": []
+}

@@ -30,6 +30,24 @@ from ingestion.metrics import PipelineMetrics, StageTimer
 
 logger = logging.getLogger(__name__)
 
+#: Metadata fields copied from each hit's ``_source`` onto
+#: ``SearchResult.metadata`` (absent on classic Potbot documents, so the
+#: resulting dict may be empty). Order/content of results is unaffected.
+RESULT_METADATA_FIELDS = (
+    "title",
+    "source",
+    "source_url",
+    "region",
+    "authority",
+    "document_type",
+    "disease_topic",
+    "published_at",
+    "updated_at",
+    "section",
+    "dataset_type",
+    "license",
+)
+
 
 # ---------------------------------------------------------------------------
 # Abstract base
@@ -346,6 +364,9 @@ class ElasticsearchVectorStore(BaseVectorStore):
                     file_type=src.get("file_type", ""),
                     page_number=src.get("page_number"),
                     score=float(hit.get("_score", 0.0)),
+                    metadata={
+                        k: src[k] for k in RESULT_METADATA_FIELDS if k in src
+                    },
                 )
             )
         return results

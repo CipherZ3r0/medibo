@@ -17,6 +17,7 @@
   - [LLM Evaluation](#2-llm-evaluation)
 - [Monitoring & Observability](#-monitoring--observability)
 - [Quickstart & Reproducibility](#-quickstart--reproducibility)
+- [Medical Corpus (Phases 1–2)](#-medical-corpus-phases-12)
 - [Project Structure](#-project-structure)
 
 ---
@@ -241,6 +242,26 @@ pytest tests/ -v
 
 ---
 
+## 🏥 Medical Corpus (Phases 1–2)
+
+Medibo starts from Potbot and adds a focused medical RAG MVP. **Phase 1 is
+corpus foundation** (official sources, a source manifest, a fixed metadata
+schema, raw/indexed text separation, tests and documentation); **Phase 2
+downloads every manifest document** into `data/medical/raw/` with verbatim
+extracted text and a fetch report. Ingestion, Elasticsearch, hybrid
+retrieval, RRF fusion, the candidate pool, the reranker and the embedding
+model are unchanged.
+
+- **Corpus root:** `data/medical/` — `raw/` (verbatim source artifacts, git-ignored) and `processed/` (searchable/indexed text + metadata)
+- **Source manifest:** `data/medical/source_manifest.json` — 16 curated documents across 4 official sources
+- **Official sources:** [MedlinePlus Health Topics](https://medlineplus.gov/xml.html) (NLM/NIH), [ICMR Guidelines](https://www.icmr.gov.in/guidelines), [MoHFW Clinical Establishments Standard Treatment Guidelines](https://clinicalestablishments.mohfw.gov.in/en/standard-treatment-guidelines), [NCDC Resource Library](https://ncdc.mohfw.gov.in/includes/Resource_Library/)
+- **Metadata schema:** `domain/medical.py::MedicalDocumentMetadata` — `source`, `source_url`, `region`, `authority`, `document_type`, `disease_topic`, `published_at`, `updated_at`, `section`, `page`, `license`
+- **Fetcher:** `python -m scripts.fetch_medical_corpus` — downloads all 16 documents, extracts raw text (PyMuPDF for PDFs, XML parsing for MedlinePlus topics) and writes `data/medical/fetch_report.json`
+- **Full documentation:** [docs/medical_corpus.md](docs/medical_corpus.md)
+- **Tests:** `python -m pytest tests/test_medical_corpus.py tests/test_fetch_medical_corpus.py -q`
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -251,7 +272,8 @@ llm-zoomcamp-project/
 │   └── database.py               # PostgreSQL Repository (SQLAlchemy ORM)
 │
 ├── domain/                       # Domain model layer (pure dataclasses)
-│   └── models.py                 # Document, Chunk, SearchResult, RAGResponse, FeedbackRecord
+│   ├── models.py                 # Document, Chunk, SearchResult, RAGResponse, FeedbackRecord
+│   └── medical.py                # Medical corpus metadata schema, manifest helpers, raw/indexed separation
 │
 ├── ingestion/                    # High-performance document ingestion pipeline
 │   ├── backends/                 # Pluggable ML backends (PyTorch, ONNX)
@@ -285,7 +307,11 @@ llm-zoomcamp-project/
 ├── scripts/                      # Utility scripts
 │   └── generate_sample_documents.py  # Creates test documents
 │
-├── tests/                        # Unit tests
+├── data/                         # Corpora and evaluation artifacts
+│   ├── medical/                  # Phase 1 medical corpus: source_manifest.json, raw/, processed/
+│   └── sample_documents/         # Demo office documents for the original Potbot corpus
+│
+├── tests/                        # Unit tests (medical corpus: test_medical_corpus.py, test_fetch_medical_corpus.py)
 │
 ├── config.py                     # Centralized env-var configuration
 ├── docker-compose.yml            # Multi-service Docker deployment
@@ -295,5 +321,5 @@ llm-zoomcamp-project/
 ├── .gitignore                    # Ignore development files
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # Project Readme (you are here)
-└── docs/                         # Documentation
+└── docs/                         # Documentation (medical corpus: docs/medical_corpus.md)
 ```

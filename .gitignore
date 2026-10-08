@@ -17,6 +17,11 @@ elasticsearch_data/
 postgres_data/
 grafana_data/
 
+# Medical corpus raw downloads (regenerable from data/medical/source_manifest.json)
+data/medical/raw/**
+!data/medical/raw/**/
+!data/medical/raw/**/.gitkeep
+
 # OS
 .DS_Store
 Thumbs.db

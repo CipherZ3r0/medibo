@@ -1,0 +1,1715 @@
+{
+  "doc_id": "ncdc-emergency-cooling-heat-illness-2024",
+  "title": "Emergency Cooling for Severe Heat Related Illnesses",
+  "indexed_text": "[page 1]\nEMERGENCY COOLING\nFOR\nSEVERE HEAT RELATED\nILLNESSES\nNational Centre for\n Disease Control\nGovernment of India\n\n[page 3]\nAcknowledgement\nThese guidelines on Emergency Cooling for Severe Heat-Related Illnesses are prepared\nunder National Programme on Climate Change and Human Health (NPCCHH), National\nCentre for Disease Control (NCDC), MoHFW. Aligned with the programme's goal, the\nguidelines emphasize the significance of rapid and active cooling in addressing severe\nheat-related illnesses. With a specific focus on various body cooling methods, the\nguidelines are envisioned to support the incorporation of this approach into emergency\ncare throughout the healthcare system, adapting to the increasing climate change and\nextreme heat events.\n\nThese guidelines supplement earlier publications, i.e., National Action Plan on Heat\nRelated Illnesses (2021) and Strengthening Health Systems Preparedness for Heat\nRelated Illnesses in India (2023). NPCCHH Programme Implementation Plan (PIP)\nprovides procurement guidance for emergency cooling measures.\n\nThese guidelines were conceptualized under the vision and leadership of Prof (Dr) Atul\nGoel, DGHS and Director, NCDC. The expert committees of clinicians from internal\nmedicine and paediatrics contributed to their development. We thank Prof (Dr) Ajay\nChauhan, Atal Bihari Vajpayee Institute of Medical Sciences & Dr. Ram Manohar Lohia\nHospital, New Delhi, for technical guidance and detailed review.\n\nDGHS Committee members (Internal medicine)\nDr. Ajay Chauhan, Professor, Atal Bihari Vajpayee Institute of Medical Sciences & Dr.\nRam Manohar Lohia Hospital\nSurg Capt Anuj Singhal, Sr. Advisor, Army Hospital Research and Referral\nDr. Arvind Kumar, Consultant, All India Institute of Medical Science-New Delhi\nDr. Sanjay Kumar, Professor, Lady Hardinge Medical College\nDr. L. H. Ghotekar, Professor, Lady Hardinge Medical College\nDr. Vinod Chaitanya, Professor, Vardhman Mahavir Medical College & Safdarjung\nHospital\n\nDGHS Committee members (Paediatrics)\nDr. Shalu Gupta, Director-Professor, Lady Hardinge Medical College\nCol S C Shaw, Sr. Advisor, Army Hospital Research and Referral\nDr. Rattan Gupta, Professor, Vardhman Mahavir Medical College & Safdarjung Hospital\nDr. Rakesh Lodha, Professor, All India Institute of Medical Science-New Delhi\nDr. Vivek Dewan, Professor, Atal Bihari Vajpayee Institute of Medical Sciences & Dr.\nRam Manohar Lohia Hospital\n\nMembers from National Programme on Climate Change and Human Health\nDr. Aakash Shrivastava, Additional Director & Head, CEOH&CCH, NCDC\nDr. Purvi Patel, Senior Consultant, NPCCHH, NCDC\n---\n\n[page 5]\nTable of Contents\n\n1.\nHeat Stroke ..................................................................................................................................... 1\nHeat and Human Body ............................................................................................................... 1\nTypes of Heat Stroke .................................................................................................................. 2\nKey Steps in Heat Stroke Management ..................................................................................... 3\nKey Points: Severe Heat-Related Illnesses (HRI) ...................................................................... 3\nGuiding Principles: Rapid Cooling in Severe Heat-Related Illnesses ....................................... 3\nCooling rates .............................................................................................................................. 5\nChallenges with Rapid Cooling ................................................................................................. 5\nFollow-up of Heat Stroke Treatment ......................................................................................... 6\n2.\nCooling methods ............................................................................................................................ 9\nA.\nConductive cooling .................................................................................................................. 9\nB.\nEvaporative and Convective Cooling .................................................................................... 17\nC.\nEvaporative + Convective + Conductive Cooling ................................................................. 18\nD.\nInvasive Cooling Measures .................................................................................................... 19\nE.\nOther cooling methods ........................................................................................................... 19\n3.\nEmergency Cooling in Children ................................................................................................... 20\nGuiding Principles: Rapid Cooling in Children ....................................................................... 20\nCooling methods ...................................................................................................................... 21\n4.\nPublic Health Aspects................................................................................................................... 22\nHealth sector preparedness for emergency cooling of severe HRI .......................................... 22\nCommunity level preparedness for rapid cooling of severe HRI ............................................. 23\nMass participation sports events/ mass gathering events ......................................................... 23\n\nAnnexure 1: Heat Stroke Management Algorithem in Emergency Department………………..… 27\nAnnexure 2: Ice/Cold Water Immersion for Exertional Heat Stroke (Pre-hospital/Field setting)… …28\nReferences……………………………...……………………………………..……………………….29\n\nLegend\n\nledgement\n\nEHS\nSymbols represent preference of usage of a cooling method in;\n (from left to right) 1. Type of heat stroke, 2. institutional and/ 3. field setting\n\n[page 7]\n\n1. Heat Stroke\n\nHeat and Human Body\n•\nHuman body temperature is maintained in a narrow range of 36.5–37.5°C (97.7–99.5°F) by\nbalancing heat load (originating from environmental heat exposure and metabolic processes),\nwith heat dissipation.\n•\nBody temperature is regulated by physiological and behavioural mechanisms.\n•\nIncreasing core body temperature leads to activation of autonomic nervous system through\nactivation of preoptic nucleus of the anterior hypothalamus causing increased sweating and\ncutaneous vasodilation to allow for dissipation of body heat.\n•\nBody heat dissipates through following heat transfer mechanisms\n1. Conduction: Direct transfer of heat through contact with a cooler object or cold water\n2. Convection: Direct transfer of heat to convective, cooler air currents\n3. Evaporation: Transfer of heat to evaporating sweat or water on the skin\n4. Radiation: Simple loss of heat across the skin barrier to the ambient air\n•\nThe first three mechanisms fail to transfer heat effectively when environmental temperature\nexceeds skin temperature (typically 35°C or 95°F).\n•\nEvaporation is the principal mechanism the body uses to cool in the hot environment.\nHowever, it becomes ineffective beyond relative humidity of 75%.\n•\nHeat stress depends on ambient temperature and humidity.\n•\nRising global warming increases ambient temperature and humidity both. With each degree\nof warming, atmospheric water vapor grows approximately by 6 to 7%, potentially pushing\nheat stress exposure to beyond human tolerance at many places.1\n\nPathophysiological Changes\nCore body temperature of ≥40°C leads to\n•\nAcute central nervous system dysfunction with pulmonary, cardiovascular, hepatic, and/ renal\ndysfunctions, and disrupted coagulation.\n•\nDamage to hepatocytes, vascular endothelium, and neural tissue which are the most sensitive\nto high heat.\n•\nCellular changes through changes in cellular proteins, enzymes and membranes leading to\ncapillary leakage, systemic inflammation and multiorgan failure.\n\nClinical Management and Heatstroke Workup\nDetail clinical management protocols (Adults and Paediatrics) and heatstroke workup guidelines\nare available in National Action Plan on Heat-Related Illnesses (2021)\n\n[page 8]\n\nTypes of Heat Stroke\n\nFeature\nExertional Heat Stroke\nClassic Heat Stroke\nOccurrence\nSporadic (any time of year)\nEpidemic (heat waves)\nExposure\nA. Athletic event\nB. Working in high heat stress\nconditions\nA. High environmental heat\nwith/without high humidity\n\nAcute risk\nfactors\n•\nDehydration\n•\nConcurrent illness\n•\nObesity\n•\nWearing too much clothing\n•\nPoor cardiovascular fitness\n•\nLack of adequate ventilation/cooling\n•\nConfined places*\n•\nPhysical exertion not a pre-requisite\nHeat\nequilibrium\nOverwhelmed: heat gain > heat loss\n•\nHeat gain from environment\nwith/without increase internal heat\nproduction\nImpaired: ↓ heat lose capacity\n•\nInternal heat loss mechanism\nimpaired\n•\nRestricted/inadequate ventilation\nHeat injury\ndevelopment\nQuick rise in core body temperature\n(over minutes-hours)\nSlow rise in core body temperature\n(over hours or days)\nSweating\nUsually present (wet skin)\nMay be absent (dry skin)\nCNS\ndysfunction\nCommon\nCommon\nPathophysiologi\ncal changes\n\n•\nMetabolic acidosis\n•\nHypoglycaemia\n•\nRhabdomyolysis: frequent\n•\nLiver dysfunction: marked-severe\n•\nRenal failure: common\n•\nDIC: marked-severe\n•\nHypocalcaemia, Hyperkalaemia\n•\nRespiratory alkalosis\n•\nRhabdomyolysis: unusual\n•\nLiver dysfunction: mild\n•\nRenal failure: uncommon\n•\nDIC: mild\n•\nVolume, electrolyte abnormality is\ncommon\nRisk factors\nPhysiological\n•\nActive adult\n•\nGenerally healthy\n•\nElderly, Children\n•\nPregnancy\n•\nObesity\n•\nChronic illness\n•\nPoor physical health\n•\nPsychological, Physiological\nimpairment\nMedication/\ndrug use\nAmphetamines and amphetamine-like\nagents (e.g., ephedra), MDMA, cocaine,\nPCP and LSD, synthetic stimulants of\nthe cathinone class (e.g., α-PHP),\nalcohol\nAntihypertensives, laxatives,\nanticholinergic drugs, salicylates,\nthyroid agonists, benztropine,\ntrifluoperazine, butyrophenones, α-\nagonists, monoamine oxidase inhibitors,\nsympathomimetic medications, tricyclic\nantidepressants, SSRIs\nSocio-economic\n(individual/instit\nutional)\nOccupation/physical exertion linked:\nwork time, duration, adequate time to\nrest, lack of cooling and hydration\nfacilities\n•\nSocial isolation\n•\nLiving on top floor\n•\nUnventilated and non–air-\nconditioned living space\n•\nInability to care for oneself\n\n[page 9]\n\nKey Steps in Heat Stroke Management\n\nKey Points: Severe Heat-Related Illnesses (HRI)\n\n•\nThe critical thermal maximum (CTM) is defined as the degree of elevated body temperature\nand duration of heat exposure that can be tolerated before cell damage occurs.2\n•\nHuman thermal maximum is estimated as a core body temperature of 42°C (107.6°F) lasting\nbetween 45 minutes and 8 hours. Children sustain serious heat-related injury when the CTM\nis exceeded.3\n•\nExposure to elevated ambient temperatures coupled with increased metabolic activity may\nresult in heat illness if the individual has exhausted physiological compensatory mechanisms\nand is unable to take behavioral steps to cool down.4 Heat stress can progress to heat stroke\neven after the patient is removed from the hot environment.\n•\nHeat stroke is a life-threatening, time-sensitive condition.\n•\nIf untreated, heat exhaustion may progress to heat stroke.\n•\nClinical diagnosis of heat stroke is largely a diagnosis of exclusion. Hence, diagnostic\ninvestigations are directed toward detecting end organ damage and excluding other diseases.\n•\nThe definitive treatment for heat-related illness is total body cooling.\nGuiding Principles: Rapid Cooling in Severe Heat-Related Illnesses\n\n•\nRapid cooling is the most effective strategy for minimizing morbidity and mortality from heat\nstroke and should be initiated as soon as possible, and within 30 minutes of presentation.\n•\nIt requires creating a gradient for heat loss from skin to environment by conduction,\nconvection or evaporation.\n•\nApply cooling method that has high effective cooling rate. (See page 6)\n•\nIn field setting, cooling should be initiated immediately at time of collapse and should be\nbased on feasible field measures including ice or tepid water (1-16°C).\n•\nIn emergency department, management should be matched to the patient's age and medical\nbackground and include immersion in ice water (1-5°C) or evaporative cooling.\n•\nIn emergency situation, the distinction between exertional and classic (non-exertional) heat\nstroke is less relevant for initiation of the treatment, because immediate cooling and support\nof organ system function is the therapeutic goal for both.\n\nStep\nAction\n1. Early Recognition\n•\nMaintain high clinical suspicion\n•\nWeather awareness\n•\nMeasure core body temperature\n2. Rapid cooling\n•\nInitiate immediate external cooling\n•\nEarly decision regarding invasive cooling\n3. Supportive care\n•\nMaintain on airway, breathing, circulation\n•\nMonitor for and correct metabolic derangements\n\n[page 10]\n\nPrimary goal\n\n1. Cool First, Transport Second\nImmediate, rapid cooling: recognize, begin effective cooling in field/pre-hospital setting\ncontinue during transport to nearest emergency department\n2. Aggressive supportive care in emergency department to maintain organ function\n\nEnd point: Core body temperature between 38-39°C, approximate cooling times 9-40min\n\nRectal temperature measurement:\nA rectal thermometer with flexible, disposable probe (2 m length) is recommended for patient\ncomfort and ease of continuous monitoring throughout the treatment. The thermometer should be\ninserted through the anal sphincter for at least 10 cm. It is recommended to mark the probe at the\ninsertion length so that the thermometer is fully inserted to the required length.5\n\n•\nThe only absolute contraindication to cooling is normal or low body temperature\n•\nDelay in cooling is directly associated with adverse outcomes including high mortality.\n•\nCooling should not be delayed to remove all clothing, uniforms, or equipment. The cooling\nprocess should be initiated as quickly as possible; clothing and equipment can be removed\nwhile cooling is initiated, or when practical\n•\nEvidence is lacking to support the use of cooling blankets or ice packs placed strategically to\nthe neck, axilla, and groin as primary cooling methods.6 This method of cooling should be\napplied to whole body for effective cooling and should be used as supplementary method.\n•\nMonitor vital signs (rectal temperature, heart rate, respiratory rate, blood pressure) and mental\nstatus continually. Always maintain patient safety.\n•\nColder water temperature produce faster cooling. water's high thermal conductivity, which is\n24 times greater than air's\n•\nAvoid using warm water whenever possible\n•\nPrognosis of heat stroke in patients is directly related to the degree of hyperthermia and its\nduration. In extreme cases these may progress to multi-organ failure and death. Heat stroke\nhas a mortality rate of 40% to 64%.7\n•\nRegardless of the cooling method used, mortality and morbidity remains higher in older\npatients with heatstroke due to pre-existing conditions and population characteristics6\n•\nA single episode of hyperthermia may cause short-term neurological and cognitive\ndysfunction, which may be prolonged or become permanent. The cerebellum is most\nfrequently affected in such instances.7\n•\nThere is insufficient evidence to recommend invasive cooling methods like intravascular\ncooling device, noninvasive external cooling system, body cavity lavage.6\n•\nAntipyretic agents (Paracetamol, Acetaminophen, Aspirin etc) are not effective.\n•\nDantrolene is not recommended in the treatment of heat stroke.\n\n[page 11]\n\nCooling rates\n\nWeighted Mean Cooling Rates (°C/min) by Cooling Method as First aid cooling\ntechniques For heat stroke and exertional hyperthermia\nStandard deviations based on the mean cooling rate of study participants\n\nDotted line represents minimum ideal rate of cooling (0.15°C/min) for EHS.\n\n•\nMinimum ideal rate of cooling is 0.155°C/min (0.28 °F/min) for EHS8\n•\nCooling rates of 0.078°C to 0.154°C/min are acceptable and <0.078°C/min are unacceptable\nfor EHS9\n•\nAir-conditioned or temperature-controlled rooms have cooling rates of\n0.03–0.06°C/min, which as a standalone cooling method are unacceptable for heat stroke\nmanagement6\n\nChallenges with Rapid Cooling\na. Shivering:\nIce or cold water immersion cooling may lead to shivering and the accompanying reflex\nperipheral vasoconstriction which may delay the cooling theoretically.\nIce Water Immersion (1-5°C water) -\nTemperate Water Immersion (20-25°C water) -\nCold Water Immersion (14-17°C water) -\nColder Water Immersion (8-12°C) -\nCommercial Ice Packs -\nShower# (20°C) -\nIce Sheets (3°C) and Towels -\nHands and Feet Cold Water immersion (16-17°C) -\nCooling Vests and Jackets -\nCold Intravenous Fluids (4°C) -\nFanning -\nPassive Cooling (20-39°C) -\nHand Cooling Devices -\nEvaporative Cooling -\n0 0.05 0.1 0.15 0.2 0.25 0.3 0.35\nAdapted from: McDermott BP, Casa DJ, Ganio MS, et al. Acute Whole-Body Cooling for Exercise-Induced Hyperthermia: A\nSystematic Review. Accessed December 28, 2023\n\n[page 12]\n\n•\nPractically, immersive cooling can effectively cool patients as it uses high thermal\nconductivity gradient between ice water and hyperthermic skin. Water has 24 times\ngreater thermal conductivity than that of air which may effectively counter small amount\nof heat generate by shivering.\n•\nAlso, thermoregulatory response is driven mainly by core body temperature and not by\nskin temperature change, high core temperature would prevent shivering even in case of\nrapid skin cooling.\nPreventing shivering\n•\nConduct evaporative cooling in elderly, children, co-morbid, classic heat stroke patients\nover immersive cooling as it is better tolerated physiologically and prevents shivering.10\n•\nUse warm water (40°C) or expose the patient to hot air (45°C) with the fan.11,12\n\nPharmacological treatment of shivering is primarily short-acting benzodiazepines and\nsecondarily phenothiazines.13 Phenothiazines may lower the seizure threshold and cause\nhypotension, and their anticholinergic properties impair sweating.\n\nb. Inability to adhere cardiac electrodes to the skin\nImmersive cooling is not preferred in classic heat stroke and patient with existing comorbidity\nas it may hamper cardiac monitoring and resuscitation. In this patients other conductive or\nevaporative measures of cooling should be used.6 (see page 18-19)\nFollow-up of Heat Stroke Treatment\n•\nSchedule a follow-up visit 7 days after hospital discharge for a physical examination and repeat\nlaboratory testing of affected organ systems during hospital stay if warranted.\n\nPatient education post-heatstroke\n•\nPatient should abstain from exercise for at least 7 days after hospital discharge.\n•\nAcclimatize: once cleared to return to routine activity, the patient should remain in a cool\nenvironment and slowly increase the duration, intensity, and heat exposure over 2-4 weeks to\nacclimatize.\n•\nEvaluate: If heatstroke symptoms return or if vigorous activity is not tolerated, the patient of\nexertional heat stroke may be considered for a heat tolerance test as per sports or occupational\nrequirements\n•\nPrevent exposure and adapt:\n▫\nTry to schedule activities during cooler times of the day and wear light-coloured, loose-\nfitting clothing.\n▫\nAvoid dehydration by drinking ample amounts of isotonic fluids (taking concurrent medical\ncondition into consideration) being sure to avoid fluids containing alcohol and caffeine if\nthe individual is at risk for heat-related injury.\n▫\nNever leave an adult or child in a car unattended.\n▫\nBe aware of medication side effects such as medications that cause bradycardia, diuresis,\nor reduce sweating.\n\n[page 13]\n\nEXERTIONAL HEAT STROKE (EHS)\nGuiding principles for cooling a exertional heat stroke case\n•\nRapid, active cooling (within 30 minutes) is the most effective strategy for minimizing morbidity\nand mortality.\n\n•\nKey principles for external cooling of an EHS patient:\n1. provide a modality of adequate cooling capacity\n2. apply this modality to a sufficient body surface area\n\n•\nRecommended minimum rate of cooling for treating an EHS patient is at least 0.15°C/minute\n\n•\nConductive cooling (i.e. with ice/water) methods are the best way to rapidly cool in EHS\no Ice/cold water immersion (CWI): the most effective (gold standard) method regardless of\nthe patient's location\no If CWI is not available or feasible, alternative yet effective cooling methods must be used\nfor rapidly cool the patient (See Conductive Cooling, page 11)\n\n•\nCooling must be initiated in the field following brief, rapid evaluation, till\no Core body temperature reduces to 38.3-39°C or\nif rectal thermometer not available\no Until the patient begins to shiver or\no If treating with CWI, cool for 15 to 20 minutes. It cools most patients 3-4°C\n(5-7°F), which would make their removal from an ice tub sensible in most cases.\n\n•\nOnce cooling to a reasonable temperature (e.g., ~39°C) is achieved, the patient is rapidly\ntransported to the closest emergency department.\n\n•\nIf adequate cooling not achieved in field, it should be continued in the best way possible during\ntransport and in the hospital.\n\n•\nStudies on EHS often report 100% survival rate when immediate cooling (via CWI or aggressive\nwhole-body cold-water dousing) was initiated within 10 minutes of collapse.\n\n•\nCooling should not be delayed in order to remove all clothing, uniforms, or equipment. The\ncooling process should be initiated as quickly as possible; clothing and equipment can be removed\nwhile cooling is initiated, or when practical.\n\nOnset of heatstroke and selection of cooling method\n\n•\nClinical presentations indicative of CNS dysfunction may be delayed (eg, disorientation,\nconfusion, aggressiveness, hysteria, delirium, altered level of consciousness and irrational\nbehaviour).\n\n•\nCollapsed athletes with confirmed hyperthermia below 40.5°C (104.9°F) should still be cooled\nusing the whole-body rotating ice-wet towel procedure where wet towels soaked in iced water are\napplied to the athlete and exchanged every 1–2 min.5\n\n•\nAthletes who are suspected of EHS from their symptoms but have a rectal temperature measured\nat below 40.5°C (104.9°F) should continue to have their rectal temperature monitored\ncontinuously and undergo a blood sodium and blood glucose point-of-care analysis for the\ndifferential diagnosis of their medical condition.\n\n[page 14]\n\nCLASSIC (NON-EXERTIONAL) HEAT STROKE (CHS)\nGuiding principles for cooling a non-exertional heat stroke case\n•\nRapid cooling should be initiated as soon as possible to minimize mortality from CHS as it arises\ndue to diminished thermoregulatory function.14\n\n•\nElderly are more vulnerable to CHS due to various combination of their intrinsic vulnerabilities\nand extrinsic factors.\n\n•\nIn CHS, evaporative cooling is preferred over conductive cooling, as it\no Provides a practical alternative to immersion in ice/cold water which may restrict cardiac\nmonitoring and resuscitation efforts in elderly or patients with existing comorbidities1\no Well tolerated physiologically and has low mortality rate10\no Less shivering and vasoconstriction compared to ice water cooling9\n\nType of cooling\n•\nEvaporative + convective cooling together (i.e. large quantities of water + strong directed air\ncurrent) is more effective to rapidly cool a patient of CHS.\n\n•\nEvaporative + convective + conductive cooling combination (i.e. large quantities of water +\nstrong directed air current + ice) may speed up overall cooling and improve outcomes.\n\n•\nEvaporative cooling in elderly patients may offer several practical advantages, such as greater\npatient comfort and less agitation.\n\nSalient points\n•\nCool the entire surface of a patient.9\n\n•\nCooling only the anterior surface of a patient9 on a bed is significantly less effective than\ncooling both anterior and posterior surfaces.\n\n•\nMisting the patient with lukewarm water with forced, directed airflow of 20-40°C is effective.\n\n•\nCooling rate for a vasodilated patient cooled with an air speed of 1 m/s−1 is twice the cooling\nrate of a vasoconstricted patient with an air speed of 0.5 m/s−1\n\n•\nStrategic placement of ice packs to axilla, neck, and groin only marginally contributes to\ncooling.1\n\n•\nPrognosis of heat stroke in patients is directly related to the degree of hyperthermia and its\nduration.11\n\n•\nRapid cooling (within 1 hr) may reduce length of hospital stay in CHS patients.14\n\n---\n\n[page 15]\n\n2. Cooling Methods\n\nA. Conductive cooling\nICE/COLD WATER IMMERSION (CWI)\n\n•\nGold standard cooling method for exertional heat stroke\n•\nHighly effective in generally healthy or athletic adult\n•\nSuitable at health facilities, pre-hospital and field setting with planned resources and setup\n•\nUseful during sport, military, outdoor events (field setting) year around especially during high\ntemperature\n•\nMay not be suitable for elderly, children or if patients have medical conditions which require\nadvance cardiac monitoring.\n•\nIce slurry or cold water of Temperature of 2–10°C (35.6–50°F) should be used.\n•\nMultiple research report very low to zero mortality in EHS treated timely with CWI\n•\nResource intensive, multiple assistants required\n\nRecommended equipment list for CWI using tub/portable pool\n•\nRectal thermistor, lubricating gel\n•\nTub or portable pool\n•\nTarp when tub is not feasible (see pg 15)\n•\n3-4 ice coolers/box with ice\n•\nWater source\n•\n3-4 towels\n•\nBed sheet or large towel (to hold patient)\n•\nTent/tarp for shade (if needed, outdoors)\nIf being set up for a planned sport or outdoor event, additional preparation for patients’ safety\nand privacy should be ensured and reliable arrangements for ice and cold water should also be\nconsidered.\n\nPersonnel\nCWI requires at least three-four trained medical providers per patient for following tasks\n1. Maintaining airway and patient\n2. Body (rectal) temperature monitoring\n3. Continuously stirring and managing cold water immersion bath\n4. Documentation of medical records\nAdditional assistance may also require in case the patient becomes combative or must be lifted or\nrolled because of vomiting.\n\nPreparation\nThe tub/portable pool should be set up as following\n1. Fill with water and ice (1/2–2/3 full)\n2. Volume should be enough to submerge a most of body area\n3. Prioritize submersion on torso\n4. Temperature of water must remain between 5°C and 15°C (lower the better)\n5. 3-4 ice/cooler boxes full of ice next to the tub\n6. In shaded area (e.g. under a tree, bleachers, or tent)\n7. Safety and protection of providers should be considered\n\nEHS\n\n[page 16]\n\n Process of CWI\nAfter diagnosis of confirmed exertional heat stroke and initial rapid clinical assessment and rapid\nremoval of additional clothes5\n\n➢ Start point\nWith assistance, place the patient/athlete in the ice/cold water immersion tub/pool up to\nmid-chest or neck with appropriate support\na. Keep patient/athlete’s head and neck above water by holding the patient under the axillae\nb. with a towel or sheet wrapped across the chest and under the arms.\nc. Cover as much of the body especially torso as possible with ice water\nd. Place an ice/wet towel over the head and neck while body is cooling\ne. Keep water temperature <15°C (60°F).\nf. Keep stirring water aggressive throughout the cooling process\ng. Keep maintaining airway, breathing and circulation and monitoring of vitals including\ncore body temperature\n\nWhen water is not stirred, it decreases the efficacy and cooling rate due to\ndecreasing in temperature gradient between water and skin,\nwhich is a primary factor in rate of cooling.\n➢ End point\nh. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\ni. If rectal temperature cannot be measured and cold-water immersion is indicated, cool for\n10-15 minutes\nj. Approximate estimate of cooling via cold water immersion: 1ºC for every 5 minutes and\n1ºF every 3 minutes (if the water is aggressively stirred).1\n\nCooling rate will be slower initially and increase the longer the person is in the tub.\nIf immersed for 15 minutes, core body temperature may reduce to 3ºC or 5ºF. (1)\nk. Once cooled, patient is transferred to a bed\nl. Dispose the water content carefully.\n\nCold water immersion process\nImage source: US football, Internet (adapted)\n\n[page 17]\n\nCOLD-WATER DOUSING WITH ICE MASSAGE\nAlso referred as Water ice therapy (WIT)\n•\nClose alternative method to CWI, utilizes same set up as CWI\n•\nSuitable at health facilities, pre-hospital and field setting with planned resources and setup\n•\nCooling rates comparable to CWI with warmer water but not as effective as CWI with cold\nwater15\n•\nInitial cooling remains slow (first 6 minutes) but subsequent cooling (minutes 6 to 12) is\ncomparable across similar experimental or clinical case studies3.\n\nRecommended equipment list (same as CWI) + a porous stretcher.\nPatients were treated while lying supine on a porous stretcher that rested on a tub filled with cold\nwater (10-12.8°C).\n\nPersonnel\nSix to eight personnel are required\n1. Maintaining airway and patient\n2. Core body temperature monitoring\n3. To continually douse the entire patient\n4. Documentation of medical records\n\nPreparation\n1. The tub should be set up as mentioned in CWI (See page 11)\n2. Put and stably arrange a porous stretcher on the tub filled with cold water (10-18°C)\n\nProcess\n➢ Start point\na. Place the patient in supine position on a meshed/porous stretcher that is stably resting\non the tub filled with cold water\nb. Six to eight personnel continuously douse the entire patient (except the head) with\nwater from the tub\nc. Use ice packs/bags to massage major muscle groups (pectorals, abdominals, quadriceps,\ngastrocnemii)\nd. Head should be covered in an ice towel\ne. Measure core body temperature every 3 minute during the treatment via indwelling\nrectal thermometer\nf. Aggressive cooling should be continued through out\n\n➢ End point\ng. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\nh. Approximate cooling time: 12 and 24 min.\n\nEHS\n\n[page 18]\n\nBODY BAG COOLING (BBC)\n\n•\nAlternative of CWI for rapid cooling in EHS patients/athletes in low resource setting\n•\nSupports similar cooling rates as of gold standard CWI in EHS16\n•\nSuitable for CHS (emerging evidence)16,17 with proper assessment of patient’s condition and\nclinical judgement. BBC allows placement of monitoring equipments/ resuscitation, if\nneeded, as patient’s chest can be kept dry while the body is surrounded by ice/cold water18\n•\nSuitable for emergency department and field setting\n•\nUtilizes a body/cadaver bag which are strong, waterproof with leak proof zip and have lifting\nhandles (6)\n•\nMay not be suitable for children\n•\nCost effective, convenient, efficient method of CWI\n\nRecommended equipment list for Body Bag Cooling\n•\nRectal thermistor, lubricating gel\n•\nBody bag/Cadaver bag\n•\nCold water source\n\n•\nIce: 3-4 ice coolers/box with ice\n•\nTent/tarp for shade (if needed, outdoors)\n•\n3-4 towels\n\nPersonnel\nBBC may require 2-3 trained medical providers per patient\nPreparation\n1. Body bag prepared on the bed/flat comfortable surface in the field settings with\n2. Buckets of ice and/ cold water\n\nProcess of BBC\nAfter diagnosis of suspected exertional or classic heat stroke and initial rapid clinical assessment\nand rapid removal of additional clothes\n➢ Start point\nWith assistance, place the patient/athlete in\na. Patient is transferred from the stretcher/field directly into the body bag,\nb. Apply monitors and a temperature-probe\nc. Buckets of ice and cold water are poured into the body bag to initiate cooling.\nd. After initial resuscitative measures are completed, the body bag is loosely closed (up to the\npatient’s neck) until the patient is cooled to 38˚C-39˚C\ne. Keep maintaining airway, breathing and circulation and monitoring of vitals including core\nbody temperature\n\n➢ End point\nf. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\ng. Once cooled, patient is transferred from the bag to another bed.\nh. Dispose the body bag and water content carefully.\n\nEHS\n\n[page 19]\n\nCold water immersive cooling using a body bag in emergency department for a patient with\nclassic heat stroke17\na. Preparing a disposable body bag on a bed with buckets of ice\nb. . the patient placed directly into the body bag with monitors including core body temperature\nmonitor and buckets of ice and tap water are poured into the body bag to initiate cooling.\nImage source: Kim D. A. et al\n\nCold water immersive cooling using a body bag on field/scene for a patient with\nclassic heat stroke19\na. Cool water is sourced through a hydrant with 2.5-inch hose.\nb. Patient’s core body temperature measured through rectal probe\n Image source: Jacobsen et. R. C. et al\n\n[page 20]\n\nTARPAULIN ASSISTED COOLING WITH OSCILLATION\n(TACO)\n\n•\nAlternative of CWI for rapid cooling in EHS patients/athletes in low resource setting\n•\nProvides cooling rates within the minimally acceptable rate of cooling8\n•\nSuitable for emergency department and field setting\n•\nNot suitable for CHS (limited evidence) due to hemodynamic instability, chronic illness or\nother risk factors that warrant continuous monitoring and possibly resuscitation\n•\nMay be used in absence of any another effective cooling methods with necessary clinical\njudgement\n•\nUtilizes a large, waterproof tarpaulin sheet\n•\nCost effective, efficient method of CWI, multiple assistants required\n\nRecommended equipment list for Tarpaulin (trap)-Assisted Cooling with Oscillation\n•\nRectal thermistor, lubricating gel\n•\nTarpaulin sheet (large, waterproof)\n•\nCold water source\n\n•\nIce: 3-4 ice coolers/box with ice\n•\nTent/tarp for shade (if needed, outdoors)\n•\n3-4 Towels\n\nPersonnel\nTACO with oscillation may require six or more individuals to implement it.\n\nPreparation\n1. Large waterproof tarp\n2. Buckets of ice and cold water (80-150litter of ice and cold water)6\n\nProcess of TACO\nAfter diagnosis of exertional heat stroke and initial rapid clinical assessment and rapid\nremoval of additional clothes\n➢ Start point\na. With assistance place the patient/athlete in the middle of a tarp on floor/comfortably\nelevated surface, which will serve as the makeshift tub.\nb. Have assistants to pick-up each corner of the tarp to form a sling (or “tacoshape”).\nc. Pour cool water and ice up to the chest level of the patient/athlete.\nd. Slowly move the tarp back and forth to oscillate the mixture and initiate cooling\ne. Keep maintaining of airway, breathing and circulation and monitoring of vitals including\ncore body temperature\n\nStanding close to the patient helps to maintain the water level and allows the tarp\nto be oscillated efficiently to maintain water circulation.\nAdditional assistance may be needed to hold the heavy tarp or replace tired providers\n\n➢ End point\nf. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\ng. Dispose the water content carefully especially if contaminated.\n\nEHS\n\n[page 21]\n\nTarpaulin assisted rapid cooling method for exertional heat stroke in field setting\nImage source: University of Missouri Health\nWHOLE-BODY ROTATING ICE-TOWEL APPLICATION\n\n•\nAlternative of CWI for rapid cooling in EHS in low resource setting\n•\nSuitable in CHS and can be combined with evaporative and convective cooling\n\nEquipment list\n•\n12 towels/4-5 bedsheets\n•\nice box/cooler full of 1/3 cold water and 2/3 ice\nPersonnel: possible with one-two trained personnel\nPreparation: Fill a cooler with ice, water, and 12 towels.\nProcess\nAfter diagnosis of heat stroke and initial rapid clinical assessment and rapid removal of additional\nclothes\n•\nSix towels soaked in ice water should be applied on the whole body\n•\nTowels should be exchanged every 1-2 min to maintain cooling capacity\n\n➢ End point: Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\nEHS\nWhole-body rotating ice-wet towel application\nImage source: Hosokawa Y, et al5.\n\n[page 22]\n\nDIFFUSE ICE PACK OR CRUSHED ICE APPLICATION\n\n•\nAlternative of CWI for rapid cooling in EHS in low resource setting\n•\nSuitable for cooling in CHS6 and can be combined with evaporative and convective cooling\n•\nCost effective, less effective than CWI in rapid cooling\n\nEquipment list: crush ice/ frozen ice boxes/packs\nPersonnel: possible with one-two trained personnel\nProcess\nAfter diagnosis of suspected exertional or classic heat stroke and initial rapid clinical\nAssessment and rapid removal of additional clothes\n•\nKeep patient in the bed/stretcher/flat surface with elevated legs\n•\nApply crushed ice or ice packs all over on the body especially torso\n\nStrategic placement of ice packs to axilla, neck, and groin only marginally contribute to\ncooling6\n➢ End point: Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\n\nCrushed ice/ cold water application for rapid cooling.\nImage source: Internet\n\nEHS\n\n[page 23]\n\nB. Evaporative and Convective Cooling\nCOLD WATER DOUSING OR COLD SHOWER:\n\n•\nUsed in EHS in field setting where water source is easily accessible.\n\nWATER SPRAY + DIRECTED FAN\n•\nSuitable for older adults and pre-pubertal children\n•\nTo prevent shivering and over cooling, it is recommended to use tepid water (40°C/104°F) or\nexposing the patient to hot air(45°C/113°F) with the fan.12\n\nWATER-SOAKED BEDSHEETS + DIRECTED FAN\nProcess:\n Cold water dousing (pouring) the patient/athlete with cold water from a hose/pipe\nin case of non-availability of cooling implements.\n Cold shower can be used if available e,g, in training area\nEquipment list: spray bottle/garden sprayer, electric fan\nPreparation: large quantities of water (slightly cold/lukewarm)\nProcess:\n• Place patient in the flat, shaded surface.\n• Remove patient clothing and spray cool water (~15*C) on most of the patient’s\nbody surface.\nEquipment list: Bedsheets/gauze sheets, electric fan\nPreparation: large quantities of water (slightly cold/lukewarm)\nProcess:\n• Place patient in the flat, shaded surface.\n• Remove patient clothing and cover maximum body surface with wet bedsheets or\ngauze sheets surface\n• Direct a fan over the patient allow high air current to pass over the patient body\n\nCHS\nCHS\n\n[page 24]\n\nC. Evaporative + Convective + Conductive Cooling\n\n•\nCombine or adjunct cooling method utilizes additional cooling power of cold water/ice.\n\nICE PACK/CRUSHED ICE + WATER SPRAY +DIRECTED FAN\n\n•\nApply crushed ice or ice packs all over on the body especially torso\n\nEquipment list: spray bottle/garden sprayer, electric fan, Ice packs/crushed ice\nPreparation: large quantities of water (slightly cold/lukewarm), ice\nProcess:\n•\nPlace patient in the flat, shaded surface.\n•\nRemove patient clothing and spray maximum body surface with water\n•\nDirect a fan over the patient allow high air current to pass over the patient body\n•\nApply crushed ice or ice packs all over on the body especially torso\n\nStrategic placement of ice packs to axilla, neck, and groin only marginally contribute to\ncooling6\n\nCombined cooling methods for rapid, active cooling\nImage source: Internet\nCHS\n1. Move the person to shade/indoors\n2. Call emergency medical services 102/108\n3. Have the person lie down with feet elevated.\n4. If conscious, give\ncold water to sip\n5. Remove\nexternal clothing\n6. Spray the person\nwith cold water\n7. Apply damp sheets/ towels/ icepacks to torso, armpits,\nneck, head, groin.\n8. Use fan to direct air\non the body\n\n[page 25]\n\nD. Invasive Cooling Measures\n\n•\nChilled/cold intravenous fluids are insufficient as primary method of cooling, they may\nprovide supplemental cooling.\n•\nCold saline may be beneficial when added to evaporative or conductive cooling\n•\nIntravascular or external cooling devices should not be considered primary cooling\nmethods in heat stroke.\n•\nBody cavity lavage with cold isotonic fluid have been reported, but not adequately studied\n\nE. Other cooling methods\n\n•\nIce-filled rubber bottles do not provide effective cooling\n•\nBody cooling unit or other novel portable/wearable cooling arrangements are not widely\navailable or adequately tested.\n\n---\n\n[page 26]\n\n3. Emergency Cooling in Children\nGuiding Principles: Rapid Cooling in Children\n\n•\nHeat stroke should be suspected in any child brought to a healthcare facility with altered\nconsciousness, confusion or seizures in a heatwave or high temperature conditions especially in\nsummer season.\n•\nCore body temperature can be measured from esophagus, oral cavity, rectum.\n•\nUsually, axillary temperatures are less precise than the rectal temperature.\n•\nAxillary temperature is usually 0.5-0.8°C lower than rectal temperature.\n•\nClassic heat stroke: more common in younger children who are unable to escape from hot\nenvironments (e.g. closed vehicles) and those with underlying chronic medical conditions that\nimpair thermoregulation (\n•\nExertional heat stroke: generally seen in young, healthy individuals who engage in heavy exercise\nduring periods of high ambient temperature and humidity (e.g. athletes, football players, military\npersonnel)\n•\nIn absence of a rectal thermometer, proceed with the temperature recording from the armpit; if it\nexceeds 40°C, a presumptive diagnosis of heat stroke should be made.\n•\nApply rapid, active cooling measures in the heat stroke case as early as possible till the temperatures\nare reduced to below 39°C. Recommended cooling rate is 1°C every 10 minutes.\n•\nAs a first aid, affected child should be moved to a cooler place/ shade / room under fan, preferably\nin the air-conditioned room if available.\n\nEffective cooling methods\n•\nAdolescent patient: cold-water immersion is the most effective method for rapidly cooling in\nadolescent20\n•\nInfants and prepubertal children: evaporative with convective cooling is the most effective for\nrapid external cooling because of the large surface area to body mass and can be used in field 20\n•\nEmergency cooling rooms, TACO method, bladder irrigation with cold saline, cold water lavage of\nthe stomach/peritoneum and bladder are not feasible. These methods are not well studied in children\nand not required most of the times.\n\nPrevent/treat shivering\n•\nIV benzodiazepines (eg, midazolam or lorazepam) may be given\n•\nAvoid meperidine, clonidine, or dexmedetomidine (significant adverse side effects in children)\n\nPost-cooling management\nAll children with heat stroke should be admitted to a pediatric critical care unit in order to maintain\nappropriate monitoring and to treat ongoing and delayed end-organ dysfunction.\nPrognosis\n•\nThe prognosis in children with heat stroke is not well studied.\n•\nAll children that recover from heat stroke may show some degree of heat intolerance (a disorder in\ntemperature homeostasis) which may increase the risk for repeated heat illness.\n•\nChildren and their families/primary caregivers should be educated to avoid heat exposure until\nrepeat evaluation establishes that they have fully recovered and a period of acclimatization has\noccurred 20\n•\nChildren with severe heat stroke may have ongoing impaired physiologic response to exertion in\nhot environments\n\n[page 27]\n\nCooling methods in Paediatric Patients\n\nCooling Method\nAdvantage\nDisadvantage\nICE/COLD WATER IMMERSION (CWI)\n(See Conductive Cooling, page\n11)\n• May provide effective cooling to\nadolescent athletes in field\nsettings\n• Discomfort, shivering,\nagitation,combativeness\n• Not preferred in hospital\nsetting\n\nBODY COOLING WITH GARDEN SPRAYER/SPRAY BOTTLE + FAN\nSpraying with tepid water (to\nminimize shivering) while\nfanning with high-flow fans to\nmaximize air circulation\n• Faster, effective cooling method\nfor infants and prepubertal\nchildren\n• Comfortable\n• Easily available\n\n• Requires maintenance and\nstorage\nWET SHEET + DIRECTED FAN\nPatients are covered with wet\nsheet, water is sprayed over the\nsheet, and fans are used to\nblow over the wet sheet\n• Heat loss comparable to the\nbody cooling unit, using a\ngarden sprayer\n• Easy to maintain\n\nICE PACKS\nIce packs are placed over large\nbody surface area, groin, neck\nand axilla\n• Simple\n• Readily available\n• Shorter cooling time when\ncombined with evaporative\ntechnique\n\n• Longer cooling time\ncompared to evaporative\ntechnique\nCOLD I.V FLUIDS\nCold iv fluid administration\n• May be used as supplementary\nto external evaporative cooling\nmethods\n\n• Needs maintenance\nCOLD WATER IRRIGATION\nGastric, bladder, peritoneal\nlavage, extracorporeal\n\n• Not well studied\n\n• Invasive\nTACO METHOD\n\n• Not studied in children\n\n---\n\n[page 28]\n\n4. Public Health Aspects\nHeat stroke is primarily an out-of-hospital health issue and a true time-critical emergency.\nA paradigm shift to “cool first, transport second” recommends active, on-scene cooling.\nTherefore, preparedness for on-scene/field or community level/pre-hospital management should be\nfocused.\n\nFor clinical protocols, surveillance, general health facility preparedness and equipment acquisition to\nmanage heat-related illnesses, please also refer to following guidelines by National Programme on\nClimate Change and Human Health, NCDC\n1. National Action Plan on Heat-Related Illnesses (2021)\n2. NPCCHH PIP Guidelines FY 24-25, 25-26\nHealth sector preparedness for emergency cooling of severe HRI\n\nAim\nMeasures\nAmbulance and first aid\n1. On-scene rapid, active, sufficient\ncooling following quick assessment\n2. Active cooling during transport\n3. Transfer to nearest health facility able\nto provide cooling and supportive care\n4. Advance communication to health\nfacility to prepare for active cooling\n1. Identifying cooling method that ambulance can\nprovide\n2. Equipping and maintaining cooling equipments\n3. Training of first-aid providers\nPrimary level health facilities\n1. Rapid, active, sufficient cooling\nfollowing quick assessment\n2. Supportive care to stabilize the patient\n(dedicated beds) and referral to higher\nlevel for advance care\n1. Identifying cooling method that facility can\nmanage\n2. Equipping and maintaining cooling equipments\n3. Preparing cooling areas and internal protocols\n4. Training of Medical officers and allied staffs first-\naid providers in case identification, clinical\nmanagement and reporting\n5. Ensure basic water, cooling facilities in general\nand treatment areas\nSecondary and tertiary level health facilities\n•\nRapid, active, sufficient cooling\nfollowing quick assessment\n•\nAdvance, critical care (heatstroke\nbed/room)\n1. Identifying cooling method that facility can\nmanage\n2. Equipping and maintaining cooling equipments\n3. Preparing areas and internal protocols\n4. Training of health care professionals in case\nidentification, clinical management and reporting\n5. Ensure basic water, cooling facilities in general\nand treatment areas\n\n[page 29]\n\nCommunity level preparedness for rapid cooling of severe HRI\n\nCommunity level preparedness and response for heat stroke should be driven by the facts: 1. heat\nstroke is preventable and 2. when manifested it is a acutely life-threatening condition. Globally, with\nclimate change, heat heat-related deaths of people older than 65 years is increased by 85% in 2018-\n2022 compared to 2000-2004.21 As global temperature continue to rise, India may experience\nsignificant increase in mortality by mid-century.\nGeneral community\n•\nAwareness among panchayat raj members, various occupational setting, community\n•\nTraining of various community service providers (traffic police, municipal workers, fire fighters)\nin identifying and responding to severe HRI (in community and in their own occupational setting)\n\nOccupational settings\nMiners, bakers, smelters, workers restricted in closed-places, construction, and agricultural workers\nare reported to be prone to heat exposure due to their occupation.\n▫\nAwareness among employers and workers\n▫\nEnsuring provision of preventive measures (See Public Health Advisory: Extreme\nHeat/Heatwave)\n▫\nEnsuring basic on-field body cooling measures in organized and unorganized occupational\nsettings with potential for high heat exposure, exertion, closed/overcrowded place\n\nMass participation sports events/ mass gathering events\n\nPreparedness to manage emergency cooling at mass\nparticipation sports events or mass gathering events\nshould be focused when combination of ambient heat,\nphysical exertion and/ overcrowding is expected to\noccur.\n\nPopulation at Risk of EHS\n•\nEvents with a high risk of EHS (eg, athletics,\ncycling, football, hockey, marathon, swimming,\nmodern pentathlon, rowing, tennis and triathlon),\nwhen scheduled under stressful environmental\nconditions must prepare a designated, well-\nmarked heat stroke assessment and management\narea (i.e. heat deck) within or adjacent to the\nmain athlete medical tent.\n•\nSports events with a high metabolic demand\n(eg, marathon running), a heat deck set-up is still\nadvised whether environmental condition is mild\nor cool.\n\nCold-water immersion setup for EHS\npatient treatment.\n\n[page 30]\n\nPopulation at Risk of CHS\n•\nPilgrimage, parades, outdoor ceremonies, spectators of sports events: invariably contains\npopulation of various age groups, physical (acclimatization), medical vulnerabilities and risk\nawareness\n\nHeat desk setup 5\nLocation\n•\nmust have access to a water source and water drainage\n•\neasily accessible from the expected site of collapse (such as the alongside the field of play in\nteam sports or near the finish line for individual sports)\n•\nhas direct ambulance access/egress\n•\nideally, housed in an indoor facility with air conditioning and/or a fan\n•\nprotected from unnecessary attention from spectators and media\n•\nIf above criteria not met, appropriate location for portable tent setup should be identified by\nin-charge health officer\n\nAccess\n•\nrestricted entry from the athlete’s team staff and family members\n\nEquipment list to provide on-site rapid cooling5\n□ Rectal thermometer with disposable probes\nor disposable probe cover\n□ Thermometer for water temperature monitoring\n□ Medical gloves\n□ Partitions for rectal temperature assessment\narea\n□ Cold water immersion tub\n□ Pole-less/soft stretcher for patient transfer in\nand out of cold water immersion tub\n□ Ice\n□ Ice cooler boxes\n□ Water\n□ Hose to supply and drain water\n□ Towels for cooling\n□ Sheets to maintain patient posture\n□ Medical record keeping\n□ Clock\n□ Cold water immersion tub cleaning\nequipment\n□ Point-of-care blood electrolyte and glucose\nanalysing kit\n□ Oral sodium\n□ Oral glucose\n□ 3% saline injection\n□ 50% glucose injection\n□ 1 mg glucagon injection\n□ Intravenous infusion kit\n□ Towels for drying\n□ Cots or beds for postcooling observation\n□ Chair\n□ Blankets for rewarming\n□ Emesis basin/kidney tray\n□ Medical waste container\n□ Change of clothes (for after cooling)\n□ Wheelchair\n□ Wheeled stretcher\n□ Cardiac defibrillator\n□ Cardiopulmonary resuscitation equipment\n□ Air conditioning unit/fan\n□ Personal protective equipment\n\nThe quantity of each item depends on the total number of participants and the relative risk of heat\nstroke at the event, such as environmental conditions, exercise duration, and exercise intensity. To\nmake an informed estimate of the amount of resources needed, a thorough evaluation of local\nenvironmental conditions and exertional heat illness records from previous international and national\ncompetitions of a similar setup should be reviewed.\n\n[page 31]\n\nHeat deck patient management areas\n1. Temperature assessment area should have partitions to limit any unnecessary exposure of an\nathlete during rectal temperature measurement.\n2. Cold water immersion (CWI) area\n3. Observation area should have cots set up for athletes to rest until all their vital signs are within a\npredetermined normal range.\n\nImmersion tab management during cooling\n•\nDuring the time of active/sports event, cold water immersion tubs do not need to be drained\nand cleaned after each use if not obviously contaminated.\n•\nContaminated cold water immersion tubs (ie, vomiting, diarrhoea and open wound) should be\nwell labelled and not be reused for other athletes. Such contaminated tubs must not be used\nuntil they have been fully cleaned and disinfected.\n•\nFor multiday event, all tubs, including tubs without obvious contamination, must be fully\ncleaned, disinfected and dried at the end of each day of competition.\n\nCold water immersion provider arrangement\nA medical officer familiar with event medical services and proficient in prehospital management\nshould be appointed with additional trained support staff\nThe CWI treatment requires at least four trained medical providers (Provider A–D) per athlete.\n•\nProvider A: maintains the airway and upright posture of the patient;\n•\nProvider B: in charge of monitoring the core temperature;\n•\nProvider C: responsible for continuously stirring the cold water immersion bath; and\n•\nProvider D: ensures all medical records are properly documented\n\nPost-cooling outcome scenarios\n•\nOn-site\nThe patient’s rectal temperature must continue to be monitored to ensure that the fall in core\ntemperature has been maintained.\n\nIf the core temperature starts to rise again then the individual should be returned to the\ncold-water bath and the cooling procedure repeated until a constant temperature <39°C is\nmaintained.\n\nIf the core temperature starts to show a rapid drop toward 36°C after removal from cold\nwater immersion during the 15-minute postcooling recovery period, the patient should be\ndried, their wet clothing removed, and insulated blankets used until they can be transported to\nthe designated hospital for rewarming and advanced care. If privacy can be maintained,\nmoving the athlete into direct sunlight may assist with rewarming while waiting for the\nambulance.\n\n•\nTransportation\nIn the case of the patient being transported to the hospital, emergency service dispatch and/or\non-site medical officials should notify the hospital medical team in advance to allow staff to\nprepare for treatment to begin immediately upon patient arrival.\n\n•\nEmergency department\nDiagnostic difficulty may occur, as the patient may present with a temperature less than 40.5°C\neither due to active or passive cooling that has already occurred\n\n[page 32]\n\nAlternative to CWI\nIf patient collapses at remote locations from the heat deck or immersion tubs are not available,\norganisers should also consider preparing a\n•\nTarp-assisted cooling (TACo)\n•\nIce/wet towel rotation\n•\nHigh-flow cold water dousing/shower (requires mapping/provision of portable water\nresources at event location)\n\n---\n---\n\n[page 33]\n\nAnnexure 1: Heat Stroke Management Algorithm in Emergency Department\n\n1.\nHeat Alert Triggered\n• Summer season=high risk\nseason based on local climate\npatterns, active heat advisory\nor high heat index\n• Patient temperature >40°C\n\n• Chief complaint includes:\nAltered Mental Status OR\nConfusion OR Unresponsive\nOR Seizure.\n\n2.\nTriage Clinician Evaluation\nActivate heat alert if clinical suspicion is\nhigh based on:\n• Recent history of environmental (indoor or\noutdoor) heat exposure OR strenuous physical\nactivity.\n• Central Nervous system dysfunction\n• Tachycardia, tachypnea, +/- hypotension\n• Flushed or warm skin +/- sweating\n• Lower suspicion for sepsis, medicine/drug\noveruse, or metabolic abnormality (e.g.\nhypoglycemia)\n3.\nBegin Treatment\nAlgorithm\n• This guide does not replace\nclinician judgment; actions\nshould be initiated\nsimultaneously if feasible.\n• More aggressive interventions\nmay be provided if available and\nprofessionals are trained to\ndeliver those.\nClinical Management Key Steps\nTasks\nBedside evaluation | Move to resuscitation | ICU consultation\nTRIAGE\nTREATMENT\nGOALS\nSupportive care\n• Continuous temperature monitoring\n• Correct electrolyte abnormalities\n• Arrange for admission (likely ICU)\nConsider transplantation if acute liver failure\nSupportive care\n• Serial neurologic and hemodynamic\nreassessments\n• Keep defibrillator and pads at bedside\n• Resupply ice as needed\nRecognition\n• Assess airway, breathing, and circulation\n• Document core temperature\n• Consider alternative / concomitant diagnoses of\nNeuroleptic Malignant syndrome, Malignant\nHyperthermia, Serotonin Syndrome,\nHyperthyroidism, Sepsis\nRecognition\n• Obtain core temperature\n• Place patient on the monitor\n• Establish large bore IVs\n• Send for lab test, ECG, and chest x-ray\nRapid cooling\n• Begin external cooling and\nconsider internal cooling\n• Consider deep sedation\nfollowed by neuromuscular\nblockade to reduce\nmetabolic heat production\n• Use benzodiazepines to treat\nintense shivering\nBegin external cooling\n(in order of preference\nbased on cooling rates)\n1.Perform cold water\nimmersion or body bag\ncooling or\n2.Place ice packs/chilled\nbed sheets/towels or\n3.Mist water + direct fan\nConsider internal cooling\n(supplementary to external cooling)\n• Infuse chilled IV fluids\n• Place 3-way Foley catheter bladder\nirrigation\n• Sedate and paralyze\n• Body cavity lavage (rare)\n• Cardiopulmonary bypass (rare)\n• ECMO/ transfer for liver transplant if\nvery severity illness (rare)\nRapid cooling\nGather supplied as per cooling method selected: Ice, Ice packs, Tub,\nTarpaulin, Ice bag, Mist bottle, Fan, Foley catheter, IV Fluids\n5 minutes\n• Recognition\n• Initiate\ntreatment\n10 minutes\n• Initiate rapid\ncooling\n30 minutes\n• Cool to 39°C\n• Avoid\nre-exposure\nAdapted from Rublee C, Dresser C, Giudice C, Lemery J, Sorensen C. Evidence-based heatstroke management in the emergency department. West J Emerg\nMed. 2021;22(2):186-195. doi:10.5811/WESTJEM.2020.11.49007\n\n[page 34]\n\nAnnexure 2: Ice/Cold Water Immersion for Exertional Heat Stroke\nPre-hospital/Field setting\n\nMONITOR: Core body temperature, mental status (continuously)\nVital signs (~ every 10 minutes)\nKeep additional assistants available throughout\nAssess\n• ABC (airway, breathing, circulation)\n• Mental status\n• Vital signs before immersing\nPrepare for emergency cooling\nIf another appropriate medical staff present,\nthey should\n• Identify/Prepare cooling equipments\n• Locate shade & get help to move\npatient to shaded area\nCool first, transport second\nPresentation: Collapse during/following strenuous activity with\nCNS dysfunction + Core body temperature ≥ 40°C (104°F)\nRapid recognition\nRapid assessment\nRapid cooling\nRapid advanced care\nProvide Advance medical support\nMonitor, investigate and support vital organ functions\nTreat with Ice/Cold Water Immersion (CWI)\n(most effective method, details on page 11)\nDesired water temperature <15°C (60°F)\n\nWith assistance, place the athlete in the ice/cold water immersion tub/pool\n•\nKeep the athlete's head and neck above water\n•\nCover as much of the body as possible with ice water.\n•\nPlace a towel soaked in ice water over the head and neck\n•\nKeep stirring water aggressive throughout the cooling\nEnd point: rectal temperature of 38.3–38.9°C (102°F)\n\nIf the rectal temperature cannot be measured and on-site ice water immersion\nis indicated,\ncool for 10 to 15 minutes\n with aggressive water stirring to achieve\ncooling rate of 1°C for every five minutes\n(or 1°F every three minutes)\n\nDO NOT rely external temperature measurements\nTransfer to the nearest medical facility quickly as possible\nonly after rectal temperature reaches 39ºC (102°F)\nAdapted from: The Korey Stringer Institute (ksi.uconn.edu) and Casa DJ, McDermott BM, Lee EC, et al.\nCold-water immersion: The gold standard for exertional heat stroke treatment. Exerc Sport Sci Rev 2007; 35:141.\nContact emergency medical services immediately\n\n[page 35]\n\n5. References\n\n1.\nSherwood SC, Ramsay EE. Closer limits to human tolerance of global heat. Proc Natl Acad\nSci U S A. 2023;120(43):e2316003120. doi:10.1073/PNAS.2316003120/ASSET/B8BDD91B-\nBBCC-40FD-A19E-E2FF0E1ECFBB/ASSETS/PNAS.2316003120.FP.PNG\n2.\nBynum GD, Pandolf KB, Schuette WH, et al. Induced hyperthermia in sedated humans and the\nconcept of critical thermal maximum. Am J Physiol. 1978;235(5).\ndoi:10.1152/AJPREGU.1978.235.5.R228\n3.\nHoffman JL. Heat-Related in Children. Clin Pediatr Emerg Med. 2001;2:203-210.\ndoi:10.1053/cpem.2001.27334\n4.\nRublee C, Dresser C, Giudice C, Lemery J, Sorensen C. Evidence-based heatstroke\nmanagement in the emergency department. West J Emerg Med. 2021;22(2):186-195.\ndoi:10.5811/WESTJEM.2020.11.49007\n5.\nHosokawa Y, Racinais S, Akama T, et al. Prehospital management of exertional heat stroke at\nsports competitions: International Olympic Committee Adverse Weather Impact Expert\nWorking Group for the Olympic Games Tokyo 2020. Br J Sports Med. 2021;55(24):1405-\n1410. doi:10.1136/bjsports-2020-103854\n6.\nGaudio FG, Grissom CK. Cooling Methods in Heat Stroke. J Emerg Med. 2016;50(4):607-\n616. doi:10.1016/j.jemermed.2015.09.014\n7.\nLawton EM, Pearce H, Gabb GM. Review article: Environmental heatstroke and long-term\nclinical neurological outcomes: A literature review of case reports and case series 2000-2016.\nEMA - Emerg Med Australas. 2019;31(2):163-173. doi:10.1111/1742-6723.12990\n8.\nWilbeck J, Tucker L, Evans E. Heatstroke on the Rise: A Guide to Implementing Tarp-\nAssisted Cooling With Oscillation (TACO) in the Emergency Department. Adv Emerg Nurs J.\n2023;45(3):210-216. doi:10.1097/TME.0000000000000470\n9.\nMcDermott BP, Casa DJ, Ganio MS, et al. Acute Whole-Body Cooling for Exercise-Induced\nHyperthermia: A Systematic Review. Accessed December 28, 2023.\nhttp://meridian.allenpress.com/jat/article-pdf/44/1/84/1454845/1062-6050-44_1_84.pdf\n10.\nAlzeer AH, Wissler EH. Theoretical analysis of evaporative cooling of classic heat stroke\npatients. Int J Biometeorol. 2018;62(9):1567-1574. doi:10.1007/S00484-018-1551-\n1/METRICS\n11.\nHadad E, Rav-Acha M, Heled Y, Epstein Y, Moran DS. Heat stroke: A review of cooling\nmethods. Sport Med. 2004;34(8):501-511. doi:10.2165/00007256-200434080-\n00002/METRICS\n12.\nLovecchio F. Chapter 210 : Heat Emergencies. Published online 2023.\n13.\nTintinalli JE, Stapczynski JS, Ma OJ, Yealy DM, Meckler GD, Cline DM. Tintinalli ’ s\nEmergency Medicine : A Comprehensive Study Guide , 8e > Approach to Shock. Published\nonline 1996:19.\n14.\nVicario SJ, Okabajue R, Haltom T. Rapid cooling in classic heatstroke: Effect on mortality\nrates. Am J Emerg Med. 1986;4(5):394-398. doi:10.1016/0735-6757(86)90185-3\n15.\nMcDermott BP, Casa DJ, O’Connor FG, et al. Cold-water dousing with ice massage to treat\nexertional heat stroke: a case series. Aviat Space Environ Med. 2009;80(8):720-722.\ndoi:10.3357/ASEM.2498.2009\n16.\nCutler BZ, Richins J, Barker BT, Rigby BR, Butts CL. Comparing Body Bag Cooling To Cold\nWater Immersion Following Exertional Hyperthermia. Med Sci Sport Exerc. 2021;53(8S):346-\n346. doi:10.1249/01.MSS.0000763252.41508.C9\n17.\nKim DA, Lindquist BD, Shen SH, Wagner AM, Lipman GS. A body bag can save your life: a\nnovel method of cold water immersion for heat stroke treatment. J Am Coll Emerg Physicians\nOpen. 2020;1(1):49. doi:10.1002/EMP2.12007\n18.\nPittala K, Willing TF, Worrilow CC, Palilonis MM. Severe Heat Stroke Resuscitation Using a\nBody Bag in a Community Emergency Department. Cureus. 2023;15(8).\n\n[page 36]\n\ndoi:10.7759/CUREUS.44045\n19.\nJacobsen RC, Beaver B, Abo B. Out-of-Hospital Cold Water Immersion for Classic (Non-\nExertional) Heat Stroke Guided by Real-Time Core Temperature Monitoring: A Case Series.\nPrehospital Emerg Care. 2023;27(6):832-837. doi:10.1080/10903127.2022.2148795\n20.\nIshimine P. Heat stroke in children - UpToDate. UpToDate. Published online 2022.\nhttps://www.uptodate.com/contents/heat-stroke-in-children/print\n21.\nRomanello M, Napoli C di, Green C, et al. The 2023 report of the Lancet Countdown on health\nand climate change: the imperative for a health-centred response in a world facing irreversible\nharms. Lancet. 2023;402(10419):2346-2394. doi:10.1016/S0140-6736(23)01859-7\n\n---\n\n[page 40]\nNational Centre for\n Disease Control\nGovernment of India",
+  "source": {
+    "source": "ncdc",
+    "name": "NCDC Resource Library",
+    "region": "india",
+    "authority": "National Centre for Disease Control (NCDC), Directorate General of Health Services, Ministry of Health and Family Welfare, Government of India",
+    "landing_url": "https://ncdc.mohfw.gov.in/includes/Resource_Library/",
+    "license": "Government of India (NCDC / MoHFW) - public health guidelines, advisories and patient material",
+    "license_notes": "Official NCDC resource-library material for non-commercial public-health and educational use with attribution. Verify NCDC / MoHFW terms and conditions before redistribution.",
+    "documents": [
+      {
+        "doc_id": "ncdc-leptospirosis-national-guidelines",
+        "title": "National Guidelines on Diagnosis, Case Management, Prevention and Control of Leptospirosis",
+        "url": "https://ncdc.mohfw.gov.in/uploads/resource/1769332981_File558.pdf",
+        "document_type": "clinical_guideline",
+        "topic": "Leptospirosis - symptoms, clinical presentation, case definitions, treatment, prevention",
+        "published_at": "2015",
+        "updated_at": null,
+        "format": "pdf",
+        "source_page": "https://ncdc.mohfw.gov.in/includes/Resource_Library/index.php?tab=Technical%20Guidelines",
+        "selection_reason": "India-specific infectious-disease guideline for a monsoon-season fever, including severe-disease warning signs and public prevention advice.",
+        "notes": "18 pages, text-extractable. Opens with a public prevention flyer, then the full guideline. Document and NCDC imprint dated 2015."
+      },
+      {
+        "doc_id": "ncdc-heatwave-public-health-advisory-2024",
+        "title": "NPCCHH Public Health Advisory: Extreme Heat / Heatwave",
+        "url": "https://ncdc.mohfw.gov.in/uploads/resource/1769333176_NPCCHH_Public-health-advisory_Extreme-heat_Heatwave_2024.pdf",
+        "document_type": "public_health_advisory",
+        "topic": "Heatwave and extreme heat - prevention do's and don'ts, hydration, who is at risk",
+        "published_at": "2024",
+        "updated_at": "2024",
+        "format": "pdf",
+        "source_page": "https://ncdc.mohfw.gov.in/includes/Resource_Library/index.php?tab=Technical%20Guidelines",
+        "selection_reason": "Short public-facing advisory directly serving the 'basic care and warning signs' scope for a climate-related health risk common in India.",
+        "notes": "3 pages, text-extractable."
+      },
+      {
+        "doc_id": "ncdc-emergency-cooling-heat-illness-2024",
+        "title": "Emergency Cooling for Severe Heat Related Illnesses",
+        "url": "https://ncdc.mohfw.gov.in/uploads/resource/1769333089_Emergency-Cooling-for-Severe-Heat-Related-Illnesses_March2024_NPCCHH.pdf",
+        "document_type": "public_health_guideline",
+        "topic": "Severe heat-related illness (heat stroke) - emergency cooling steps and when to get emergency care",
+        "published_at": "2024-03",
+        "updated_at": "2024-03",
+        "format": "pdf",
+        "source_page": "https://ncdc.mohfw.gov.in/includes/Resource_Library/index.php?tab=Technical%20Guidelines",
+        "selection_reason": "Actionable emergency-care guidance with explicit red flags for severe heat illness.",
+        "notes": "40 pages, text-extractable. Document dated March 2024 (NPCCHH)."
+      },
+      {
+        "doc_id": "ncdc-hypertension-faq-general-public",
+        "title": "Hypertension - Frequently Asked Questions for the General Public",
+        "url": "https://ncdc.mohfw.gov.in/uploads/pdf/Hypertension%20English%20FAQs.pdf",
+        "document_type": "patient_faq",
+        "topic": "High blood pressure - what it is, causes, risks, prevention and when to seek care",
+        "published_at": null,
+        "updated_at": null,
+        "format": "pdf",
+        "source_page": "https://ncdc.mohfw.gov.in/includes/Health_Information/generalpublic.php",
+        "selection_reason": "Plain-language Indian patient FAQ that answers common symptom and self-care questions directly.",
+        "notes": "11 pages, text-extractable. No publication date stated; published_at left null."
+      }
+    ]
+  },
+  "manifest_document": {
+    "doc_id": "ncdc-emergency-cooling-heat-illness-2024",
+    "title": "Emergency Cooling for Severe Heat Related Illnesses",
+    "url": "https://ncdc.mohfw.gov.in/uploads/resource/1769333089_Emergency-Cooling-for-Severe-Heat-Related-Illnesses_March2024_NPCCHH.pdf",
+    "document_type": "public_health_guideline",
+    "topic": "Severe heat-related illness (heat stroke) - emergency cooling steps and when to get emergency care",
+    "published_at": "2024-03",
+    "updated_at": "2024-03",
+    "format": "pdf",
+    "source_page": "https://ncdc.mohfw.gov.in/includes/Resource_Library/index.php?tab=Technical%20Guidelines",
+    "selection_reason": "Actionable emergency-care guidance with explicit red flags for severe heat illness.",
+    "notes": "40 pages, text-extractable. Document dated March 2024 (NPCCHH)."
+  },
+  "pages": [
+    1,
+    3,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    40
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "start_page": 1,
+      "end_page": 1,
+      "text": "[page 1]"
+    },
+    {
+      "heading": "EMERGENCY COOLING",
+      "start_page": 1,
+      "end_page": 1,
+      "text": ""
+    },
+    {
+      "heading": "FOR",
+      "start_page": 1,
+      "end_page": 1,
+      "text": ""
+    },
+    {
+      "heading": "SEVERE HEAT RELATED",
+      "start_page": 1,
+      "end_page": 1,
+      "text": ""
+    },
+    {
+      "heading": "ILLNESSES",
+      "start_page": 1,
+      "end_page": 1,
+      "text": ""
+    },
+    {
+      "heading": "National Centre for",
+      "start_page": 1,
+      "end_page": 1,
+      "text": ""
+    },
+    {
+      "heading": "Disease Control",
+      "start_page": 1,
+      "end_page": 1,
+      "text": ""
+    },
+    {
+      "heading": "Government of India",
+      "start_page": 1,
+      "end_page": 3,
+      "text": "[page 3]"
+    },
+    {
+      "heading": "Acknowledgement",
+      "start_page": 3,
+      "end_page": 3,
+      "text": "These guidelines on Emergency Cooling for Severe Heat-Related Illnesses are prepared\nunder National Programme on Climate Change and Human Health (NPCCHH), National\nCentre for Disease Control (NCDC), MoHFW. Aligned with the programme's goal, the\nguidelines emphasize the significance of rapid and active cooling in addressing severe\nheat-related illnesses. With a specific focus on various body cooling methods, the\nguidelines are envisioned to support the incorporation of this approach into emergency\ncare throughout the healthcare system, adapting to the increasing climate change and\nextreme heat events.\n\nThese guidelines supplement earlier publications, i.e., National Action Plan on Heat\nRelated Illnesses (2021) and Strengthening Health Systems Preparedness for Heat\nRelated Illnesses in India (2023). NPCCHH Programme Implementation Plan (PIP)\nprovides procurement guidance for emergency cooling measures.\n\nThese guidelines were conceptualized under the vision and leadership of Prof (Dr) Atul\nGoel, DGHS and Director, NCDC. The expert committees of clinicians from internal\nmedicine and paediatrics contributed to their development. We thank Prof (Dr) Ajay\nChauhan, Atal Bihari Vajpayee Institute of Medical Sciences & Dr. Ram Manohar Lohia\nHospital, New Delhi, for technical guidance and detailed review.\n\nDGHS Committee members (Internal medicine)\nDr. Ajay Chauhan, Professor, Atal Bihari Vajpayee Institute of Medical Sciences & Dr."
+    },
+    {
+      "heading": "Ram Manohar Lohia Hospital",
+      "start_page": 3,
+      "end_page": 3,
+      "text": "Surg Capt Anuj Singhal, Sr. Advisor, Army Hospital Research and Referral\nDr. Arvind Kumar, Consultant, All India Institute of Medical Science-New Delhi\nDr. Sanjay Kumar, Professor, Lady Hardinge Medical College\nDr. L. H. Ghotekar, Professor, Lady Hardinge Medical College\nDr. Vinod Chaitanya, Professor, Vardhman Mahavir Medical College & Safdarjung"
+    },
+    {
+      "heading": "Hospital",
+      "start_page": 3,
+      "end_page": 3,
+      "text": "DGHS Committee members (Paediatrics)\nDr. Shalu Gupta, Director-Professor, Lady Hardinge Medical College\nCol S C Shaw, Sr. Advisor, Army Hospital Research and Referral\nDr. Rattan Gupta, Professor, Vardhman Mahavir Medical College & Safdarjung Hospital\nDr. Rakesh Lodha, Professor, All India Institute of Medical Science-New Delhi\nDr. Vivek Dewan, Professor, Atal Bihari Vajpayee Institute of Medical Sciences & Dr."
+    },
+    {
+      "heading": "Ram Manohar Lohia Hospital",
+      "start_page": 3,
+      "end_page": 3,
+      "text": ""
+    },
+    {
+      "heading": "Members from National Programme on Climate Change and Human Health",
+      "start_page": 3,
+      "end_page": 5,
+      "text": "Dr. Aakash Shrivastava, Additional Director & Head, CEOH&CCH, NCDC\nDr. Purvi Patel, Senior Consultant, NPCCHH, NCDC\n---\n\n[page 5]"
+    },
+    {
+      "heading": "Table of Contents",
+      "start_page": 5,
+      "end_page": 5,
+      "text": "1.\nHeat Stroke ..................................................................................................................................... 1\nHeat and Human Body ............................................................................................................... 1\nTypes of Heat Stroke .................................................................................................................. 2\nKey Steps in Heat Stroke Management ..................................................................................... 3\nKey Points: Severe Heat-Related Illnesses (HRI) ...................................................................... 3\nGuiding Principles: Rapid Cooling in Severe Heat-Related Illnesses ....................................... 3\nCooling rates .............................................................................................................................. 5\nChallenges with Rapid Cooling ................................................................................................. 5\nFollow-up of Heat Stroke Treatment ......................................................................................... 6\n2.\nCooling methods ............................................................................................................................ 9"
+    },
+    {
+      "heading": "A.",
+      "start_page": 5,
+      "end_page": 5,
+      "text": "Conductive cooling .................................................................................................................. 9"
+    },
+    {
+      "heading": "B.",
+      "start_page": 5,
+      "end_page": 5,
+      "text": "Evaporative and Convective Cooling .................................................................................... 17"
+    },
+    {
+      "heading": "C.",
+      "start_page": 5,
+      "end_page": 5,
+      "text": "Evaporative + Convective + Conductive Cooling ................................................................. 18"
+    },
+    {
+      "heading": "D.",
+      "start_page": 5,
+      "end_page": 5,
+      "text": "Invasive Cooling Measures .................................................................................................... 19"
+    },
+    {
+      "heading": "E.",
+      "start_page": 5,
+      "end_page": 5,
+      "text": "Other cooling methods ........................................................................................................... 19\n3.\nEmergency Cooling in Children ................................................................................................... 20\nGuiding Principles: Rapid Cooling in Children ....................................................................... 20\nCooling methods ...................................................................................................................... 21\n4.\nPublic Health Aspects................................................................................................................... 22\nHealth sector preparedness for emergency cooling of severe HRI .......................................... 22\nCommunity level preparedness for rapid cooling of severe HRI ............................................. 23\nMass participation sports events/ mass gathering events ......................................................... 23\n\nAnnexure 1: Heat Stroke Management Algorithem in Emergency Department………………..… 27\nAnnexure 2: Ice/Cold Water Immersion for Exertional Heat Stroke (Pre-hospital/Field setting)… …28\nReferences……………………………...……………………………………..……………………….29"
+    },
+    {
+      "heading": "Legend",
+      "start_page": 5,
+      "end_page": 5,
+      "text": "ledgement"
+    },
+    {
+      "heading": "EHS",
+      "start_page": 5,
+      "end_page": 7,
+      "text": "Symbols represent preference of usage of a cooling method in;\n (from left to right) 1. Type of heat stroke, 2. institutional and/ 3. field setting\n\n[page 7]\n\n1. Heat Stroke"
+    },
+    {
+      "heading": "Heat and Human Body",
+      "start_page": 7,
+      "end_page": 7,
+      "text": "•\nHuman body temperature is maintained in a narrow range of 36.5–37.5°C (97.7–99.5°F) by\nbalancing heat load (originating from environmental heat exposure and metabolic processes),\nwith heat dissipation.\n•\nBody temperature is regulated by physiological and behavioural mechanisms.\n•"
+    },
+    {
+      "heading": "Increasing core body temperature leads to activation of autonomic nervous system through",
+      "start_page": 7,
+      "end_page": 7,
+      "text": "activation of preoptic nucleus of the anterior hypothalamus causing increased sweating and\ncutaneous vasodilation to allow for dissipation of body heat.\n•"
+    },
+    {
+      "heading": "Body heat dissipates through following heat transfer mechanisms",
+      "start_page": 7,
+      "end_page": 7,
+      "text": "1. Conduction: Direct transfer of heat through contact with a cooler object or cold water\n2. Convection: Direct transfer of heat to convective, cooler air currents\n3. Evaporation: Transfer of heat to evaporating sweat or water on the skin\n4. Radiation: Simple loss of heat across the skin barrier to the ambient air\n•"
+    },
+    {
+      "heading": "The first three mechanisms fail to transfer heat effectively when environmental temperature",
+      "start_page": 7,
+      "end_page": 7,
+      "text": "exceeds skin temperature (typically 35°C or 95°F).\n•\nEvaporation is the principal mechanism the body uses to cool in the hot environment.\nHowever, it becomes ineffective beyond relative humidity of 75%.\n•\nHeat stress depends on ambient temperature and humidity.\n•\nRising global warming increases ambient temperature and humidity both. With each degree\nof warming, atmospheric water vapor grows approximately by 6 to 7%, potentially pushing\nheat stress exposure to beyond human tolerance at many places.1"
+    },
+    {
+      "heading": "Pathophysiological Changes",
+      "start_page": 7,
+      "end_page": 7,
+      "text": "Core body temperature of ≥40°C leads to\n•\nAcute central nervous system dysfunction with pulmonary, cardiovascular, hepatic, and/ renal\ndysfunctions, and disrupted coagulation.\n•\nDamage to hepatocytes, vascular endothelium, and neural tissue which are the most sensitive\nto high heat.\n•\nCellular changes through changes in cellular proteins, enzymes and membranes leading to\ncapillary leakage, systemic inflammation and multiorgan failure."
+    },
+    {
+      "heading": "Clinical Management and Heatstroke Workup",
+      "start_page": 7,
+      "end_page": 8,
+      "text": "Detail clinical management protocols (Adults and Paediatrics) and heatstroke workup guidelines\nare available in National Action Plan on Heat-Related Illnesses (2021)\n\n[page 8]"
+    },
+    {
+      "heading": "Types of Heat Stroke",
+      "start_page": 8,
+      "end_page": 8,
+      "text": ""
+    },
+    {
+      "heading": "Feature",
+      "start_page": 8,
+      "end_page": 8,
+      "text": ""
+    },
+    {
+      "heading": "Exertional Heat Stroke",
+      "start_page": 8,
+      "end_page": 8,
+      "text": ""
+    },
+    {
+      "heading": "Classic Heat Stroke",
+      "start_page": 8,
+      "end_page": 8,
+      "text": ""
+    },
+    {
+      "heading": "Occurrence",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "Sporadic (any time of year)\nEpidemic (heat waves)"
+    },
+    {
+      "heading": "Exposure",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "A. Athletic event\nB. Working in high heat stress\nconditions\nA. High environmental heat\nwith/without high humidity"
+    },
+    {
+      "heading": "Acute risk",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "factors\n•"
+    },
+    {
+      "heading": "Dehydration",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Concurrent illness",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Obesity",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Wearing too much clothing",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Poor cardiovascular fitness",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•\nLack of adequate ventilation/cooling\n•\nConfined places*\n•\nPhysical exertion not a pre-requisite"
+    },
+    {
+      "heading": "Heat",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "equilibrium\nOverwhelmed: heat gain > heat loss\n•"
+    },
+    {
+      "heading": "Heat gain from environment",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "with/without increase internal heat\nproduction\nImpaired: ↓ heat lose capacity\n•"
+    },
+    {
+      "heading": "Internal heat loss mechanism",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "impaired\n•\nRestricted/inadequate ventilation"
+    },
+    {
+      "heading": "Heat injury",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "development"
+    },
+    {
+      "heading": "Quick rise in core body temperature",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "(over minutes-hours)"
+    },
+    {
+      "heading": "Slow rise in core body temperature",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "(over hours or days)"
+    },
+    {
+      "heading": "Sweating",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "Usually present (wet skin)\nMay be absent (dry skin)"
+    },
+    {
+      "heading": "CNS",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "dysfunction"
+    },
+    {
+      "heading": "Common",
+      "start_page": 8,
+      "end_page": 8,
+      "text": ""
+    },
+    {
+      "heading": "Common",
+      "start_page": 8,
+      "end_page": 8,
+      "text": ""
+    },
+    {
+      "heading": "Pathophysiologi",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "cal changes\n\n•"
+    },
+    {
+      "heading": "Metabolic acidosis",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Hypoglycaemia",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•\nRhabdomyolysis: frequent\n•\nLiver dysfunction: marked-severe\n•\nRenal failure: common\n•\nDIC: marked-severe\n•\nHypocalcaemia, Hyperkalaemia\n•"
+    },
+    {
+      "heading": "Respiratory alkalosis",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•\nRhabdomyolysis: unusual\n•\nLiver dysfunction: mild\n•\nRenal failure: uncommon\n•\nDIC: mild\n•\nVolume, electrolyte abnormality is\ncommon"
+    },
+    {
+      "heading": "Risk factors",
+      "start_page": 8,
+      "end_page": 8,
+      "text": ""
+    },
+    {
+      "heading": "Physiological",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Active adult",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Generally healthy",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•\nElderly, Children\n•"
+    },
+    {
+      "heading": "Pregnancy",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Obesity",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Chronic illness",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Poor physical health",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•\nPsychological, Physiological\nimpairment\nMedication/\ndrug use\nAmphetamines and amphetamine-like\nagents (e.g., ephedra), MDMA, cocaine,\nPCP and LSD, synthetic stimulants of\nthe cathinone class (e.g., α-PHP),\nalcohol\nAntihypertensives, laxatives,\nanticholinergic drugs, salicylates,\nthyroid agonists, benztropine,\ntrifluoperazine, butyrophenones, α-\nagonists, monoamine oxidase inhibitors,\nsympathomimetic medications, tricyclic\nantidepressants, SSRIs\nSocio-economic\n(individual/instit\nutional)"
+    },
+    {
+      "heading": "Occupation/physical exertion linked:",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "work time, duration, adequate time to\nrest, lack of cooling and hydration\nfacilities\n•"
+    },
+    {
+      "heading": "Social isolation",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•"
+    },
+    {
+      "heading": "Living on top floor",
+      "start_page": 8,
+      "end_page": 8,
+      "text": "•\nUnventilated and non–air-\nconditioned living space\n•"
+    },
+    {
+      "heading": "Inability to care for oneself",
+      "start_page": 8,
+      "end_page": 9,
+      "text": "[page 9]"
+    },
+    {
+      "heading": "Key Steps in Heat Stroke Management",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "Key Points: Severe Heat-Related Illnesses (HRI)\n\n•\nThe critical thermal maximum (CTM) is defined as the degree of elevated body temperature\nand duration of heat exposure that can be tolerated before cell damage occurs.2\n•\nHuman thermal maximum is estimated as a core body temperature of 42°C (107.6°F) lasting\nbetween 45 minutes and 8 hours. Children sustain serious heat-related injury when the CTM\nis exceeded.3\n•"
+    },
+    {
+      "heading": "Exposure to elevated ambient temperatures coupled with increased metabolic activity may",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "result in heat illness if the individual has exhausted physiological compensatory mechanisms\nand is unable to take behavioral steps to cool down.4 Heat stress can progress to heat stroke\neven after the patient is removed from the hot environment.\n•\nHeat stroke is a life-threatening, time-sensitive condition.\n•\nIf untreated, heat exhaustion may progress to heat stroke.\n•\nClinical diagnosis of heat stroke is largely a diagnosis of exclusion. Hence, diagnostic\ninvestigations are directed toward detecting end organ damage and excluding other diseases.\n•\nThe definitive treatment for heat-related illness is total body cooling.\nGuiding Principles: Rapid Cooling in Severe Heat-Related Illnesses\n\n•"
+    },
+    {
+      "heading": "Rapid cooling is the most effective strategy for minimizing morbidity and mortality from heat",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "stroke and should be initiated as soon as possible, and within 30 minutes of presentation.\n•\nIt requires creating a gradient for heat loss from skin to environment by conduction,\nconvection or evaporation.\n•\nApply cooling method that has high effective cooling rate. (See page 6)\n•\nIn field setting, cooling should be initiated immediately at time of collapse and should be\nbased on feasible field measures including ice or tepid water (1-16°C).\n•\nIn emergency department, management should be matched to the patient's age and medical\nbackground and include immersion in ice water (1-5°C) or evaporative cooling.\n•\nIn emergency situation, the distinction between exertional and classic (non-exertional) heat\nstroke is less relevant for initiation of the treatment, because immediate cooling and support\nof organ system function is the therapeutic goal for both."
+    },
+    {
+      "heading": "Step",
+      "start_page": 9,
+      "end_page": 9,
+      "text": ""
+    },
+    {
+      "heading": "Action",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "1. Early Recognition\n•"
+    },
+    {
+      "heading": "Maintain high clinical suspicion",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "•"
+    },
+    {
+      "heading": "Weather awareness",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "•"
+    },
+    {
+      "heading": "Measure core body temperature",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "2. Rapid cooling\n•"
+    },
+    {
+      "heading": "Initiate immediate external cooling",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "•"
+    },
+    {
+      "heading": "Early decision regarding invasive cooling",
+      "start_page": 9,
+      "end_page": 9,
+      "text": "3. Supportive care\n•\nMaintain on airway, breathing, circulation\n•"
+    },
+    {
+      "heading": "Monitor for and correct metabolic derangements",
+      "start_page": 9,
+      "end_page": 10,
+      "text": "[page 10]"
+    },
+    {
+      "heading": "Primary goal",
+      "start_page": 10,
+      "end_page": 10,
+      "text": "1. Cool First, Transport Second\nImmediate, rapid cooling: recognize, begin effective cooling in field/pre-hospital setting\ncontinue during transport to nearest emergency department\n2. Aggressive supportive care in emergency department to maintain organ function\n\nEnd point: Core body temperature between 38-39°C, approximate cooling times 9-40min"
+    },
+    {
+      "heading": "Rectal temperature measurement:",
+      "start_page": 10,
+      "end_page": 10,
+      "text": "A rectal thermometer with flexible, disposable probe (2 m length) is recommended for patient\ncomfort and ease of continuous monitoring throughout the treatment. The thermometer should be\ninserted through the anal sphincter for at least 10 cm. It is recommended to mark the probe at the\ninsertion length so that the thermometer is fully inserted to the required length.5\n\n•"
+    },
+    {
+      "heading": "The only absolute contraindication to cooling is normal or low body temperature",
+      "start_page": 10,
+      "end_page": 10,
+      "text": "•\nDelay in cooling is directly associated with adverse outcomes including high mortality.\n•\nCooling should not be delayed to remove all clothing, uniforms, or equipment. The cooling\nprocess should be initiated as quickly as possible; clothing and equipment can be removed\nwhile cooling is initiated, or when practical\n•"
+    },
+    {
+      "heading": "Evidence is lacking to support the use of cooling blankets or ice packs placed strategically to",
+      "start_page": 10,
+      "end_page": 10,
+      "text": "the neck, axilla, and groin as primary cooling methods.6 This method of cooling should be\napplied to whole body for effective cooling and should be used as supplementary method.\n•\nMonitor vital signs (rectal temperature, heart rate, respiratory rate, blood pressure) and mental\nstatus continually. Always maintain patient safety.\n•\nColder water temperature produce faster cooling. water's high thermal conductivity, which is\n24 times greater than air's\n•"
+    },
+    {
+      "heading": "Avoid using warm water whenever possible",
+      "start_page": 10,
+      "end_page": 10,
+      "text": "•"
+    },
+    {
+      "heading": "Prognosis of heat stroke in patients is directly related to the degree of hyperthermia and its",
+      "start_page": 10,
+      "end_page": 10,
+      "text": "duration. In extreme cases these may progress to multi-organ failure and death. Heat stroke\nhas a mortality rate of 40% to 64%.7\n•\nRegardless of the cooling method used, mortality and morbidity remains higher in older\npatients with heatstroke due to pre-existing conditions and population characteristics6\n•\nA single episode of hyperthermia may cause short-term neurological and cognitive\ndysfunction, which may be prolonged or become permanent. The cerebellum is most\nfrequently affected in such instances.7\n•"
+    },
+    {
+      "heading": "There is insufficient evidence to recommend invasive cooling methods like intravascular",
+      "start_page": 10,
+      "end_page": 11,
+      "text": "cooling device, noninvasive external cooling system, body cavity lavage.6\n•\nAntipyretic agents (Paracetamol, Acetaminophen, Aspirin etc) are not effective.\n•\nDantrolene is not recommended in the treatment of heat stroke.\n\n[page 11]"
+    },
+    {
+      "heading": "Cooling rates",
+      "start_page": 11,
+      "end_page": 11,
+      "text": "Weighted Mean Cooling Rates (°C/min) by Cooling Method as First aid cooling\ntechniques For heat stroke and exertional hyperthermia"
+    },
+    {
+      "heading": "Standard deviations based on the mean cooling rate of study participants",
+      "start_page": 11,
+      "end_page": 11,
+      "text": "Dotted line represents minimum ideal rate of cooling (0.15°C/min) for EHS.\n\n•\nMinimum ideal rate of cooling is 0.155°C/min (0.28 °F/min) for EHS8\n•\nCooling rates of 0.078°C to 0.154°C/min are acceptable and <0.078°C/min are unacceptable\nfor EHS9\n•\nAir-conditioned or temperature-controlled rooms have cooling rates of\n0.03–0.06°C/min, which as a standalone cooling method are unacceptable for heat stroke\nmanagement6"
+    },
+    {
+      "heading": "Challenges with Rapid Cooling",
+      "start_page": 11,
+      "end_page": 11,
+      "text": ""
+    },
+    {
+      "heading": "a. Shivering:",
+      "start_page": 11,
+      "end_page": 11,
+      "text": ""
+    },
+    {
+      "heading": "Ice or cold water immersion cooling may lead to shivering and the accompanying reflex",
+      "start_page": 11,
+      "end_page": 12,
+      "text": "peripheral vasoconstriction which may delay the cooling theoretically.\nIce Water Immersion (1-5°C water) -\nTemperate Water Immersion (20-25°C water) -\nCold Water Immersion (14-17°C water) -\nColder Water Immersion (8-12°C) -\nCommercial Ice Packs -\nShower# (20°C) -\nIce Sheets (3°C) and Towels -\nHands and Feet Cold Water immersion (16-17°C) -\nCooling Vests and Jackets -\nCold Intravenous Fluids (4°C) -\nFanning -\nPassive Cooling (20-39°C) -\nHand Cooling Devices -\nEvaporative Cooling -\n0 0.05 0.1 0.15 0.2 0.25 0.3 0.35\nAdapted from: McDermott BP, Casa DJ, Ganio MS, et al. Acute Whole-Body Cooling for Exercise-Induced Hyperthermia: A\nSystematic Review. Accessed December 28, 2023\n\n[page 12]\n\n•\nPractically, immersive cooling can effectively cool patients as it uses high thermal\nconductivity gradient between ice water and hyperthermic skin. Water has 24 times\ngreater thermal conductivity than that of air which may effectively counter small amount\nof heat generate by shivering.\n•\nAlso, thermoregulatory response is driven mainly by core body temperature and not by\nskin temperature change, high core temperature would prevent shivering even in case of\nrapid skin cooling."
+    },
+    {
+      "heading": "Preventing shivering",
+      "start_page": 12,
+      "end_page": 12,
+      "text": "•\nConduct evaporative cooling in elderly, children, co-morbid, classic heat stroke patients\nover immersive cooling as it is better tolerated physiologically and prevents shivering.10\n•\nUse warm water (40°C) or expose the patient to hot air (45°C) with the fan.11,12\n\nPharmacological treatment of shivering is primarily short-acting benzodiazepines and\nsecondarily phenothiazines.13 Phenothiazines may lower the seizure threshold and cause\nhypotension, and their anticholinergic properties impair sweating.\n\nb. Inability to adhere cardiac electrodes to the skin"
+    },
+    {
+      "heading": "Immersive cooling is not preferred in classic heat stroke and patient with existing comorbidity",
+      "start_page": 12,
+      "end_page": 12,
+      "text": "as it may hamper cardiac monitoring and resuscitation. In this patients other conductive or\nevaporative measures of cooling should be used.6 (see page 18-19)\nFollow-up of Heat Stroke Treatment\n•\nSchedule a follow-up visit 7 days after hospital discharge for a physical examination and repeat\nlaboratory testing of affected organ systems during hospital stay if warranted.\n\nPatient education post-heatstroke\n•\nPatient should abstain from exercise for at least 7 days after hospital discharge.\n•\nAcclimatize: once cleared to return to routine activity, the patient should remain in a cool\nenvironment and slowly increase the duration, intensity, and heat exposure over 2-4 weeks to\nacclimatize.\n•\nEvaluate: If heatstroke symptoms return or if vigorous activity is not tolerated, the patient of\nexertional heat stroke may be considered for a heat tolerance test as per sports or occupational\nrequirements\n•"
+    },
+    {
+      "heading": "Prevent exposure and adapt:",
+      "start_page": 12,
+      "end_page": 13,
+      "text": "▫\nTry to schedule activities during cooler times of the day and wear light-coloured, loose-\nfitting clothing.\n▫\nAvoid dehydration by drinking ample amounts of isotonic fluids (taking concurrent medical\ncondition into consideration) being sure to avoid fluids containing alcohol and caffeine if\nthe individual is at risk for heat-related injury.\n▫\nNever leave an adult or child in a car unattended.\n▫\nBe aware of medication side effects such as medications that cause bradycardia, diuresis,\nor reduce sweating.\n\n[page 13]"
+    },
+    {
+      "heading": "EXERTIONAL HEAT STROKE (EHS)",
+      "start_page": 13,
+      "end_page": 13,
+      "text": ""
+    },
+    {
+      "heading": "Guiding principles for cooling a exertional heat stroke case",
+      "start_page": 13,
+      "end_page": 13,
+      "text": "•\nRapid, active cooling (within 30 minutes) is the most effective strategy for minimizing morbidity\nand mortality.\n\n•"
+    },
+    {
+      "heading": "Key principles for external cooling of an EHS patient:",
+      "start_page": 13,
+      "end_page": 13,
+      "text": "1. provide a modality of adequate cooling capacity\n2. apply this modality to a sufficient body surface area\n\n•\nRecommended minimum rate of cooling for treating an EHS patient is at least 0.15°C/minute\n\n•\nConductive cooling (i.e. with ice/water) methods are the best way to rapidly cool in EHS\no Ice/cold water immersion (CWI): the most effective (gold standard) method regardless of\nthe patient's location\no If CWI is not available or feasible, alternative yet effective cooling methods must be used\nfor rapidly cool the patient (See Conductive Cooling, page 11)\n\n•\nCooling must be initiated in the field following brief, rapid evaluation, till\no Core body temperature reduces to 38.3-39°C or\nif rectal thermometer not available\no Until the patient begins to shiver or\no If treating with CWI, cool for 15 to 20 minutes. It cools most patients 3-4°C\n(5-7°F), which would make their removal from an ice tub sensible in most cases.\n\n•\nOnce cooling to a reasonable temperature (e.g., ~39°C) is achieved, the patient is rapidly\ntransported to the closest emergency department.\n\n•\nIf adequate cooling not achieved in field, it should be continued in the best way possible during\ntransport and in the hospital.\n\n•\nStudies on EHS often report 100% survival rate when immediate cooling (via CWI or aggressive\nwhole-body cold-water dousing) was initiated within 10 minutes of collapse.\n\n•\nCooling should not be delayed in order to remove all clothing, uniforms, or equipment. The\ncooling process should be initiated as quickly as possible; clothing and equipment can be removed\nwhile cooling is initiated, or when practical."
+    },
+    {
+      "heading": "Onset of heatstroke and selection of cooling method",
+      "start_page": 13,
+      "end_page": 13,
+      "text": "•\nClinical presentations indicative of CNS dysfunction may be delayed (eg, disorientation,\nconfusion, aggressiveness, hysteria, delirium, altered level of consciousness and irrational\nbehaviour).\n\n•\nCollapsed athletes with confirmed hyperthermia below 40.5°C (104.9°F) should still be cooled\nusing the whole-body rotating ice-wet towel procedure where wet towels soaked in iced water are\napplied to the athlete and exchanged every 1–2 min.5\n\n•"
+    },
+    {
+      "heading": "Athletes who are suspected of EHS from their symptoms but have a rectal temperature measured",
+      "start_page": 13,
+      "end_page": 14,
+      "text": "at below 40.5°C (104.9°F) should continue to have their rectal temperature monitored\ncontinuously and undergo a blood sodium and blood glucose point-of-care analysis for the\ndifferential diagnosis of their medical condition.\n\n[page 14]"
+    },
+    {
+      "heading": "CLASSIC (NON-EXERTIONAL) HEAT STROKE (CHS)",
+      "start_page": 14,
+      "end_page": 14,
+      "text": "Guiding principles for cooling a non-exertional heat stroke case\n•"
+    },
+    {
+      "heading": "Rapid cooling should be initiated as soon as possible to minimize mortality from CHS as it arises",
+      "start_page": 14,
+      "end_page": 14,
+      "text": "due to diminished thermoregulatory function.14\n\n•"
+    },
+    {
+      "heading": "Elderly are more vulnerable to CHS due to various combination of their intrinsic vulnerabilities",
+      "start_page": 14,
+      "end_page": 14,
+      "text": "and extrinsic factors.\n\n•\nIn CHS, evaporative cooling is preferred over conductive cooling, as it\no Provides a practical alternative to immersion in ice/cold water which may restrict cardiac\nmonitoring and resuscitation efforts in elderly or patients with existing comorbidities1\no Well tolerated physiologically and has low mortality rate10\no Less shivering and vasoconstriction compared to ice water cooling9"
+    },
+    {
+      "heading": "Type of cooling",
+      "start_page": 14,
+      "end_page": 14,
+      "text": "•\nEvaporative + convective cooling together (i.e. large quantities of water + strong directed air\ncurrent) is more effective to rapidly cool a patient of CHS.\n\n•\nEvaporative + convective + conductive cooling combination (i.e. large quantities of water +\nstrong directed air current + ice) may speed up overall cooling and improve outcomes.\n\n•\nEvaporative cooling in elderly patients may offer several practical advantages, such as greater\npatient comfort and less agitation."
+    },
+    {
+      "heading": "Salient points",
+      "start_page": 14,
+      "end_page": 14,
+      "text": "•\nCool the entire surface of a patient.9\n\n•\nCooling only the anterior surface of a patient9 on a bed is significantly less effective than\ncooling both anterior and posterior surfaces.\n\n•\nMisting the patient with lukewarm water with forced, directed airflow of 20-40°C is effective.\n\n•\nCooling rate for a vasodilated patient cooled with an air speed of 1 m/s−1 is twice the cooling\nrate of a vasoconstricted patient with an air speed of 0.5 m/s−1\n\n•\nStrategic placement of ice packs to axilla, neck, and groin only marginally contributes to\ncooling.1\n\n•"
+    },
+    {
+      "heading": "Prognosis of heat stroke in patients is directly related to the degree of hyperthermia and its",
+      "start_page": 14,
+      "end_page": 15,
+      "text": "duration.11\n\n•\nRapid cooling (within 1 hr) may reduce length of hospital stay in CHS patients.14\n\n---\n\n[page 15]\n\n2. Cooling Methods\n\nA. Conductive cooling"
+    },
+    {
+      "heading": "ICE/COLD WATER IMMERSION (CWI)",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "•"
+    },
+    {
+      "heading": "Gold standard cooling method for exertional heat stroke",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "•"
+    },
+    {
+      "heading": "Highly effective in generally healthy or athletic adult",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "•\nSuitable at health facilities, pre-hospital and field setting with planned resources and setup\n•\nUseful during sport, military, outdoor events (field setting) year around especially during high\ntemperature\n•\nMay not be suitable for elderly, children or if patients have medical conditions which require\nadvance cardiac monitoring.\n•\nIce slurry or cold water of Temperature of 2–10°C (35.6–50°F) should be used.\n•"
+    },
+    {
+      "heading": "Multiple research report very low to zero mortality in EHS treated timely with CWI",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "•\nResource intensive, multiple assistants required\n\nRecommended equipment list for CWI using tub/portable pool\n•\nRectal thermistor, lubricating gel\n•"
+    },
+    {
+      "heading": "Tub or portable pool",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "•\nTarp when tub is not feasible (see pg 15)\n•\n3-4 ice coolers/box with ice\n•"
+    },
+    {
+      "heading": "Water source",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "•\n3-4 towels\n•\nBed sheet or large towel (to hold patient)\n•\nTent/tarp for shade (if needed, outdoors)\nIf being set up for a planned sport or outdoor event, additional preparation for patients’ safety\nand privacy should be ensured and reliable arrangements for ice and cold water should also be\nconsidered."
+    },
+    {
+      "heading": "Personnel",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "CWI requires at least three-four trained medical providers per patient for following tasks\n1. Maintaining airway and patient\n2. Body (rectal) temperature monitoring\n3. Continuously stirring and managing cold water immersion bath\n4. Documentation of medical records"
+    },
+    {
+      "heading": "Additional assistance may also require in case the patient becomes combative or must be lifted or",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "rolled because of vomiting."
+    },
+    {
+      "heading": "Preparation",
+      "start_page": 15,
+      "end_page": 15,
+      "text": "The tub/portable pool should be set up as following\n1. Fill with water and ice (1/2–2/3 full)\n2. Volume should be enough to submerge a most of body area\n3. Prioritize submersion on torso\n4. Temperature of water must remain between 5°C and 15°C (lower the better)\n5. 3-4 ice/cooler boxes full of ice next to the tub\n6. In shaded area (e.g. under a tree, bleachers, or tent)\n7. Safety and protection of providers should be considered"
+    },
+    {
+      "heading": "EHS",
+      "start_page": 15,
+      "end_page": 16,
+      "text": "[page 16]"
+    },
+    {
+      "heading": "Process of CWI",
+      "start_page": 16,
+      "end_page": 16,
+      "text": ""
+    },
+    {
+      "heading": "After diagnosis of confirmed exertional heat stroke and initial rapid clinical assessment and rapid",
+      "start_page": 16,
+      "end_page": 16,
+      "text": "removal of additional clothes5\n\n➢ Start point\nWith assistance, place the patient/athlete in the ice/cold water immersion tub/pool up to\nmid-chest or neck with appropriate support\na. Keep patient/athlete’s head and neck above water by holding the patient under the axillae\nb. with a towel or sheet wrapped across the chest and under the arms.\nc. Cover as much of the body especially torso as possible with ice water\nd. Place an ice/wet towel over the head and neck while body is cooling\ne. Keep water temperature <15°C (60°F).\nf. Keep stirring water aggressive throughout the cooling process\ng. Keep maintaining airway, breathing and circulation and monitoring of vitals including\ncore body temperature\n\nWhen water is not stirred, it decreases the efficacy and cooling rate due to\ndecreasing in temperature gradient between water and skin,\nwhich is a primary factor in rate of cooling.\n➢ End point\nh. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\ni. If rectal temperature cannot be measured and cold-water immersion is indicated, cool for\n10-15 minutes\nj. Approximate estimate of cooling via cold water immersion: 1ºC for every 5 minutes and\n1ºF every 3 minutes (if the water is aggressively stirred).1\n\nCooling rate will be slower initially and increase the longer the person is in the tub.\nIf immersed for 15 minutes, core body temperature may reduce to 3ºC or 5ºF. (1)\nk. Once cooled, patient is transferred to a bed\nl. Dispose the water content carefully."
+    },
+    {
+      "heading": "Cold water immersion process",
+      "start_page": 16,
+      "end_page": 17,
+      "text": "Image source: US football, Internet (adapted)\n\n[page 17]"
+    },
+    {
+      "heading": "COLD-WATER DOUSING WITH ICE MASSAGE",
+      "start_page": 17,
+      "end_page": 17,
+      "text": "Also referred as Water ice therapy (WIT)\n•\nClose alternative method to CWI, utilizes same set up as CWI\n•\nSuitable at health facilities, pre-hospital and field setting with planned resources and setup\n•"
+    },
+    {
+      "heading": "Cooling rates comparable to CWI with warmer water but not as effective as CWI with cold",
+      "start_page": 17,
+      "end_page": 17,
+      "text": "water15\n•\nInitial cooling remains slow (first 6 minutes) but subsequent cooling (minutes 6 to 12) is\ncomparable across similar experimental or clinical case studies3.\n\nRecommended equipment list (same as CWI) + a porous stretcher."
+    },
+    {
+      "heading": "Patients were treated while lying supine on a porous stretcher that rested on a tub filled with cold",
+      "start_page": 17,
+      "end_page": 17,
+      "text": "water (10-12.8°C)."
+    },
+    {
+      "heading": "Personnel",
+      "start_page": 17,
+      "end_page": 17,
+      "text": ""
+    },
+    {
+      "heading": "Six to eight personnel are required",
+      "start_page": 17,
+      "end_page": 17,
+      "text": "1. Maintaining airway and patient\n2. Core body temperature monitoring\n3. To continually douse the entire patient\n4. Documentation of medical records"
+    },
+    {
+      "heading": "Preparation",
+      "start_page": 17,
+      "end_page": 17,
+      "text": "1. The tub should be set up as mentioned in CWI (See page 11)\n2. Put and stably arrange a porous stretcher on the tub filled with cold water (10-18°C)"
+    },
+    {
+      "heading": "Process",
+      "start_page": 17,
+      "end_page": 17,
+      "text": "➢ Start point\na. Place the patient in supine position on a meshed/porous stretcher that is stably resting\non the tub filled with cold water\nb. Six to eight personnel continuously douse the entire patient (except the head) with\nwater from the tub\nc. Use ice packs/bags to massage major muscle groups (pectorals, abdominals, quadriceps,\ngastrocnemii)\nd. Head should be covered in an ice towel\ne. Measure core body temperature every 3 minute during the treatment via indwelling\nrectal thermometer\nf. Aggressive cooling should be continued through out\n\n➢ End point\ng. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\nh. Approximate cooling time: 12 and 24 min."
+    },
+    {
+      "heading": "EHS",
+      "start_page": 17,
+      "end_page": 18,
+      "text": "[page 18]"
+    },
+    {
+      "heading": "BODY BAG COOLING (BBC)",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "•\nAlternative of CWI for rapid cooling in EHS patients/athletes in low resource setting\n•\nSupports similar cooling rates as of gold standard CWI in EHS16\n•\nSuitable for CHS (emerging evidence)16,17 with proper assessment of patient’s condition and\nclinical judgement. BBC allows placement of monitoring equipments/ resuscitation, if\nneeded, as patient’s chest can be kept dry while the body is surrounded by ice/cold water18\n•"
+    },
+    {
+      "heading": "Suitable for emergency department and field setting",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "•\nUtilizes a body/cadaver bag which are strong, waterproof with leak proof zip and have lifting\nhandles (6)\n•"
+    },
+    {
+      "heading": "May not be suitable for children",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "•\nCost effective, convenient, efficient method of CWI"
+    },
+    {
+      "heading": "Recommended equipment list for Body Bag Cooling",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "•\nRectal thermistor, lubricating gel\n•\nBody bag/Cadaver bag\n•"
+    },
+    {
+      "heading": "Cold water source",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "•\nIce: 3-4 ice coolers/box with ice\n•\nTent/tarp for shade (if needed, outdoors)\n•\n3-4 towels"
+    },
+    {
+      "heading": "Personnel",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "BBC may require 2-3 trained medical providers per patient"
+    },
+    {
+      "heading": "Preparation",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "1. Body bag prepared on the bed/flat comfortable surface in the field settings with\n2. Buckets of ice and/ cold water"
+    },
+    {
+      "heading": "Process of BBC",
+      "start_page": 18,
+      "end_page": 18,
+      "text": ""
+    },
+    {
+      "heading": "After diagnosis of suspected exertional or classic heat stroke and initial rapid clinical assessment",
+      "start_page": 18,
+      "end_page": 18,
+      "text": "and rapid removal of additional clothes\n➢ Start point\nWith assistance, place the patient/athlete in\na. Patient is transferred from the stretcher/field directly into the body bag,\nb. Apply monitors and a temperature-probe\nc. Buckets of ice and cold water are poured into the body bag to initiate cooling.\nd. After initial resuscitative measures are completed, the body bag is loosely closed (up to the\npatient’s neck) until the patient is cooled to 38˚C-39˚C\ne. Keep maintaining airway, breathing and circulation and monitoring of vitals including core\nbody temperature\n\n➢ End point\nf. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\ng. Once cooled, patient is transferred from the bag to another bed.\nh. Dispose the body bag and water content carefully."
+    },
+    {
+      "heading": "EHS",
+      "start_page": 18,
+      "end_page": 19,
+      "text": "[page 19]"
+    },
+    {
+      "heading": "Cold water immersive cooling using a body bag in emergency department for a patient with",
+      "start_page": 19,
+      "end_page": 20,
+      "text": "classic heat stroke17\na. Preparing a disposable body bag on a bed with buckets of ice\nb. . the patient placed directly into the body bag with monitors including core body temperature\nmonitor and buckets of ice and tap water are poured into the body bag to initiate cooling.\nImage source: Kim D. A. et al\n\nCold water immersive cooling using a body bag on field/scene for a patient with\nclassic heat stroke19\na. Cool water is sourced through a hydrant with 2.5-inch hose.\nb. Patient’s core body temperature measured through rectal probe\n Image source: Jacobsen et. R. C. et al\n\n[page 20]"
+    },
+    {
+      "heading": "TARPAULIN ASSISTED COOLING WITH OSCILLATION",
+      "start_page": 20,
+      "end_page": 20,
+      "text": ""
+    },
+    {
+      "heading": "(TACO)",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "•\nAlternative of CWI for rapid cooling in EHS patients/athletes in low resource setting\n•\nProvides cooling rates within the minimally acceptable rate of cooling8\n•"
+    },
+    {
+      "heading": "Suitable for emergency department and field setting",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "•\nNot suitable for CHS (limited evidence) due to hemodynamic instability, chronic illness or\nother risk factors that warrant continuous monitoring and possibly resuscitation\n•"
+    },
+    {
+      "heading": "May be used in absence of any another effective cooling methods with necessary clinical",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "judgement\n•\nUtilizes a large, waterproof tarpaulin sheet\n•\nCost effective, efficient method of CWI, multiple assistants required\n\nRecommended equipment list for Tarpaulin (trap)-Assisted Cooling with Oscillation\n•\nRectal thermistor, lubricating gel\n•\nTarpaulin sheet (large, waterproof)\n•"
+    },
+    {
+      "heading": "Cold water source",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "•\nIce: 3-4 ice coolers/box with ice\n•\nTent/tarp for shade (if needed, outdoors)\n•\n3-4 Towels"
+    },
+    {
+      "heading": "Personnel",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "TACO with oscillation may require six or more individuals to implement it."
+    },
+    {
+      "heading": "Preparation",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "1. Large waterproof tarp\n2. Buckets of ice and cold water (80-150litter of ice and cold water)6"
+    },
+    {
+      "heading": "Process of TACO",
+      "start_page": 20,
+      "end_page": 20,
+      "text": ""
+    },
+    {
+      "heading": "After diagnosis of exertional heat stroke and initial rapid clinical assessment and rapid",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "removal of additional clothes\n➢ Start point\na. With assistance place the patient/athlete in the middle of a tarp on floor/comfortably\nelevated surface, which will serve as the makeshift tub.\nb. Have assistants to pick-up each corner of the tarp to form a sling (or “tacoshape”).\nc. Pour cool water and ice up to the chest level of the patient/athlete.\nd. Slowly move the tarp back and forth to oscillate the mixture and initiate cooling\ne. Keep maintaining of airway, breathing and circulation and monitoring of vitals including\ncore body temperature"
+    },
+    {
+      "heading": "Standing close to the patient helps to maintain the water level and allows the tarp",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "to be oscillated efficiently to maintain water circulation."
+    },
+    {
+      "heading": "Additional assistance may be needed to hold the heavy tarp or replace tired providers",
+      "start_page": 20,
+      "end_page": 20,
+      "text": "➢ End point\nf. Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\ng. Dispose the water content carefully especially if contaminated."
+    },
+    {
+      "heading": "EHS",
+      "start_page": 20,
+      "end_page": 21,
+      "text": "[page 21]"
+    },
+    {
+      "heading": "Tarpaulin assisted rapid cooling method for exertional heat stroke in field setting",
+      "start_page": 21,
+      "end_page": 21,
+      "text": "Image source: University of Missouri Health"
+    },
+    {
+      "heading": "WHOLE-BODY ROTATING ICE-TOWEL APPLICATION",
+      "start_page": 21,
+      "end_page": 21,
+      "text": "•"
+    },
+    {
+      "heading": "Alternative of CWI for rapid cooling in EHS in low resource setting",
+      "start_page": 21,
+      "end_page": 21,
+      "text": "•"
+    },
+    {
+      "heading": "Suitable in CHS and can be combined with evaporative and convective cooling",
+      "start_page": 21,
+      "end_page": 21,
+      "text": ""
+    },
+    {
+      "heading": "Equipment list",
+      "start_page": 21,
+      "end_page": 21,
+      "text": "•\n12 towels/4-5 bedsheets\n•\nice box/cooler full of 1/3 cold water and 2/3 ice\nPersonnel: possible with one-two trained personnel\nPreparation: Fill a cooler with ice, water, and 12 towels."
+    },
+    {
+      "heading": "Process",
+      "start_page": 21,
+      "end_page": 21,
+      "text": ""
+    },
+    {
+      "heading": "After diagnosis of heat stroke and initial rapid clinical assessment and rapid removal of additional",
+      "start_page": 21,
+      "end_page": 21,
+      "text": "clothes\n•"
+    },
+    {
+      "heading": "Six towels soaked in ice water should be applied on the whole body",
+      "start_page": 21,
+      "end_page": 21,
+      "text": "•\nTowels should be exchanged every 1-2 min to maintain cooling capacity\n\n➢ End point: Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)"
+    },
+    {
+      "heading": "EHS",
+      "start_page": 21,
+      "end_page": 22,
+      "text": "Whole-body rotating ice-wet towel application\nImage source: Hosokawa Y, et al5.\n\n[page 22]"
+    },
+    {
+      "heading": "DIFFUSE ICE PACK OR CRUSHED ICE APPLICATION",
+      "start_page": 22,
+      "end_page": 22,
+      "text": "•"
+    },
+    {
+      "heading": "Alternative of CWI for rapid cooling in EHS in low resource setting",
+      "start_page": 22,
+      "end_page": 22,
+      "text": "•\nSuitable for cooling in CHS6 and can be combined with evaporative and convective cooling\n•\nCost effective, less effective than CWI in rapid cooling\n\nEquipment list: crush ice/ frozen ice boxes/packs\nPersonnel: possible with one-two trained personnel"
+    },
+    {
+      "heading": "Process",
+      "start_page": 22,
+      "end_page": 22,
+      "text": ""
+    },
+    {
+      "heading": "After diagnosis of suspected exertional or classic heat stroke and initial rapid clinical",
+      "start_page": 22,
+      "end_page": 22,
+      "text": ""
+    },
+    {
+      "heading": "Assessment and rapid removal of additional clothes",
+      "start_page": 22,
+      "end_page": 22,
+      "text": "•\nKeep patient in the bed/stretcher/flat surface with elevated legs\n•"
+    },
+    {
+      "heading": "Apply crushed ice or ice packs all over on the body especially torso",
+      "start_page": 22,
+      "end_page": 22,
+      "text": "Strategic placement of ice packs to axilla, neck, and groin only marginally contribute to\ncooling6\n➢ End point: Continue cooling until patient’s rectal temperature lowers to <39ºC (102ºF)\n\nCrushed ice/ cold water application for rapid cooling.\nImage source: Internet"
+    },
+    {
+      "heading": "EHS",
+      "start_page": 22,
+      "end_page": 23,
+      "text": "[page 23]\n\nB. Evaporative and Convective Cooling"
+    },
+    {
+      "heading": "COLD WATER DOUSING OR COLD SHOWER:",
+      "start_page": 23,
+      "end_page": 23,
+      "text": "•\nUsed in EHS in field setting where water source is easily accessible."
+    },
+    {
+      "heading": "WATER SPRAY + DIRECTED FAN",
+      "start_page": 23,
+      "end_page": 23,
+      "text": "•\nSuitable for older adults and pre-pubertal children\n•\nTo prevent shivering and over cooling, it is recommended to use tepid water (40°C/104°F) or\nexposing the patient to hot air(45°C/113°F) with the fan.12"
+    },
+    {
+      "heading": "WATER-SOAKED BEDSHEETS + DIRECTED FAN",
+      "start_page": 23,
+      "end_page": 23,
+      "text": ""
+    },
+    {
+      "heading": "Process:",
+      "start_page": 23,
+      "end_page": 23,
+      "text": "Cold water dousing (pouring) the patient/athlete with cold water from a hose/pipe\nin case of non-availability of cooling implements.\n Cold shower can be used if available e,g, in training area\nEquipment list: spray bottle/garden sprayer, electric fan\nPreparation: large quantities of water (slightly cold/lukewarm)"
+    },
+    {
+      "heading": "Process:",
+      "start_page": 23,
+      "end_page": 23,
+      "text": "• Place patient in the flat, shaded surface.\n• Remove patient clothing and spray cool water (~15*C) on most of the patient’s\nbody surface.\nEquipment list: Bedsheets/gauze sheets, electric fan\nPreparation: large quantities of water (slightly cold/lukewarm)"
+    },
+    {
+      "heading": "Process:",
+      "start_page": 23,
+      "end_page": 23,
+      "text": "• Place patient in the flat, shaded surface.\n• Remove patient clothing and cover maximum body surface with wet bedsheets or\ngauze sheets surface\n• Direct a fan over the patient allow high air current to pass over the patient body"
+    },
+    {
+      "heading": "CHS",
+      "start_page": 23,
+      "end_page": 23,
+      "text": ""
+    },
+    {
+      "heading": "CHS",
+      "start_page": 23,
+      "end_page": 24,
+      "text": "[page 24]\n\nC. Evaporative + Convective + Conductive Cooling\n\n•\nCombine or adjunct cooling method utilizes additional cooling power of cold water/ice."
+    },
+    {
+      "heading": "ICE PACK/CRUSHED ICE + WATER SPRAY +DIRECTED FAN",
+      "start_page": 24,
+      "end_page": 24,
+      "text": "•"
+    },
+    {
+      "heading": "Apply crushed ice or ice packs all over on the body especially torso",
+      "start_page": 24,
+      "end_page": 24,
+      "text": "Equipment list: spray bottle/garden sprayer, electric fan, Ice packs/crushed ice\nPreparation: large quantities of water (slightly cold/lukewarm), ice"
+    },
+    {
+      "heading": "Process:",
+      "start_page": 24,
+      "end_page": 24,
+      "text": "•\nPlace patient in the flat, shaded surface.\n•"
+    },
+    {
+      "heading": "Remove patient clothing and spray maximum body surface with water",
+      "start_page": 24,
+      "end_page": 24,
+      "text": "•"
+    },
+    {
+      "heading": "Direct a fan over the patient allow high air current to pass over the patient body",
+      "start_page": 24,
+      "end_page": 24,
+      "text": "•"
+    },
+    {
+      "heading": "Apply crushed ice or ice packs all over on the body especially torso",
+      "start_page": 24,
+      "end_page": 24,
+      "text": "Strategic placement of ice packs to axilla, neck, and groin only marginally contribute to\ncooling6\n\nCombined cooling methods for rapid, active cooling\nImage source: Internet"
+    },
+    {
+      "heading": "CHS",
+      "start_page": 24,
+      "end_page": 25,
+      "text": "1. Move the person to shade/indoors\n2. Call emergency medical services 102/108\n3. Have the person lie down with feet elevated.\n4. If conscious, give\ncold water to sip\n5. Remove\nexternal clothing\n6. Spray the person\nwith cold water\n7. Apply damp sheets/ towels/ icepacks to torso, armpits,\nneck, head, groin.\n8. Use fan to direct air\non the body\n\n[page 25]\n\nD. Invasive Cooling Measures\n\n•\nChilled/cold intravenous fluids are insufficient as primary method of cooling, they may\nprovide supplemental cooling.\n•"
+    },
+    {
+      "heading": "Cold saline may be beneficial when added to evaporative or conductive cooling",
+      "start_page": 25,
+      "end_page": 25,
+      "text": "•"
+    },
+    {
+      "heading": "Intravascular or external cooling devices should not be considered primary cooling",
+      "start_page": 25,
+      "end_page": 26,
+      "text": "methods in heat stroke.\n•\nBody cavity lavage with cold isotonic fluid have been reported, but not adequately studied\n\nE. Other cooling methods\n\n•\nIce-filled rubber bottles do not provide effective cooling\n•\nBody cooling unit or other novel portable/wearable cooling arrangements are not widely\navailable or adequately tested.\n\n---\n\n[page 26]\n\n3. Emergency Cooling in Children\nGuiding Principles: Rapid Cooling in Children\n\n•"
+    },
+    {
+      "heading": "Heat stroke should be suspected in any child brought to a healthcare facility with altered",
+      "start_page": 26,
+      "end_page": 26,
+      "text": "consciousness, confusion or seizures in a heatwave or high temperature conditions especially in\nsummer season.\n•\nCore body temperature can be measured from esophagus, oral cavity, rectum.\n•\nUsually, axillary temperatures are less precise than the rectal temperature.\n•\nAxillary temperature is usually 0.5-0.8°C lower than rectal temperature.\n•\nClassic heat stroke: more common in younger children who are unable to escape from hot\nenvironments (e.g. closed vehicles) and those with underlying chronic medical conditions that\nimpair thermoregulation (\n•\nExertional heat stroke: generally seen in young, healthy individuals who engage in heavy exercise\nduring periods of high ambient temperature and humidity (e.g. athletes, football players, military\npersonnel)\n•\nIn absence of a rectal thermometer, proceed with the temperature recording from the armpit; if it\nexceeds 40°C, a presumptive diagnosis of heat stroke should be made.\n•\nApply rapid, active cooling measures in the heat stroke case as early as possible till the temperatures\nare reduced to below 39°C. Recommended cooling rate is 1°C every 10 minutes.\n•\nAs a first aid, affected child should be moved to a cooler place/ shade / room under fan, preferably\nin the air-conditioned room if available."
+    },
+    {
+      "heading": "Effective cooling methods",
+      "start_page": 26,
+      "end_page": 26,
+      "text": "•\nAdolescent patient: cold-water immersion is the most effective method for rapidly cooling in\nadolescent20\n•\nInfants and prepubertal children: evaporative with convective cooling is the most effective for\nrapid external cooling because of the large surface area to body mass and can be used in field 20\n•\nEmergency cooling rooms, TACO method, bladder irrigation with cold saline, cold water lavage of\nthe stomach/peritoneum and bladder are not feasible. These methods are not well studied in children\nand not required most of the times.\n\nPrevent/treat shivering\n•\nIV benzodiazepines (eg, midazolam or lorazepam) may be given\n•\nAvoid meperidine, clonidine, or dexmedetomidine (significant adverse side effects in children)\n\nPost-cooling management"
+    },
+    {
+      "heading": "All children with heat stroke should be admitted to a pediatric critical care unit in order to maintain",
+      "start_page": 26,
+      "end_page": 26,
+      "text": "appropriate monitoring and to treat ongoing and delayed end-organ dysfunction."
+    },
+    {
+      "heading": "Prognosis",
+      "start_page": 26,
+      "end_page": 26,
+      "text": "•\nThe prognosis in children with heat stroke is not well studied.\n•\nAll children that recover from heat stroke may show some degree of heat intolerance (a disorder in\ntemperature homeostasis) which may increase the risk for repeated heat illness.\n•\nChildren and their families/primary caregivers should be educated to avoid heat exposure until\nrepeat evaluation establishes that they have fully recovered and a period of acclimatization has\noccurred 20\n•"
+    },
+    {
+      "heading": "Children with severe heat stroke may have ongoing impaired physiologic response to exertion in",
+      "start_page": 26,
+      "end_page": 27,
+      "text": "hot environments\n\n[page 27]"
+    },
+    {
+      "heading": "Cooling methods in Paediatric Patients",
+      "start_page": 27,
+      "end_page": 27,
+      "text": ""
+    },
+    {
+      "heading": "Cooling Method",
+      "start_page": 27,
+      "end_page": 27,
+      "text": ""
+    },
+    {
+      "heading": "Advantage",
+      "start_page": 27,
+      "end_page": 27,
+      "text": ""
+    },
+    {
+      "heading": "Disadvantage",
+      "start_page": 27,
+      "end_page": 27,
+      "text": ""
+    },
+    {
+      "heading": "ICE/COLD WATER IMMERSION (CWI)",
+      "start_page": 27,
+      "end_page": 27,
+      "text": "(See Conductive Cooling, page\n11)\n• May provide effective cooling to\nadolescent athletes in field\nsettings\n• Discomfort, shivering,\nagitation,combativeness\n• Not preferred in hospital\nsetting"
+    },
+    {
+      "heading": "BODY COOLING WITH GARDEN SPRAYER/SPRAY BOTTLE + FAN",
+      "start_page": 27,
+      "end_page": 27,
+      "text": "Spraying with tepid water (to\nminimize shivering) while\nfanning with high-flow fans to\nmaximize air circulation\n• Faster, effective cooling method\nfor infants and prepubertal\nchildren\n• Comfortable\n• Easily available\n\n• Requires maintenance and\nstorage"
+    },
+    {
+      "heading": "WET SHEET + DIRECTED FAN",
+      "start_page": 27,
+      "end_page": 27,
+      "text": ""
+    },
+    {
+      "heading": "Patients are covered with wet",
+      "start_page": 27,
+      "end_page": 27,
+      "text": "sheet, water is sprayed over the\nsheet, and fans are used to\nblow over the wet sheet\n• Heat loss comparable to the\nbody cooling unit, using a\ngarden sprayer\n• Easy to maintain"
+    },
+    {
+      "heading": "ICE PACKS",
+      "start_page": 27,
+      "end_page": 27,
+      "text": ""
+    },
+    {
+      "heading": "Ice packs are placed over large",
+      "start_page": 27,
+      "end_page": 27,
+      "text": "body surface area, groin, neck\nand axilla\n• Simple\n• Readily available\n• Shorter cooling time when\ncombined with evaporative\ntechnique\n\n• Longer cooling time\ncompared to evaporative\ntechnique"
+    },
+    {
+      "heading": "COLD I.V FLUIDS",
+      "start_page": 27,
+      "end_page": 27,
+      "text": ""
+    },
+    {
+      "heading": "Cold iv fluid administration",
+      "start_page": 27,
+      "end_page": 27,
+      "text": "• May be used as supplementary\nto external evaporative cooling\nmethods\n\n• Needs maintenance"
+    },
+    {
+      "heading": "COLD WATER IRRIGATION",
+      "start_page": 27,
+      "end_page": 27,
+      "text": "Gastric, bladder, peritoneal\nlavage, extracorporeal\n\n• Not well studied\n\n• Invasive"
+    },
+    {
+      "heading": "TACO METHOD",
+      "start_page": 27,
+      "end_page": 28,
+      "text": "• Not studied in children\n\n---\n\n[page 28]\n\n4. Public Health Aspects\nHeat stroke is primarily an out-of-hospital health issue and a true time-critical emergency.\nA paradigm shift to “cool first, transport second” recommends active, on-scene cooling.\nTherefore, preparedness for on-scene/field or community level/pre-hospital management should be\nfocused.\n\nFor clinical protocols, surveillance, general health facility preparedness and equipment acquisition to\nmanage heat-related illnesses, please also refer to following guidelines by National Programme on\nClimate Change and Human Health, NCDC\n1. National Action Plan on Heat-Related Illnesses (2021)\n2. NPCCHH PIP Guidelines FY 24-25, 25-26"
+    },
+    {
+      "heading": "Health sector preparedness for emergency cooling of severe HRI",
+      "start_page": 28,
+      "end_page": 28,
+      "text": ""
+    },
+    {
+      "heading": "Aim",
+      "start_page": 28,
+      "end_page": 28,
+      "text": ""
+    },
+    {
+      "heading": "Measures",
+      "start_page": 28,
+      "end_page": 28,
+      "text": ""
+    },
+    {
+      "heading": "Ambulance and first aid",
+      "start_page": 28,
+      "end_page": 28,
+      "text": "1. On-scene rapid, active, sufficient\ncooling following quick assessment\n2. Active cooling during transport\n3. Transfer to nearest health facility able\nto provide cooling and supportive care\n4. Advance communication to health\nfacility to prepare for active cooling\n1. Identifying cooling method that ambulance can\nprovide\n2. Equipping and maintaining cooling equipments\n3. Training of first-aid providers"
+    },
+    {
+      "heading": "Primary level health facilities",
+      "start_page": 28,
+      "end_page": 28,
+      "text": "1. Rapid, active, sufficient cooling\nfollowing quick assessment\n2. Supportive care to stabilize the patient\n(dedicated beds) and referral to higher\nlevel for advance care\n1. Identifying cooling method that facility can\nmanage\n2. Equipping and maintaining cooling equipments\n3. Preparing cooling areas and internal protocols\n4. Training of Medical officers and allied staffs first-\naid providers in case identification, clinical\nmanagement and reporting\n5. Ensure basic water, cooling facilities in general\nand treatment areas"
+    },
+    {
+      "heading": "Secondary and tertiary level health facilities",
+      "start_page": 28,
+      "end_page": 29,
+      "text": "•\nRapid, active, sufficient cooling\nfollowing quick assessment\n•\nAdvance, critical care (heatstroke\nbed/room)\n1. Identifying cooling method that facility can\nmanage\n2. Equipping and maintaining cooling equipments\n3. Preparing areas and internal protocols\n4. Training of health care professionals in case\nidentification, clinical management and reporting\n5. Ensure basic water, cooling facilities in general\nand treatment areas\n\n[page 29]"
+    },
+    {
+      "heading": "Community level preparedness for rapid cooling of severe HRI",
+      "start_page": 29,
+      "end_page": 29,
+      "text": "Community level preparedness and response for heat stroke should be driven by the facts: 1. heat\nstroke is preventable and 2. when manifested it is a acutely life-threatening condition. Globally, with\nclimate change, heat heat-related deaths of people older than 65 years is increased by 85% in 2018-\n2022 compared to 2000-2004.21 As global temperature continue to rise, India may experience\nsignificant increase in mortality by mid-century."
+    },
+    {
+      "heading": "General community",
+      "start_page": 29,
+      "end_page": 29,
+      "text": "•\nAwareness among panchayat raj members, various occupational setting, community\n•\nTraining of various community service providers (traffic police, municipal workers, fire fighters)\nin identifying and responding to severe HRI (in community and in their own occupational setting)"
+    },
+    {
+      "heading": "Occupational settings",
+      "start_page": 29,
+      "end_page": 29,
+      "text": "Miners, bakers, smelters, workers restricted in closed-places, construction, and agricultural workers\nare reported to be prone to heat exposure due to their occupation.\n▫"
+    },
+    {
+      "heading": "Awareness among employers and workers",
+      "start_page": 29,
+      "end_page": 29,
+      "text": "▫\nEnsuring provision of preventive measures (See Public Health Advisory: Extreme\nHeat/Heatwave)\n▫\nEnsuring basic on-field body cooling measures in organized and unorganized occupational\nsettings with potential for high heat exposure, exertion, closed/overcrowded place\n\nMass participation sports events/ mass gathering events"
+    },
+    {
+      "heading": "Preparedness to manage emergency cooling at mass",
+      "start_page": 29,
+      "end_page": 29,
+      "text": "participation sports events or mass gathering events\nshould be focused when combination of ambient heat,\nphysical exertion and/ overcrowding is expected to\noccur."
+    },
+    {
+      "heading": "Population at Risk of EHS",
+      "start_page": 29,
+      "end_page": 29,
+      "text": "•\nEvents with a high risk of EHS (eg, athletics,\ncycling, football, hockey, marathon, swimming,\nmodern pentathlon, rowing, tennis and triathlon),\nwhen scheduled under stressful environmental\nconditions must prepare a designated, well-\nmarked heat stroke assessment and management\narea (i.e. heat deck) within or adjacent to the\nmain athlete medical tent.\n•"
+    },
+    {
+      "heading": "Sports events with a high metabolic demand",
+      "start_page": 29,
+      "end_page": 30,
+      "text": "(eg, marathon running), a heat deck set-up is still\nadvised whether environmental condition is mild\nor cool.\n\nCold-water immersion setup for EHS\npatient treatment.\n\n[page 30]"
+    },
+    {
+      "heading": "Population at Risk of CHS",
+      "start_page": 30,
+      "end_page": 30,
+      "text": "•\nPilgrimage, parades, outdoor ceremonies, spectators of sports events: invariably contains\npopulation of various age groups, physical (acclimatization), medical vulnerabilities and risk\nawareness\n\nHeat desk setup 5"
+    },
+    {
+      "heading": "Location",
+      "start_page": 30,
+      "end_page": 30,
+      "text": "•\nmust have access to a water source and water drainage\n•\neasily accessible from the expected site of collapse (such as the alongside the field of play in\nteam sports or near the finish line for individual sports)\n•\nhas direct ambulance access/egress\n•\nideally, housed in an indoor facility with air conditioning and/or a fan\n•\nprotected from unnecessary attention from spectators and media\n•\nIf above criteria not met, appropriate location for portable tent setup should be identified by\nin-charge health officer"
+    },
+    {
+      "heading": "Access",
+      "start_page": 30,
+      "end_page": 30,
+      "text": "•\nrestricted entry from the athlete’s team staff and family members\n\nEquipment list to provide on-site rapid cooling5\n□ Rectal thermometer with disposable probes\nor disposable probe cover\n□ Thermometer for water temperature monitoring\n□ Medical gloves\n□ Partitions for rectal temperature assessment\narea\n□ Cold water immersion tub\n□ Pole-less/soft stretcher for patient transfer in\nand out of cold water immersion tub\n□ Ice\n□ Ice cooler boxes\n□ Water\n□ Hose to supply and drain water\n□ Towels for cooling\n□ Sheets to maintain patient posture\n□ Medical record keeping\n□ Clock\n□ Cold water immersion tub cleaning\nequipment\n□ Point-of-care blood electrolyte and glucose\nanalysing kit\n□ Oral sodium\n□ Oral glucose\n□ 3% saline injection\n□ 50% glucose injection\n□ 1 mg glucagon injection\n□ Intravenous infusion kit\n□ Towels for drying\n□ Cots or beds for postcooling observation\n□ Chair\n□ Blankets for rewarming\n□ Emesis basin/kidney tray\n□ Medical waste container\n□ Change of clothes (for after cooling)\n□ Wheelchair\n□ Wheeled stretcher\n□ Cardiac defibrillator\n□ Cardiopulmonary resuscitation equipment\n□ Air conditioning unit/fan\n□ Personal protective equipment"
+    },
+    {
+      "heading": "The quantity of each item depends on the total number of participants and the relative risk of heat",
+      "start_page": 30,
+      "end_page": 31,
+      "text": "stroke at the event, such as environmental conditions, exercise duration, and exercise intensity. To\nmake an informed estimate of the amount of resources needed, a thorough evaluation of local\nenvironmental conditions and exertional heat illness records from previous international and national\ncompetitions of a similar setup should be reviewed.\n\n[page 31]"
+    },
+    {
+      "heading": "Heat deck patient management areas",
+      "start_page": 31,
+      "end_page": 31,
+      "text": "1. Temperature assessment area should have partitions to limit any unnecessary exposure of an\nathlete during rectal temperature measurement.\n2. Cold water immersion (CWI) area\n3. Observation area should have cots set up for athletes to rest until all their vital signs are within a\npredetermined normal range."
+    },
+    {
+      "heading": "Immersion tab management during cooling",
+      "start_page": 31,
+      "end_page": 31,
+      "text": "•\nDuring the time of active/sports event, cold water immersion tubs do not need to be drained\nand cleaned after each use if not obviously contaminated.\n•\nContaminated cold water immersion tubs (ie, vomiting, diarrhoea and open wound) should be\nwell labelled and not be reused for other athletes. Such contaminated tubs must not be used\nuntil they have been fully cleaned and disinfected.\n•\nFor multiday event, all tubs, including tubs without obvious contamination, must be fully\ncleaned, disinfected and dried at the end of each day of competition."
+    },
+    {
+      "heading": "Cold water immersion provider arrangement",
+      "start_page": 31,
+      "end_page": 31,
+      "text": ""
+    },
+    {
+      "heading": "A medical officer familiar with event medical services and proficient in prehospital management",
+      "start_page": 31,
+      "end_page": 31,
+      "text": "should be appointed with additional trained support staff\nThe CWI treatment requires at least four trained medical providers (Provider A–D) per athlete.\n•\nProvider A: maintains the airway and upright posture of the patient;\n•\nProvider B: in charge of monitoring the core temperature;\n•\nProvider C: responsible for continuously stirring the cold water immersion bath; and\n•\nProvider D: ensures all medical records are properly documented\n\nPost-cooling outcome scenarios\n•\nOn-site\nThe patient’s rectal temperature must continue to be monitored to ensure that the fall in core\ntemperature has been maintained."
+    },
+    {
+      "heading": "If the core temperature starts to rise again then the individual should be returned to the",
+      "start_page": 31,
+      "end_page": 31,
+      "text": "cold-water bath and the cooling procedure repeated until a constant temperature <39°C is\nmaintained.\n\nIf the core temperature starts to show a rapid drop toward 36°C after removal from cold\nwater immersion during the 15-minute postcooling recovery period, the patient should be\ndried, their wet clothing removed, and insulated blankets used until they can be transported to\nthe designated hospital for rewarming and advanced care. If privacy can be maintained,\nmoving the athlete into direct sunlight may assist with rewarming while waiting for the\nambulance.\n\n•"
+    },
+    {
+      "heading": "Transportation",
+      "start_page": 31,
+      "end_page": 31,
+      "text": "In the case of the patient being transported to the hospital, emergency service dispatch and/or\non-site medical officials should notify the hospital medical team in advance to allow staff to\nprepare for treatment to begin immediately upon patient arrival.\n\n•"
+    },
+    {
+      "heading": "Emergency department",
+      "start_page": 31,
+      "end_page": 32,
+      "text": "Diagnostic difficulty may occur, as the patient may present with a temperature less than 40.5°C\neither due to active or passive cooling that has already occurred\n\n[page 32]"
+    },
+    {
+      "heading": "Alternative to CWI",
+      "start_page": 32,
+      "end_page": 33,
+      "text": "If patient collapses at remote locations from the heat deck or immersion tubs are not available,\norganisers should also consider preparing a\n•\nTarp-assisted cooling (TACo)\n•\nIce/wet towel rotation\n•\nHigh-flow cold water dousing/shower (requires mapping/provision of portable water\nresources at event location)\n\n---\n---\n\n[page 33]\n\nAnnexure 1: Heat Stroke Management Algorithm in Emergency Department\n\n1."
+    },
+    {
+      "heading": "Heat Alert Triggered",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• Summer season=high risk\nseason based on local climate\npatterns, active heat advisory\nor high heat index\n• Patient temperature >40°C"
+    },
+    {
+      "heading": "• Chief complaint includes:",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "Altered Mental Status OR",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "Confusion OR Unresponsive",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "OR Seizure.\n\n2."
+    },
+    {
+      "heading": "Triage Clinician Evaluation",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "Activate heat alert if clinical suspicion is",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "high based on:",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• Recent history of environmental (indoor or\noutdoor) heat exposure OR strenuous physical\nactivity.\n• Central Nervous system dysfunction\n• Tachycardia, tachypnea, +/- hypotension\n• Flushed or warm skin +/- sweating\n• Lower suspicion for sepsis, medicine/drug\noveruse, or metabolic abnormality (e.g.\nhypoglycemia)\n3."
+    },
+    {
+      "heading": "Begin Treatment",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "Algorithm",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• This guide does not replace\nclinician judgment; actions\nshould be initiated\nsimultaneously if feasible.\n• More aggressive interventions\nmay be provided if available and\nprofessionals are trained to\ndeliver those."
+    },
+    {
+      "heading": "Clinical Management Key Steps",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "Tasks",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "Bedside evaluation | Move to resuscitation | ICU consultation"
+    },
+    {
+      "heading": "TRIAGE",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "TREATMENT",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "GOALS",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "Supportive care",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• Continuous temperature monitoring\n• Correct electrolyte abnormalities\n• Arrange for admission (likely ICU)"
+    },
+    {
+      "heading": "Consider transplantation if acute liver failure",
+      "start_page": 33,
+      "end_page": 33,
+      "text": ""
+    },
+    {
+      "heading": "Supportive care",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• Serial neurologic and hemodynamic\nreassessments\n• Keep defibrillator and pads at bedside\n• Resupply ice as needed"
+    },
+    {
+      "heading": "Recognition",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• Assess airway, breathing, and circulation\n• Document core temperature\n• Consider alternative / concomitant diagnoses of\nNeuroleptic Malignant syndrome, Malignant\nHyperthermia, Serotonin Syndrome,\nHyperthyroidism, Sepsis"
+    },
+    {
+      "heading": "Recognition",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• Obtain core temperature\n• Place patient on the monitor\n• Establish large bore IVs\n• Send for lab test, ECG, and chest x-ray"
+    },
+    {
+      "heading": "Rapid cooling",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "• Begin external cooling and\nconsider internal cooling\n• Consider deep sedation\nfollowed by neuromuscular\nblockade to reduce\nmetabolic heat production\n• Use benzodiazepines to treat\nintense shivering"
+    },
+    {
+      "heading": "Begin external cooling",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "(in order of preference\nbased on cooling rates)\n1.Perform cold water\nimmersion or body bag\ncooling or\n2.Place ice packs/chilled\nbed sheets/towels or\n3.Mist water + direct fan"
+    },
+    {
+      "heading": "Consider internal cooling",
+      "start_page": 33,
+      "end_page": 33,
+      "text": "(supplementary to external cooling)\n• Infuse chilled IV fluids\n• Place 3-way Foley catheter bladder\nirrigation\n• Sedate and paralyze\n• Body cavity lavage (rare)\n• Cardiopulmonary bypass (rare)\n• ECMO/ transfer for liver transplant if\nvery severity illness (rare)"
+    },
+    {
+      "heading": "Rapid cooling",
+      "start_page": 33,
+      "end_page": 34,
+      "text": "Gather supplied as per cooling method selected: Ice, Ice packs, Tub,\nTarpaulin, Ice bag, Mist bottle, Fan, Foley catheter, IV Fluids\n5 minutes\n• Recognition\n• Initiate\ntreatment\n10 minutes\n• Initiate rapid\ncooling\n30 minutes\n• Cool to 39°C\n• Avoid\nre-exposure\nAdapted from Rublee C, Dresser C, Giudice C, Lemery J, Sorensen C. Evidence-based heatstroke management in the emergency department. West J Emerg\nMed. 2021;22(2):186-195. doi:10.5811/WESTJEM.2020.11.49007\n\n[page 34]\n\nAnnexure 2: Ice/Cold Water Immersion for Exertional Heat Stroke\nPre-hospital/Field setting\n\nMONITOR: Core body temperature, mental status (continuously)\nVital signs (~ every 10 minutes)"
+    },
+    {
+      "heading": "Keep additional assistants available throughout",
+      "start_page": 34,
+      "end_page": 34,
+      "text": ""
+    },
+    {
+      "heading": "Assess",
+      "start_page": 34,
+      "end_page": 34,
+      "text": "• ABC (airway, breathing, circulation)\n• Mental status\n• Vital signs before immersing"
+    },
+    {
+      "heading": "Prepare for emergency cooling",
+      "start_page": 34,
+      "end_page": 34,
+      "text": "If another appropriate medical staff present,\nthey should\n• Identify/Prepare cooling equipments\n• Locate shade & get help to move\npatient to shaded area\nCool first, transport second\nPresentation: Collapse during/following strenuous activity with\nCNS dysfunction + Core body temperature ≥ 40°C (104°F)"
+    },
+    {
+      "heading": "Rapid recognition",
+      "start_page": 34,
+      "end_page": 34,
+      "text": ""
+    },
+    {
+      "heading": "Rapid assessment",
+      "start_page": 34,
+      "end_page": 34,
+      "text": ""
+    },
+    {
+      "heading": "Rapid cooling",
+      "start_page": 34,
+      "end_page": 34,
+      "text": ""
+    },
+    {
+      "heading": "Rapid advanced care",
+      "start_page": 34,
+      "end_page": 34,
+      "text": ""
+    },
+    {
+      "heading": "Provide Advance medical support",
+      "start_page": 34,
+      "end_page": 34,
+      "text": "Monitor, investigate and support vital organ functions\nTreat with Ice/Cold Water Immersion (CWI)\n(most effective method, details on page 11)\nDesired water temperature <15°C (60°F)\n\nWith assistance, place the athlete in the ice/cold water immersion tub/pool\n•\nKeep the athlete's head and neck above water\n•\nCover as much of the body as possible with ice water.\n•"
+    },
+    {
+      "heading": "Place a towel soaked in ice water over the head and neck",
+      "start_page": 34,
+      "end_page": 34,
+      "text": "•"
+    },
+    {
+      "heading": "Keep stirring water aggressive throughout the cooling",
+      "start_page": 34,
+      "end_page": 34,
+      "text": "End point: rectal temperature of 38.3–38.9°C (102°F)\n\nIf the rectal temperature cannot be measured and on-site ice water immersion\nis indicated,\ncool for 10 to 15 minutes\n with aggressive water stirring to achieve\ncooling rate of 1°C for every five minutes\n(or 1°F every three minutes)"
+    },
+    {
+      "heading": "DO NOT rely external temperature measurements",
+      "start_page": 34,
+      "end_page": 34,
+      "text": ""
+    },
+    {
+      "heading": "Transfer to the nearest medical facility quickly as possible",
+      "start_page": 34,
+      "end_page": 34,
+      "text": "only after rectal temperature reaches 39ºC (102°F)\nAdapted from: The Korey Stringer Institute (ksi.uconn.edu) and Casa DJ, McDermott BM, Lee EC, et al.\nCold-water immersion: The gold standard for exertional heat stroke treatment. Exerc Sport Sci Rev 2007; 35:141."
+    },
+    {
+      "heading": "Contact emergency medical services immediately",
+      "start_page": 34,
+      "end_page": 35,
+      "text": "[page 35]\n\n5. References\n\n1.\nSherwood SC, Ramsay EE. Closer limits to human tolerance of global heat. Proc Natl Acad\nSci U S A. 2023;120(43):e2316003120. doi:10.1073/PNAS.2316003120/ASSET/B8BDD91B-"
+    },
+    {
+      "heading": "BBCC-40FD-A19E-E2FF0E1ECFBB/ASSETS/PNAS.2316003120.FP.PNG",
+      "start_page": 35,
+      "end_page": 35,
+      "text": "2.\nBynum GD, Pandolf KB, Schuette WH, et al. Induced hyperthermia in sedated humans and the\nconcept of critical thermal maximum. Am J Physiol. 1978;235(5).\ndoi:10.1152/AJPREGU.1978.235.5.R228\n3.\nHoffman JL. Heat-Related in Children. Clin Pediatr Emerg Med. 2001;2:203-210.\ndoi:10.1053/cpem.2001.27334\n4.\nRublee C, Dresser C, Giudice C, Lemery J, Sorensen C. Evidence-based heatstroke\nmanagement in the emergency department. West J Emerg Med. 2021;22(2):186-195.\ndoi:10.5811/WESTJEM.2020.11.49007\n5.\nHosokawa Y, Racinais S, Akama T, et al. Prehospital management of exertional heat stroke at\nsports competitions: International Olympic Committee Adverse Weather Impact Expert\nWorking Group for the Olympic Games Tokyo 2020. Br J Sports Med. 2021;55(24):1405-\n1410. doi:10.1136/bjsports-2020-103854\n6.\nGaudio FG, Grissom CK. Cooling Methods in Heat Stroke. J Emerg Med. 2016;50(4):607-\n616. doi:10.1016/j.jemermed.2015.09.014\n7.\nLawton EM, Pearce H, Gabb GM. Review article: Environmental heatstroke and long-term\nclinical neurological outcomes: A literature review of case reports and case series 2000-2016.\nEMA - Emerg Med Australas. 2019;31(2):163-173. doi:10.1111/1742-6723.12990\n8.\nWilbeck J, Tucker L, Evans E. Heatstroke on the Rise: A Guide to Implementing Tarp-\nAssisted Cooling With Oscillation (TACO) in the Emergency Department. Adv Emerg Nurs J.\n2023;45(3):210-216. doi:10.1097/TME.0000000000000470\n9.\nMcDermott BP, Casa DJ, Ganio MS, et al. Acute Whole-Body Cooling for Exercise-Induced\nHyperthermia: A Systematic Review. Accessed December 28, 2023.\nhttp://meridian.allenpress.com/jat/article-pdf/44/1/84/1454845/1062-6050-44_1_84.pdf\n10.\nAlzeer AH, Wissler EH. Theoretical analysis of evaporative cooling of classic heat stroke\npatients. Int J Biometeorol. 2018;62(9):1567-1574. doi:10.1007/S00484-018-1551-"
+    },
+    {
+      "heading": "1/METRICS",
+      "start_page": 35,
+      "end_page": 35,
+      "text": "11.\nHadad E, Rav-Acha M, Heled Y, Epstein Y, Moran DS. Heat stroke: A review of cooling\nmethods. Sport Med. 2004;34(8):501-511. doi:10.2165/00007256-200434080-"
+    },
+    {
+      "heading": "00002/METRICS",
+      "start_page": 35,
+      "end_page": 40,
+      "text": "12.\nLovecchio F. Chapter 210 : Heat Emergencies. Published online 2023.\n13.\nTintinalli JE, Stapczynski JS, Ma OJ, Yealy DM, Meckler GD, Cline DM. Tintinalli ’ s\nEmergency Medicine : A Comprehensive Study Guide , 8e > Approach to Shock. Published\nonline 1996:19.\n14.\nVicario SJ, Okabajue R, Haltom T. Rapid cooling in classic heatstroke: Effect on mortality\nrates. Am J Emerg Med. 1986;4(5):394-398. doi:10.1016/0735-6757(86)90185-3\n15.\nMcDermott BP, Casa DJ, O’Connor FG, et al. Cold-water dousing with ice massage to treat\nexertional heat stroke: a case series. Aviat Space Environ Med. 2009;80(8):720-722.\ndoi:10.3357/ASEM.2498.2009\n16.\nCutler BZ, Richins J, Barker BT, Rigby BR, Butts CL. Comparing Body Bag Cooling To Cold\nWater Immersion Following Exertional Hyperthermia. Med Sci Sport Exerc. 2021;53(8S):346-\n346. doi:10.1249/01.MSS.0000763252.41508.C9\n17.\nKim DA, Lindquist BD, Shen SH, Wagner AM, Lipman GS. A body bag can save your life: a\nnovel method of cold water immersion for heat stroke treatment. J Am Coll Emerg Physicians\nOpen. 2020;1(1):49. doi:10.1002/EMP2.12007\n18.\nPittala K, Willing TF, Worrilow CC, Palilonis MM. Severe Heat Stroke Resuscitation Using a\nBody Bag in a Community Emergency Department. Cureus. 2023;15(8).\n\n[page 36]\n\ndoi:10.7759/CUREUS.44045\n19.\nJacobsen RC, Beaver B, Abo B. Out-of-Hospital Cold Water Immersion for Classic (Non-\nExertional) Heat Stroke Guided by Real-Time Core Temperature Monitoring: A Case Series.\nPrehospital Emerg Care. 2023;27(6):832-837. doi:10.1080/10903127.2022.2148795\n20.\nIshimine P. Heat stroke in children - UpToDate. UpToDate. Published online 2022.\nhttps://www.uptodate.com/contents/heat-stroke-in-children/print\n21.\nRomanello M, Napoli C di, Green C, et al. The 2023 report of the Lancet Countdown on health\nand climate change: the imperative for a health-centred response in a world facing irreversible\nharms. Lancet. 2023;402(10419):2346-2394. doi:10.1016/S0140-6736(23)01859-7\n\n---\n\n[page 40]"
+    },
+    {
+      "heading": "National Centre for",
+      "start_page": 40,
+      "end_page": 40,
+      "text": ""
+    },
+    {
+      "heading": "Disease Control",
+      "start_page": 40,
+      "end_page": 40,
+      "text": ""
+    },
+    {
+      "heading": "Government of India",
+      "start_page": 40,
+      "end_page": 40,
+      "text": ""
+    }
+  ],
+  "raw_text_path": "data/medical/raw/ncdc/ncdc-emergency-cooling-heat-illness-2024/raw_text.txt",
+  "original_path": "data/medical/raw/ncdc/ncdc-emergency-cooling-heat-illness-2024/original.pdf",
+  "bytes": 1921479,
+  "sha256": "565ac2b026b7e6b9055b8fe48230c9d4dc66186eebf088e8eeff0fc1fbbc51fb",
+  "processed_at": "2026-10-08T05:14:51.412356Z",
+  "problems": []
+}

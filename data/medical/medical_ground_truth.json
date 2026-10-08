@@ -1,0 +1,214 @@
+{
+  "queries": [
+    {
+      "query": "What are warning signs of heart attack?",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--heart-attack"
+      ],
+      "notes": "emergency warning"
+    },
+    {
+      "query": "First aid steps for seizures",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--seizures",
+        "medlineplus-health-topics-xml--first-aid"
+      ],
+      "notes": "first aid"
+    },
+    {
+      "query": "When to seek medical care for high blood pressure?",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--high-blood-pressure",
+        "mohfw-stg-hypertension-full",
+        "ncdc-hypertension-faq-general-public"
+      ],
+      "notes": "hypertension warning"
+    },
+    {
+      "query": "Diabetes type 2 management basics",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--diabetes-type-2",
+        "icmr-type-2-diabetes-guideline"
+      ],
+      "notes": "diabetes"
+    },
+    {
+      "query": "Signs and treatment of malaria in India",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--malaria",
+        "icmr-malaria-drug-policy-north-east"
+      ],
+      "notes": "Indian malaria"
+    },
+    {
+      "query": "Dengue symptoms and care",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--dengue"
+      ],
+      "notes": "dengue"
+    },
+    {
+      "query": "Chikungunya symptoms",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--chikungunya"
+      ],
+      "notes": "chikungunya"
+    },
+    {
+      "query": "Cholera prevention and treatment",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--cholera"
+      ],
+      "notes": "cholera"
+    },
+    {
+      "query": "Pneumonia symptoms in children/adults",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--pneumonia",
+        "mohfw-stg-child-respiratory-infection-quick-reference"
+      ],
+      "notes": "respiratory"
+    },
+    {
+      "query": "Tuberculosis basics and warning signs",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--tuberculosis"
+      ],
+      "notes": "TB"
+    },
+    {
+      "query": "Fever causes and when to worry",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--fever"
+      ],
+      "notes": "fever"
+    },
+    {
+      "query": "Diarrhea treatment and dehydration",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--diarrhea",
+        "medlineplus-health-topics-xml--dehydration"
+      ],
+      "notes": "GI"
+    },
+    {
+      "query": "Dehydration warning signs",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--dehydration"
+      ],
+      "notes": "dehydration"
+    },
+    {
+      "query": "Rabies post-exposure prophylaxis",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--rabies",
+        "mohfw-stg-rabies-prophylaxis"
+      ],
+      "notes": "rabies"
+    },
+    {
+      "query": "Snakebite management guidelines",
+      "relevant_doc_ids": [
+        "mohfw-stg-snakebite-full",
+        "mohfw-stg-snakebite-quick-reference"
+      ],
+      "notes": "Indian snakebite"
+    },
+    {
+      "query": "Heat illness and heatstroke emergency care",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--heat-illness",
+        "ncdc-emergency-cooling-heat-illness-2024",
+        "ncdc-heatwave-public-health-advisory-2024"
+      ],
+      "notes": "heat"
+    },
+    {
+      "query": "Stroke symptoms - FAST",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--stroke"
+      ],
+      "notes": "stroke"
+    },
+    {
+      "query": "Fainting causes and first aid",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--fainting",
+        "medlineplus-health-topics-xml--first-aid"
+      ],
+      "notes": "fainting"
+    },
+    {
+      "query": "Headache types and red flags",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--headache"
+      ],
+      "notes": "headache"
+    },
+    {
+      "query": "Cough causes and care",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--cough"
+      ],
+      "notes": "cough"
+    },
+    {
+      "query": "Nausea and vomiting causes",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--nausea-and-vomiting"
+      ],
+      "notes": "nausea"
+    },
+    {
+      "query": "Rashes evaluation",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--rashes"
+      ],
+      "notes": "rash"
+    },
+    {
+      "query": "Leptospirosis prevention and guidelines",
+      "relevant_doc_ids": [
+        "ncdc-leptospirosis-national-guidelines"
+      ],
+      "notes": "leptospirosis"
+    },
+    {
+      "query": "Hypertension FAQ for general public",
+      "relevant_doc_ids": [
+        "ncdc-hypertension-faq-general-public"
+      ],
+      "notes": "HTN FAQ"
+    },
+    {
+      "query": "Encephalitis symptoms and care",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--encephalitis"
+      ],
+      "notes": "encephalitis"
+    },
+    {
+      "query": "Breathing problems when to seek help",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--breathing-problems"
+      ],
+      "notes": "breathing"
+    },
+    {
+      "query": "Major trauma initial management",
+      "relevant_doc_ids": [
+        "mohfw-stg-major-trauma-full"
+      ],
+      "notes": "trauma"
+    },
+    {
+      "query": "Influenza flu symptoms",
+      "relevant_doc_ids": [
+        "medlineplus-health-topics-xml--flu"
+      ],
+      "notes": "flu"
+    }
+  ],
+  "num_queries": 28,
+  "created_at": "2026-10-08T06:00:00Z"
+}

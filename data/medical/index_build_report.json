@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-10-08T08:03:58.202047Z",
+  "index": "medibo_default",
+  "user_index": "medibo_user",
+  "existing_indices": [
+    "medibo_default",
+    "medibo_user",
+    "potbot_documents"
+  ],
+  "chunks_source": "/run/media/nilax/New Volume/projects/medibo/data/medical/chunks/medical_chunks.json",
+  "chunks_in_source": 3187,
+  "chunks_indexed": 3187,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "cpu",
+  "dimension": 384,
+  "model_load_time_s": 4.701,
+  "embed_time_s": 71.467,
+  "embed_throughput_chunks_s": 44.59,
+  "recreated": true,
+  "index_exists": true,
+  "doc_count": 3187,
+  "store_bytes": 31416391,
+  "store_size_mb": 29.961,
+  "user_index_doc_count": 0,
+  "metadata_fields": [
+    "title",
+    "source",
+    "source_url",
+    "region",
+    "authority",
+    "document_type",
+    "disease_topic",
+    "published_at",
+    "updated_at",
+    "section",
+    "dataset_type",
+    "license"
+  ],
+  "dataset_type": "default",
+  "retrieval_untouched": [
+    "potbot_documents",
+    "RETRIEVAL_CANDIDATE_POOL",
+    "VECTOR_RRF_WEIGHT / TEXT_RRF_WEIGHT / RRF_K",
+    "reranker",
+    "query rewriting"
+  ]
+}
