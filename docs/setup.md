@@ -1,6 +1,6 @@
-# potbot Setup Guide
+# Medibo Setup Guide
 
-Detailed instructions for installing, configuring, and running potbot — both locally (without Docker) and with Docker Compose.
+Detailed instructions for installing, configuring, and running Medibo — both locally (without Docker) and with Docker Compose.
 
 ## 📑 Table of Contents
 
@@ -392,7 +392,7 @@ This starts these services:
 | `elasticsearch`  | default  | 9200  | Vector + text search engine    |
 | `postgres`       | default  | 5432  | Feedback & telemetry database  |
 | `grafana`        | default  | 3000  | Monitoring dashboards          |
-| `streamlit-app`  | default  | 8501  | The Potbot application         |
+| `streamlit-app`  | default  | 8501  | The Medibo application         |
 | `ollama`         | `ollama` | 11434 | Local LLM server (optional)    |
 
 > **Note**: The ingestion pipeline uses two local SQLite files (`.embed_cache.db` and `.ingest_state.db`) for caching and incremental runs. These are stored locally in the project root and are mounted or written directly by the application. They are safely ignored by git.
@@ -419,7 +419,7 @@ docker-compose logs -f streamlit-app
 
 | Service         | URL                      | Credentials       |
 |-----------------|--------------------------|-------------------|
-| Potbot          | http://localhost:8501    | —                 |
+| Medibo          | http://localhost:8501    | —                 |
 | Grafana         | http://localhost:3000    | `admin` / `admin` |
 | Elasticsearch   | http://localhost:9200    | —                 |
 | Ollama *(profile)* | http://localhost:11434| —                 |
@@ -454,7 +454,7 @@ docker compose --profile ollama stop ollama
 
 ## 🤗 About Hugging Face & the Embedding Model
 
-potbot uses the `sentence-transformers/all-MiniLM-L6-v2` model for generating document embeddings.
+Medibo uses the `sentence-transformers/all-MiniLM-L6-v2` model for generating document embeddings.
 
 ### How it works
 

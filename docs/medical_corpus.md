@@ -160,7 +160,7 @@ The two representations are separate fields and separate files:
 `MedicalDocument.from_processed_dict()` rejects payloads that contain a
 `raw_text` key.
 
-## What is reused from Potbot (unchanged)
+## What is reused from the original Potbot project (unchanged)
 
 - `ingestion/loaders.py`, `chunkers.py`, `embedders.py`, `indexers.py`,
   `pipeline.py` — ingestion pipeline as-is.

@@ -1,9 +1,9 @@
-# Potbot — Enterprise Internal Document Intelligence System
+# Medibo — Enterprise Internal Document Intelligence System
 
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-Supported-blue.svg)](https://docker.com)
 
-**Potbot** is an end-to-end, enterprise-grade Retrieval-Augmented Generation (RAG) system designed for organizations to instantly turn internal document folders into a searchable, private knowledge base. All vector embeddings are generated locally on-device — ensuring zero data leakage — while response generation can be powered by **Groq's cloud LLM API** (default) *or* a **fully local Ollama instance** for 100% offline, air-gapped deployments.
+**Medibo** is an end-to-end, enterprise-grade Retrieval-Augmented Generation (RAG) system designed for organizations to instantly turn internal document folders into a searchable, private knowledge base. All vector embeddings are generated locally on-device — ensuring zero data leakage — while response generation can be powered by **Groq's cloud LLM API** (default) *or* a **fully local Ollama instance** for 100% offline, air-gapped deployments.
 
 ---
 
@@ -26,7 +26,7 @@
 
 Modern enterprises manage thousands of unstructured internal documents standard operating procedures (SOPs), company policies, engineering handbooks, and financial reports. Navigating these files manually is slow, error-prone, and inefficient.
 
-**Potbot** solves this problem by providing:
+**Medibo** solves this problem by providing:
 1. **Automated Document & Code Ingestion**: Select any folder containing documents (PDFs, Word files, Markdown, plain text), tabular data (CSV, TSV, JSONL), source code (`.py`, `.js`, `.ts`, `.cpp`, `.java`, `.go`, `.rs`, `.sql`, `.sh`), or configuration files (`.json`, `.yaml`, `.toml`, `.xml`, `.html`, `.css`, `.env`); the system automatically extracts text, chunks content, generates embeddings, and indexes everything into a hybrid search database.
 2. **Data Privacy**: Vector embeddings and re-ranking models run 100% locally on-device.
 3. **Hybrid RAG Intelligence**: Combines sparse keyword search (BM25) with dense vector search (kNN) using Reciprocal Rank Fusion (RRF), cross-encoder re-ranking, and query expansion.
@@ -104,7 +104,7 @@ The codebase is built following **Clean Architecture** and Object-Oriented Desig
 
 ## 🤖 LLM Providers
 
-Potbot supports multiple LLM backends, selectable with the `LLM_PROVIDER` environment variable — **no code changes required**.
+Medibo supports multiple LLM backends, selectable with the `LLM_PROVIDER` environment variable — **no code changes required**.
 
 | Provider | `LLM_PROVIDER` | Key variables | Best for |
 |---|---|---|---|
@@ -155,7 +155,7 @@ Measured using **LLM-as-a-Judge** (Relevance, Faithfulness, Completeness on 1-5 
 
 ## 📊 Monitoring & Observability
 
-Potbot automatically logs every interaction into PostgreSQL, which feeds a real-time **Grafana Dashboard** (`http://localhost:3000`):
+Medibo automatically logs every interaction into PostgreSQL, which feeds a real-time **Grafana Dashboard** (`http://localhost:3000`):
 
 1. **Total Queries Processed** (Stat counter)
 2. **Average Response Latency Trend** (Time-series line chart)
@@ -178,8 +178,8 @@ Potbot automatically logs every interaction into PostgreSQL, which feeds a real-
 
 ### Step 1: Clone & Configure Environment
 ```bash
-git clone https://github.com/CipherZ3r0/Potbot.git
-cd Potbot
+git clone https://github.com/CipherZ3r0/medibo.git
+cd medibo
 
 # Create .env file from template
 cp .env.example .env
@@ -230,7 +230,7 @@ docker exec -it potbot-ollama ollama pull llama3
 Access services:
 | Service | URL | Credentials |
 |---|---|---|
-| Potbot app | http://localhost:8501 | — |
+| Medibo app | http://localhost:8501 | — |
 | Grafana dashboard | http://localhost:3000 | `admin` / `admin` |
 | Elasticsearch | http://localhost:9200 | — |
 | Ollama API *(profile only)* | http://localhost:11434 | — |
@@ -244,7 +244,7 @@ pytest tests/ -v
 
 ## 🏥 Medical Corpus (Phases 1–2)
 
-Medibo starts from Potbot and adds a focused medical RAG MVP. **Phase 1 is
+Medibo builds on the original Potbot project and adds a focused medical RAG MVP. **Phase 1 is
 corpus foundation** (official sources, a source manifest, a fixed metadata
 schema, raw/indexed text separation, tests and documentation); **Phase 2
 downloads every manifest document** into `data/medical/raw/` with verbatim
@@ -309,7 +309,7 @@ llm-zoomcamp-project/
 │
 ├── data/                         # Corpora and evaluation artifacts
 │   ├── medical/                  # Phase 1 medical corpus: source_manifest.json, raw/, processed/
-│   └── sample_documents/         # Demo office documents for the original Potbot corpus
+│   └── sample_documents/         # Demo office documents for the original corpus
 │
 ├── tests/                        # Unit tests (medical corpus: test_medical_corpus.py, test_fetch_medical_corpus.py)
 │

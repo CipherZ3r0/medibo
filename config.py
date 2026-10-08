@@ -1,5 +1,5 @@
 """
-potbot - Centralized configuration.
+Medibo - Centralized configuration.
 
 Loads settings from environment variables (.env file) with sensible defaults.
 All ingestion tuning knobs are prefixed with INGESTION_ and can be set per

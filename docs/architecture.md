@@ -1,12 +1,12 @@
-# potbot — Architecture & Design
+# Medibo — Architecture & Design
 
 A comprehensive guide to the system architecture, tech stack, design patterns, and how every component fits together.
 
 ---
 
-## 1. What is potbot?
+## 1. What is Medibo?
 
-potbot is a **Retrieval-Augmented Generation (RAG)** application for querying internal company documents using natural language. It:
+Medibo is a **Retrieval-Augmented Generation (RAG)** application for querying internal company documents using natural language. It:
 
 1. **Ingests** documents (PDF, DOCX, TXT, MD, CSV) → splits them into chunks → generates vector embeddings → stores them in Elasticsearch.
 2. **Retrieves** the most relevant chunks when a user asks a question (using vector search, text search, or a hybrid of both).

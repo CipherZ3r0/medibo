@@ -4,7 +4,7 @@ Scope
 -----
 Phase 6 of the medical RAG MVP.  Provides everything needed to build the
 bundled medical corpus index (``medibo_default``) while leaving the existing
-Potbot retrieval path (RRF, candidate pool, reranker, query rewriting, ES
+Medibo retrieval path (RRF, candidate pool, reranker, query rewriting, ES
 schema of ``potbot_documents``) untouched.
 
 Dataset protection

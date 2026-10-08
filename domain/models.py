@@ -1,5 +1,5 @@
 """
-Domain Models — Dataclasses representing core domain entities in potbot.
+Domain Models — Dataclasses representing core domain entities in Medibo.
 """
 
 from dataclasses import dataclass, field

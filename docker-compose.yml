@@ -58,7 +58,7 @@ services:
       postgres:
         condition: service_healthy
 
-  # --- potbot Application ---
+  # --- Medibo Application ---
   streamlit-app:
     build:
       context: .

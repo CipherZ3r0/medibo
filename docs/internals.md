@@ -1,6 +1,6 @@
-# potbot — Deep Dive & Internals
+# Medibo — Deep Dive & Internals
 
-This document explains the "why" and "how" behind potbot's core logic, algorithms, and observed behaviors.
+This document explains the "why" and "how" behind Medibo's core logic, algorithms, and observed behaviors.
 
 ---
 
@@ -8,7 +8,7 @@ This document explains the "why" and "how" behind potbot's core logic, algorithm
 
 Historically, the ingestion pipeline loaded all documents into memory, chunked them all, and then embedded them all. This caused massive memory spikes on large datasets.
 
-potbot now uses a **Producer-Consumer Streaming Architecture**:
+Medibo now uses a **Producer-Consumer Streaming Architecture**:
 - **Generators**: Data flows through the pipeline (Load → Chunk → Embed → Index) one chunk at a time using Python generators (`yield`). Memory usage is strictly bounded by the `bulk_size` configuration, regardless of whether you process 10 files or 10,000.
 - **Parallelism**: 
   - `ThreadPoolExecutor` is used during the Loading phase to read multiple files from disk concurrently (I/O-bound).
@@ -18,7 +18,7 @@ potbot now uses a **Producer-Consumer Streaming Architecture**:
 
 ## 2. Incremental Ingestion & Checkpointing
 
-Re-processing unchanged files wastes massive amounts of time and compute. potbot solves this using a local SQLite database (`.ingest_state.db`).
+Re-processing unchanged files wastes massive amounts of time and compute. Medibo solves this using a local SQLite database (`.ingest_state.db`).
 
 - **Hashing**: When ingestion starts, the system computes the `sha256` hash of every file in the target directory.
 - **Checkpoints**: It compares these hashes against the SQLite checkpoint store. If a file's hash hasn't changed since the last successful run, it is completely skipped.
@@ -30,7 +30,7 @@ Re-processing unchanged files wastes massive amounts of time and compute. potbot
 
 Generating 384-dimensional vectors via neural networks is the slowest part of ingestion. 
 
-To optimize this, potbot uses a **Least Recently Used (LRU) Embedding Cache** backed by SQLite (`.embed_cache.db`).
+To optimize this, Medibo uses a **Least Recently Used (LRU) Embedding Cache** backed by SQLite (`.embed_cache.db`).
 - Before sending a chunk of text to the `TorchEmbeddingBackend`, the system hashes the text and checks the cache.
 - If an exact match is found, the cached vector is used instantly, bypassing the neural network.
 - This is incredibly powerful for boilerplate text (e.g., standard headers, copyright notices, or repeated tabular data across reports) that remains identical even if the rest of the file changes.
@@ -58,12 +58,12 @@ The system adapts how it loads and chunks based on the file type:
 
 ## 5. The Search Stack: Hybrid + Re-ranking
 
-potbot uses a multi-stage retrieval pipeline to achieve maximum accuracy.
+Medibo uses a multi-stage retrieval pipeline to achieve maximum accuracy.
 
 ### Stage 1: Hybrid Retrieval (Elasticsearch)
 Vector search is great at understanding *meaning*, but terrible at exact keyword matching (e.g., searching for a specific product ID like `AX-992B`). Text search is the exact opposite.
 
-potbot does both simultaneously:
+Medibo does both simultaneously:
 1. **Vector Search (kNN)**: Embeds the user's query into a 384-dimensional vector and asks Elasticsearch for the closest chunks using cosine similarity.
 2. **Text Search (BM25)**: Asks Elasticsearch for chunks containing exact keywords from the query.
 
@@ -88,7 +88,7 @@ Users often ask lazy follow-up questions like:
 > "What is the policy?" 
 
 If you search for that exact string, the vector database will return random policies.
-Potbot intercepts the question and sends it to the LLM with a hidden `SYSTEM_PROMPT` (inside `LLMQueryRewriter`). The LLM rewrites the query to make it search-friendly (e.g., expanding abbreviations, adding context) *before* the database search happens.
+Medibo intercepts the question and sends it to the LLM with a hidden `SYSTEM_PROMPT` (inside `LLMQueryRewriter`). The LLM rewrites the query to make it search-friendly (e.g., expanding abbreviations, adding context) *before* the database search happens.
 
 ### LLM Provider Abstraction
 

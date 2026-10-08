@@ -1,6 +1,6 @@
-# potbot Usage Guide
+# Medibo Usage Guide
 
-Walkthrough of common workflows in potbot.
+Walkthrough of common workflows in Medibo.
 
 ## 1. Generating Sample Documents
 To generate a set of test corporate policy documents:
@@ -53,5 +53,5 @@ python evaluation/llm_eval.py data/ground_truth.json
 ## 5. Viewing Telemetry in Grafana
 1. Open Grafana (`http://localhost:3000`).
 2. Log in with `admin` / `admin`.
-3. Navigate to **Dashboards** → **potbot Monitoring Dashboard**.
+3. Navigate to **Dashboards** → **Medibo Monitoring Dashboard**.
 4. Monitor real-time latency, token usage, query logs, and user feedback sentiment.

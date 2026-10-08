@@ -93,6 +93,6 @@ Very valuable clinically, and India is a SNOMED International member. SNOMED Int
 But distribution/licensing still needs to be handled through the Indian release/licensing mechanism. I wouldn't silently package it into the repo.
 PrimeKG
 Don't build the project around PrimeKG. Its own repository now says PrimeKG has been superseded by OptimusKG. GitHub
-Also, a huge knowledge graph isn't necessary for your first medical Potbot.
+Also, a huge knowledge graph isn't necessary for your first medical Medibo.
 WHO ICD-11
 Useful for classification and coding, and the current ICD API has a 2026 release, but I'd use it as an optional API/lookup layer, not the initial embedded RAG corpus. ICD-11

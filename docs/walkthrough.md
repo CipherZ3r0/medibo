@@ -1,6 +1,6 @@
-# Potbot End-to-End Walkthrough
+# Medibo End-to-End Walkthrough
 
-This guide walks you through a complete, end-to-end demonstration of the Potbot system, from generating sample data and indexing documents to querying the RAG system and monitoring performance in Grafana.
+This guide walks you through a complete, end-to-end demonstration of the Medibo system, from generating sample data and indexing documents to querying the RAG system and monitoring performance in Grafana.
 
 ---
 
@@ -22,7 +22,7 @@ These documents are saved in the `data/sample_documents/` folder.
 
 ## 2. Accessing the Streamlit Application
 
-The main interface for Potbot is built using Streamlit. Open your browser and navigate to `http://localhost:8501`.
+The main interface for Medibo is built using Streamlit. Open your browser and navigate to `http://localhost:8501`.
 
 You will see the main chat interface on the right and a sidebar for configuration and document ingestion on the left.
 
@@ -33,7 +33,7 @@ You will see the main chat interface on the right and a sidebar for configuratio
 
 ## 3. Ingesting Documents into the Vector Database
 
-Before we can chat with our documents, we need to ingest them. Potbot extracts text, splits it into semantic chunks, generates embeddings locally, and stores them in Elasticsearch.
+Before we can chat with our documents, we need to ingest them. Medibo extracts text, splits it into semantic chunks, generates embeddings locally, and stores them in Elasticsearch.
 
 1. In the left sidebar, under **Document Ingestion**, locate the input field for the folder path.
 2. Enter `/app/data/sample_documents` (the internal Docker path for the generated files).
@@ -47,7 +47,7 @@ Before we can chat with our documents, we need to ingest them. Potbot extracts t
 
 ## 4. Querying the Assistant
 
-Now that the knowledge base is populated, you can ask questions based on the ingested documents. Potbot uses a Hybrid Search approach (BM25 + Vector kNN) combined with cross-encoder re-ranking to find the most relevant chunks.
+Now that the knowledge base is populated, you can ask questions based on the ingested documents. Medibo uses a Hybrid Search approach (BM25 + Vector kNN) combined with cross-encoder re-ranking to find the most relevant chunks.
 
 Try asking a question related to the sample documents, such as:
 > *"What is our policy on vacation rollover days?"*
@@ -59,7 +59,7 @@ Try asking a question related to the sample documents, such as:
 
 ## 5. Exploring Sources and Grounding
 
-Potbot ensures all answers are traceable back to internal documents. 
+Medibo ensures all answers are traceable back to internal documents. 
 Underneath the assistant's response, you will find an expandable **Sources** section.
 
 1. Click on the **Sources** expander to see the exact chunks of text retrieved from the database.
@@ -72,7 +72,7 @@ Underneath the assistant's response, you will find an expandable **Sources** sec
 
 ## 6. Providing Feedback
 
-Potbot captures user feedback to evaluate answer quality over time.
+Medibo captures user feedback to evaluate answer quality over time.
 Under every response, there are **👍** and **👎** buttons.
 
 1. Click the **👍 (Thumbs Up)** button if the answer was helpful and accurate.
@@ -89,7 +89,7 @@ All queries, latencies, token consumption, and user feedback are persisted to Po
 
 1. Open Grafana by navigating to `http://localhost:3000`.
 2. Log in with the default credentials (`admin` / `admin`).
-3. Open the **Potbot Monitoring Dashboard** from the dashboards menu.
+3. Open the **Medibo Monitoring Dashboard** from the dashboards menu.
 
 <!-- [Insert screenshot of the Grafana dashboard showing query metrics and charts] -->
 <br>
@@ -107,7 +107,7 @@ All queries, latencies, token consumption, and user feedback are persisted to Po
 
 ## 8. Offline Evaluation (Optional)
 
-Potbot includes scripts to formally evaluate retrieval metrics (Hit Rate & MRR) and generation quality (LLM-as-a-judge).
+Medibo includes scripts to formally evaluate retrieval metrics (Hit Rate & MRR) and generation quality (LLM-as-a-judge).
 
 Run the evaluation suite in your terminal:
 ```bash

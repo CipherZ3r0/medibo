@@ -31,7 +31,7 @@ from ingestion.metrics import PipelineMetrics, StageTimer
 logger = logging.getLogger(__name__)
 
 #: Metadata fields copied from each hit's ``_source`` onto
-#: ``SearchResult.metadata`` (absent on classic Potbot documents, so the
+#: ``SearchResult.metadata`` (absent on classic Medibo documents, so the
 #: resulting dict may be empty). Order/content of results is unaffected.
 RESULT_METADATA_FIELDS = (
     "title",

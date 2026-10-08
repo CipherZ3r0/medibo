@@ -321,7 +321,7 @@ class TestDefaultDataInRetrieval(unittest.TestCase):
         self.assertEqual(doc.metadata.get("source_url"), "https://mohfw.gov.in/dengue")
         self.assertEqual(doc.page_number, 1)
 
-    def test_never_queries_the_legacy_potbot_index(self) -> None:
+    def test_never_queries_the_legacy_index(self) -> None:
         app_pipeline(self.store).query(
             "What are common symptoms of dengue?",
             use_reranking=False,
