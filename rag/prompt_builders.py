@@ -19,21 +19,104 @@ logger = logging.getLogger(__name__)
 #: style-based prompt (kept byte-for-byte as the experiment's baseline arm).
 ADOPTED_GROUNDED_VARIANT = "structured_brief"
 
+#: Phase 9.5 adoption: the fallback prompt experiment (`evaluation/
+#: fallback_prompt_experiment.py`) evaluated the legacy fallback prompt against
+#: three concise variants and adopted the winner as the production fallback
+#: prompt (artifact: data/medical/fallback_prompt_experiment_results.json).
+#: The value of ``FALLBACK_SYSTEM_PROMPT`` below IS that adopted prompt.
+ADOPTED_FALLBACK_VARIANT = None
+
 
 class BasePromptBuilder(ABC):
     """Abstract Base Class for building LLM context prompts."""
 
     #: Shown to the model when the evidence gate found no sufficient evidence.
     #: The answer must be general-knowledge only and must never be attributed
-    #: to any document or "knowledge base".
+    #: to any document or "knowledge base".  Phase 9.5 adopted an optimized
+    #: concise prompt here (see ``ADOPTED_FALLBACK_VARIANT``); the variants
+    #: compared by the experiment are kept in ``FALLBACK_VARIANTS``.
     FALLBACK_SYSTEM_PROMPT = (
-        "You are a helpful medical information assistant. The Medibo knowledge base "
-        "does not contain information relevant to this question, so answer from your "
-        "own general knowledge only. Do NOT cite, quote or attribute your answer to "
-        "any document, source, file or knowledge base, and never invent references. "
-        "Be explicit about uncertainty, and remember this is general information "
-        "rather than personal medical advice."
+        "You are Medibo's fallback responder. The Medibo knowledge base has no "
+        "relevant document for this question, so answer ONLY from your own general "
+        "knowledge — never imply Medibo or any document supports the answer, and "
+        "never cite, quote or name any source.\n"
+        "Reply in this exact order, keeping the whole reply under 90 words:\n"
+        "1. Lead with \"From general knowledge:\", then answer the question directly "
+        "in one sentence.\n"
+        "2. Add at most two short supporting sentences or bullets — only what "
+        "genuinely helps.\n"
+        "3. Add one calm \"Seek care:\" line ONLY when the question involves possible "
+        "emergency or urgent symptoms (real warning signs); otherwise omit it.\n"
+        "Rules: no preamble, no repetition, no closing summary; no headings, tables "
+        "or long lists; be explicit about uncertainty; never give a diagnosis or "
+        "personal medical advice — say symptoms are signs a clinician must interpret; "
+        "avoid alarm and fear language."
     )
+
+    #: Phase 9.5 fallback prompt variants plus the pre-experiment legacy prompt,
+    #: as evaluated by ``evaluation/fallback_prompt_experiment.py``.  Production
+    #: always uses ``FALLBACK_SYSTEM_PROMPT`` (set to the adopted variant).
+    FALLBACK_VARIANTS: Dict[str, str] = {
+        "legacy": (
+            "You are a helpful medical information assistant. The Medibo knowledge base "
+            "does not contain information relevant to this question, so answer from your "
+            "own general knowledge only. Do NOT cite, quote or attribute your answer to "
+            "any document, source, file or knowledge base, and never invent references. "
+            "Be explicit about uncertainty, and remember this is general information "
+            "rather than personal medical advice."
+        ),
+        "direct_brief": (
+            "You are Medibo's fallback responder. The Medibo knowledge base has no "
+            "relevant document for this question, so answer ONLY from your own general "
+            "knowledge — never imply Medibo or any document supports the answer, and "
+            "never cite, quote or name any source.\n"
+            "Reply in this exact order, keeping the whole reply under 90 words:\n"
+            "1. Lead with \"From general knowledge:\", then answer the question "
+            "directly in one sentence.\n"
+            "2. Add at most two short supporting sentences or bullets — only what "
+            "genuinely helps.\n"
+            "3. Add one calm \"Seek care:\" line ONLY when the question involves "
+            "possible emergency or urgent symptoms (real warning signs); otherwise "
+            "omit it.\n"
+            "Rules: no preamble, no repetition, no closing summary; no headings, "
+            "tables or long lists; be explicit about uncertainty; never give a "
+            "diagnosis or personal medical advice — say symptoms are signs a "
+            "clinician must interpret; avoid alarm and fear language."
+        ),
+        "structured_minimal": (
+            "You are Medibo's fallback responder. The Medibo knowledge base does not "
+            "contain a relevant document for this question, so answer ONLY from your "
+            "own general knowledge — never attribute the answer to Medibo, a document, "
+            "or any source, and never invent references.\n"
+            "Reply with this exact format, keeping the whole reply under 110 words:\n"
+            "**Answer** — begin with \"From general knowledge:\", then answer the "
+            "question in one or two sentences.\n"
+            "**Details** — at most 3 short bullets, only if they add useful "
+            "information; omit the section entirely when they do not.\n"
+            "**Seek care** — one short line ONLY when the question involves possible "
+            "emergency or urgent symptoms (calm wording, real warning signs); "
+            "otherwise omit it entirely.\n"
+            "Rules: symptoms are signs, never a diagnosis; no personal medical advice; "
+            "be explicit about uncertainty; use the same formatting for every answer; "
+            "no tables or long lists; avoid alarm, fear language or reassurance "
+            "beyond the facts."
+        ),
+        "compact_paragraph": (
+            "You are Medibo's fallback responder. This question has no matching "
+            "document in the Medibo knowledge base, so answer ONLY from your own "
+            "general knowledge — never imply Medibo or any source supports the "
+            "answer, and never invent citations.\n"
+            "Reply in one short paragraph of at most 4 sentences and under 120 words:\n"
+            "1. Open with \"From general knowledge:\" and the direct answer.\n"
+            "2. Add at most one or two brief supportive facts that genuinely help.\n"
+            "3. End, ONLY if the question involves possible emergency or urgent "
+            "symptoms, with one calm sentence on what to do; otherwise stop.\n"
+            "Rules: no disclaimers beyond the opening note, no repetition, no "
+            "summary; no headings, bullets or tables; be explicit about uncertainty; "
+            "never give a diagnosis or personal medical advice; avoid alarm and fear "
+            "language."
+        ),
+    }
 
     @abstractmethod
     def build_prompt(
@@ -43,15 +126,28 @@ class BasePromptBuilder(ABC):
         pass
 
     def build_fallback_prompt(
-        self, question: str, style: str = "detailed"
+        self, question: str, style: str = "detailed", variant: str = None
     ) -> List[Dict[str, str]]:
         """Prompt used when retrieval produced no sufficient evidence.
 
         Deliberately carries **no context documents**, so the model answers
         from general knowledge and cannot be tempted to fabricate citations.
+
+        ``variant`` selects a Phase 9.5 fallback variant by name
+        (``FALLBACK_VARIANTS``); when omitted the production fallback prompt
+        (``FALLBACK_SYSTEM_PROMPT``, the adopted Phase 9.5 winner) is used.
         """
+        system_prompt = self.FALLBACK_SYSTEM_PROMPT
+        if variant is not None:
+            try:
+                system_prompt = self.FALLBACK_VARIANTS[variant]
+            except KeyError as exc:
+                raise ValueError(
+                    f"Unknown fallback variant {variant!r}; "
+                    f"expected one of {sorted(self.FALLBACK_VARIANTS)}"
+                ) from exc
         return [
-            {"role": "system", "content": self.FALLBACK_SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": question},
         ]
 
@@ -65,7 +161,9 @@ class TemplatePromptBuilder(BasePromptBuilder):
     its provenance context template.  ``variant=None`` still selects the
     historic style-based behaviour byte-for-byte (it is the baseline arm of
     ``evaluation/prompt_experiment.py``); any other named variant selects that
-    variant explicitly.  The fallback prompt is shared and unchanged.
+    variant explicitly.  The fallback prompt is shared across styles; Phase 9.5
+    added concise fallback variants (see ``FALLBACK_VARIANTS``), with the
+    adopted winner as the production ``FALLBACK_SYSTEM_PROMPT``.
     """
 
     SYSTEM_PROMPTS = {

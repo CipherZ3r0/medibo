@@ -19,6 +19,7 @@
 - [Quickstart & Reproducibility](#-quickstart--reproducibility)
 - [Medical Corpus (Phases 1–2)](#-medical-corpus-phases-12)
 - [Project Structure](#-project-structure)
+- [Future Scope](#-future-scope)
 
 ---
 
@@ -265,7 +266,7 @@ model are unchanged.
 ## 📁 Project Structure
 
 ```
-llm-zoomcamp-project/
+medibo/
 │
 ├── app/                          # Web UI layer
 │   ├── streamlit_app.py          # Main Streamlit application
@@ -323,3 +324,38 @@ llm-zoomcamp-project/
 ├── README.md                     # Project Readme (you are here)
 └── docs/                         # Documentation (medical corpus: docs/medical_corpus.md)
 ```
+
+---
+
+## 🔭 Future Scope
+
+### Geography-based personalization
+
+Every medical document already carries a coarse `region` (`global` | `india`)
+through `domain/medical.py::MedicalDocumentMetadata`. The next step is to turn
+that field into an explicit, evaluated personalization layer:
+
+1. **Region taxonomy & metadata** — extend `REGIONS` to a hierarchy
+   (country → state/UT → district), add locale and effective-date fields, and
+   version the manifest so new regional sources can be added without breaking
+   existing indexes.
+2. **Geo-aware retrieval** — propagate region into Elasticsearch chunk metadata
+   and apply a user/org-level region filter or boost at query time, so local
+   guidance outranks global guidance without hiding authoritative global
+   sources.
+3. **Authority precedence & conflict handling** — define an explicit order
+   (national → state → district → global) and surface "guidance differs by
+   region" answers with both citations instead of silently choosing one.
+4. **Locale-aware generation** — localize red-flag wording, emergency numbers,
+   units and care pathways while keeping the evidence gate and the
+   no-invented-citations rule unchanged. Evaluate each language separately.
+5. **Regional evaluation slices** — split `data/medical/medical_ground_truth.json`
+   by region and report Hit@k / MRR@5 and faithfulness per slice; no slice ships
+   without a minimum sample size and documented limitations.
+6. **Governance & licensing** — every new regional source enters through
+   `source_manifest.json` with authority, licence and redistribution terms;
+   non-redistributable documents stay fetch-only under `data/medical/raw/`.
+
+Out of scope for this phase: changes to BM25/vector retrieval, RRF fusion, the
+candidate pool, the reranker, embeddings or the evidence gate. Geography is a
+filter/boost and presentation layer, not a new retrieval engine.

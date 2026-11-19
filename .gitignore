@@ -41,3 +41,5 @@ temp_data/
 # agent
 .agents/
 skills-lock.json
+
+medibo_local_demo_data/
