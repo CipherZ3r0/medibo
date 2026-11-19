@@ -323,7 +323,7 @@ class TestFallbackNeverClaimsSources(unittest.TestCase):
 
     def test_fallback_prompt_forbids_citations(self):
         system, _ = self.llm.prompts[0]
-        self.assertIn("Do NOT cite", system["content"])
+        self.assertRegex(system["content"].lower(), r"\b(?:do not|never)\s+cite\b")
         self.assertIn("knowledge base", system["content"])
 
     def test_answer_is_marked_and_untouched_by_retrieved_text(self):
